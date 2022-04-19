@@ -5,4 +5,4 @@
 # Set the number of processes here:
 #$ -pe mpi 6
 # Change the name of the executable here:
-mpirun ./hybrid_clustering > outputs/parallel/p6m0015.txt
+mpirun ./hybrid_clustering > p6m0020.txt

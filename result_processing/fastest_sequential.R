@@ -55,3 +55,10 @@ plot(hc, hang = -1)
 stopwatch[["end_time"]] <- as.character.POSIXt(Sys.time())
 time_taken <- difftime(stopwatch[['end_time']], stopwatch[['start_time']], units = "secs") %>% as.double()
 
+
+
+
+hc <- hclust.vector(USArrests, "cen")
+# squared Euclidean distances
+hc$height <- hc$height^2
+memb <- cutree(hc, k = 1)

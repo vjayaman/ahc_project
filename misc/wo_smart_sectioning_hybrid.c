@@ -97,17 +97,6 @@ static void manager(double *A) {
                    A, NUM_VECS, N);
     printf("\n\n");
 
-    double min_coord0 = 3000;
-    double max_coord0 = 0;
-    minMaxCoord(NUM_VECS, N, 0, A, min_coord0, max_coord0);
-    printf("min x: $f, max x: %f\n", min_coord0, max_coord0);
-
-    double min_coord1 = 3000;
-    double max_coord1 = 0;
-    minMaxCoord(NUM_VECS, N, 1, A, min_coord1, max_coord1);
-    printf("min y: $f, max y: %f\n", min_coord1, max_coord1);
-    
-    
     printf("Sending address of first row of each chunk\n");
     for (i = 1; i < num_procs; i++) {
         first_row = (i - 1) * chunk_size;
@@ -124,24 +113,6 @@ static void manager(double *A) {
         // buf, count, datatype, dest, tag, comm
         MPI_Send(A_chunk, chunk_size * N, MPI_DOUBLE, i, chunk_size, MPI_COMM_WORLD);
     }
-
-/*    printf("Sending address of first row of each chunk\n");
-    for (i = 1; i < num_procs; i++) {
-        first_row = (i - 1) * chunk_size;
-
-        c_row = 0;
-        for (f_row = first_row; f_row < (first_row + chunk_size); f_row++) {
-            c_col = 0;
-            for (f_col = 0; f_col < N; f_col++) {
-                A_chunk[c_row*N + c_col] = *(A + f_row*N + f_col);
-                c_col++;
-            }
-            c_row++;
-        }
-        // buf, count, datatype, dest, tag, comm
-        MPI_Send(A_chunk, chunk_size * N, MPI_DOUBLE, i, chunk_size, MPI_COMM_WORLD);
-    }
-*/
 
     // each worker process clusters a chunk of data rows and returns a 
     // matrix of the vectors selected to merge into a group with each iteration within the process

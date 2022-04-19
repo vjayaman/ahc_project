@@ -17,7 +17,7 @@ Dists:
 0.00	0.00	0.00	0.00	0.00	
 
 
-Minimum distance 2.000 found at (0, 4), level 5
+Minimum distance 2.000 found at (0, 4), level 5, process 0
 	From [3.00, 4.00] and [5.00, 4.00] to [4.00, 4.00]
 
 --------------------------------------------
@@ -29,7 +29,7 @@ New A:
 4.00	4.00	
 
 
-Minimum distance 3.606 found at (2, 3), level 4
+Minimum distance 3.606 found at (2, 3), level 4, process 0
 	From [1.00, 6.00] and [4.00, 4.00] to [2.50, 5.00]
 
 --------------------------------------------
@@ -40,7 +40,7 @@ New A:
 2.50	5.00	
 
 
-Minimum distance 5.025 found at (0, 2), level 3
+Minimum distance 5.025 found at (0, 2), level 3, process 0
 	From [3.00, 0.00] and [2.50, 5.00] to [2.75, 2.50]
 
 --------------------------------------------
@@ -50,7 +50,7 @@ New A:
 2.75	2.50	
 
 
-Minimum distance 6.731 found at (0, 1), level 2
+Minimum distance 6.731 found at (0, 1), level 2, process 0
 	From [9.00, 0.00] and [2.75, 2.50] to [5.88, 1.25]
 
 --------------------------------------------
@@ -66,4 +66,4 @@ Sequential results:
 
 ||-----Done sequential-----||.
 
-Total time (sec): 0.001070
+Total time (sec): 0.001265

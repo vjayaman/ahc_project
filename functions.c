@@ -2,7 +2,18 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+
 /* Functions */
+
+// if (x > y) return y else x
+int min(int x, int y) {
+    return (x > y) ? y : x;
+}
+
+// if (x > y) return x else y
+int max(int x, int y) {
+    return (x > y) ? x : y;
+}
 
 double fabs(double x);
 
@@ -12,6 +23,7 @@ void init_vec(double *vec, int len)
     int i;
     for (i = 0; i < len; i++)
     {
+        //srand(i);
         vec[i] = rand() % MAX_RAND;
     }    
 }
@@ -59,13 +71,25 @@ void resetMatrix(int dim1, int dim2, double *matrix) {
     }
 }
 
+void minMaxCoord(int dim1, int dim2, int j, double *matrix, double minval, double maxval) {
+    int i;
+    for (i = 0; i < dim1; i++) {
+        if (minval > matrix[i * dim2 + j]) {
+            minval = matrix[i * dim2 + j];
+        }
+        if (maxval < matrix[i * dim2 + j) {
+            maxval = matrix[i * dim2 + j];
+        }
+    }
+}
+
 void print_oned_mat(const char *label, double *A, int dim1, int dim2) {
     int i,j;
     printf("%s", label);
     for (i = 0; i < dim1; i++) {
         for (j = 0; j < dim2; j++) {
             printf("%.2f\t", *(A + i*dim2 + j));
-        }            
+        }
         printf("\n");
     }
 }

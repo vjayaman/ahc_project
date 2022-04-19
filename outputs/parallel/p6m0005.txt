@@ -1,4 +1,5 @@
 Number of processes: 6
+Number of processes: 6
 
 --------------------------------------------
 
@@ -11,9 +12,6 @@ Matrix A:
 
 
 Sending address of first row of each chunk
-Number of processes: 6
-Number of processes: 6
-Number of processes: 6
 
 Matrices for process 1: 
 A_chunk: 
@@ -23,9 +21,6 @@ Dists:
 0.00	
 
 
-
-Matrices for process 2: 
-A_chunk: 
 Minimum distance 1000.000 found at (0, 0), level 1, process 1
 	From [3.00, 4.00] and [3.00, 4.00] to [3.00, 4.00]
 
@@ -34,6 +29,13 @@ Minimum distance 1000.000 found at (0, 0), level 1, process 1
 
 ---------New A: 
 Returning root of this subtree to manager
+Number of processes: 6
+Number of processes: 6
+Number of processes: 6
+Number of processes: 6
+
+Matrices for process 2: 
+A_chunk: 
 3.00	0.00	
 
 Dists: 
@@ -41,42 +43,49 @@ Dists:
 
 
 Minimum distance 1000.000 found at (0, 0), level 1, process 2
-	Receiving merged pairs from workers
-Number of processes: 6
-From [3.00, 0.00] and [3.00, 0.00] to [3.00, 0.00]
+	From [3.00, 0.00] and [3.00, 0.00] to [3.00, 0.00]
 
 --------------------------------------------
 
 
 ---------New A: 
 Returning root of this subtree to manager
-Number of processes: 6
-
-Matrices for process 5: 
-A_chunk: 
-
-Matrices for process 3: 
-A_chunk: 
+Receiving merged pairs from workers
 
 --------------------------------------------
 
 Sequential Matrix A: 
 0.00	0.00	
 3.00	4.00	
-5.00	4.00	
-
-Dists: 
-0.00	
-
-
-9.00	0.00	
 3.00	0.00	
 1.00	6.00	
 5.00	4.00	
 9.00	0.00	
 
+Matrices for process 3: 
+A_chunk: 
+
 Dists: 
-0.00	5.00	Minimum distance 1000.000 found at (0, 0), level 1, process 5
+0.00	5.00	3.00	6.08	6.40	9.00	
+0.00	0.00	4.00	2.83	2.00	7.21	
+0.00	0.00	0.00	6.32	4.47	6.00	
+0.00	-0.00	0.00	
+Matrices for process 5: 
+A_chunk: 
+5.00	4.00	
+
+Dists: 
+0.00	9.00	0.00	
+
+Matrices for process 4: 
+A_chunk: 
+1.00	6.00	
+0.00	4.47	10.00	
+0.00	0.00	0.00	0.00	0.00	5.66	
+0.00	0.00
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 5
 	From [5.00, 4.00] and [5.00, 4.00] to [5.00, 4.00]
 
 --------------------------------------------
@@ -95,16 +104,6 @@ Minimum distance 1000.000 found at (0, 0), level 1, process 3
 --------------------------------------------
 
 
----------New A: 
-
-Matrices for process 4: 
-A_chunk: 
-1.00	6.00	
-3.00	6.08	6.40	9.00	
-0.00	0.00	4.00	2.83	2.00	7.21	
-0.00	0.00	0.00	6.32	4.47	6.00	
-Returning root of this subtree to manager
-
 Dists: 
 0.00	
 
@@ -117,9 +116,7 @@ Minimum distance 1000.000 found at (0, 0), level 1, process 4
 
 ---------New A: 
 Returning root of this subtree to manager
-0.00	1054081670220986227676934644999194889144895315655827052137679989275512228320846255511290232555899147334387529195353185343289715151708844429352409524806773183901833504424522929676455841179612421609691807744.00	0.00	0.00	4.47	10.00	
-0.00	0.00	0.00	0.00	0.00	5.66	
-0.00	0.00	0.00	1054081670220986227676934644999194889144895315655827052137679989275512228320846255511290232555899147334387529195353185343289715151708844429352409524806773183901833504424522929676455841179612421609691807744.00	0.00	0.00	
+	0.00	-0.00	0.00	0.00	
 
 
 Minimum distance 2.000 found at (1, 4), level 6, process 0
@@ -143,6 +140,9 @@ Minimum distance 3.000 found at (0, 1), level 5, process 0
 New A: 
 1.00	6.00	
 9.00	0.00	
+---------New A: 
+Returning root of this subtree to manager
+
 4.00	4.00	
 1.50	0.00	
 
@@ -189,4 +189,4 @@ Sending dietags for 5 workers
 
 ||-----Done parallel part-----||.
 
-Total time (sec): 0.002917
+Total time (sec): 0.002822

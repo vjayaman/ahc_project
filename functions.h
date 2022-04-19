@@ -7,7 +7,7 @@
 #define N 2
 #define PRINT_VECS 1  // flag so we can turn off printing when N is large
 #define MAX_RAND 10   // max value of elements generated for array
-#define NUM_VECS 15
+#define NUM_VECS 20
 //#define NTHREADS 8
 
 /* Prototypes */
@@ -27,6 +27,8 @@ double concatenate(double x, double y);
 void addToMergedList(double *merged_pairs, double *A, int val0, int val1, int x); 
 void concatPair(char *str0, double val0, double val1);
 void concatStrings(char *str0, char *str1, char *str2);
-
+int min(int x, int y);
+int max(int x, int y);
+void minMaxCoord(int dim1, int dim2, int j, double *matrix, double minval, double maxval); 
 
 #endif
