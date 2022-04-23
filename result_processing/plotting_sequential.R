@@ -2,8 +2,8 @@
 
 source("result_processing/rfuncs.R")
 
-num_vecs <- 25
-file_index <- 4
+num_vecs <- 15
+file_index <- 3
 
 # ------------------------------------------------------------------------------
 # SEQUENTIAL -------------------------------------------------------------------
@@ -20,7 +20,9 @@ s_a1 <- initialPairs(seq_results)
 
 s_clustering <- s_outputs[which(grepl("From ", s_outputs))]
 s_x1 <- lapply(s_clustering, function(x_i) {
-  x_i %>% gsub("From ", "", .) %>% gsub(" and ", "\t", .) %>% 
+  strsplit(x_i, "From ")[[1]][2] %>% 
+    # gsub("From ", "", .) %>% 
+    gsub(" and ", "\t", .) %>% 
     gsub(" to ", "\t", .) %>% 
     strsplit(., "\t") %>% unlist()
 })
@@ -59,8 +61,8 @@ s_df <- s_df %>% mutate(across(val, as.double))
 toplot_1 <- as.data.table(s_toplot)[val <= floor(num_vecs/2)]
 df_1 <- as.data.table(s_df)[val <= floor(num_vecs/2)]
 
-toplot_2 <- as.data.table(s_toplot)
-df_2 <- as.data.table(s_df)
+toplot_2 <- as.data.table(s_toplot)[val > floor(num_vecs/2)]
+df_2 <- as.data.table(s_df)#[val > floor(num_vecs/2)]
 
 ggplot(data = toplot_1, aes(x = x, y = y, color = type)) + geom_point() + 
   xlim(min(toplot_2$x), max(toplot_2$x)) + 
@@ -70,11 +72,13 @@ ggplot(data = toplot_1, aes(x = x, y = y, color = type)) + geom_point() +
   labs(color = "Point type")
 ggsave(paste0("levels_lower_p1m", num_vecs, ".png"))
 
+toplot_1$type <- paste("Old_", toplot_1$type, sep = "")
+toplot_2 <- bind_rows(toplot_2, toplot_1)
 
 ggplot(data = toplot_2, aes(x = x, y = y, color = type)) + geom_point() + 
   xlim(min(toplot_2$x), max(toplot_2$x)) +
   ylim(min(toplot_2$y), max(toplot_2$y)) +
-  geom_segment(aes(x = df_2$x, y = df_2$y, xend = df_2$xend, yend = df_2$yend)) + 
+  geom_segment(aes(x = df_2$x, y = df_2$y, xend = df_2$xend, yend = df_2$yend)) +
   ggtitle(paste0("Naive sequential implementation for ", num_vecs, " vectors and N = 2")) + 
   labs(color = "Point type")
 ggsave(paste0("levels_upper_p1m", num_vecs, ".png"))

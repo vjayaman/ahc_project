@@ -23,7 +23,6 @@ int main(int argc, char *argv[]) {
     double x_i[N];
     int i, j;
     
-    // Sequential 
     srand(200);
     for (i = 0; i < NUM_VECS; i++) {
         for (j = 0; j < N; j++) {
@@ -32,10 +31,6 @@ int main(int argc, char *argv[]) {
         }
     }
     
-    //int t = omp_get_num_procs();
-    //omp_set_num_threads(t);     
-
-
     int my_rank;
     int num_procs;
 
@@ -73,8 +68,6 @@ int main(int argc, char *argv[]) {
         double time_interval = end_time - start_time;
         printf("Total time (sec): %f\n", time_interval);
     }
-    
-    //printf("Total time (sec): %f for %d threads\n", time_interval, t);
     return 0;    
 }
 
@@ -82,11 +75,10 @@ int main(int argc, char *argv[]) {
 
 static void manager(double *A) {
     //int m = NUM_VECS;//+1;
-    //double merged_pairs[m * 4];    
-    int i;   
+    //int i;   
     int num_procs;
     MPI_Status status;
-    int f_row, f_col, c_row, c_col, first_row;
+    int f_row, f_col, c_row, c_col;
 
 
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
@@ -97,21 +89,41 @@ static void manager(double *A) {
                    A, NUM_VECS, N);
     printf("\n\n");
 
-    double min_coord0 = 3000;
-    double max_coord0 = 0;
-    minMaxCoord(NUM_VECS, N, 0, A, min_coord0, max_coord0);
-    printf("min x: $f, max x: %f\n", min_coord0, max_coord0);
+    double minX = minCoord(NUM_VECS, N, 0, A);
+    double maxX = maxCoord(NUM_VECS, N, 0, A);
+    
+    double minY = minCoord(NUM_VECS, N, 1, A);
+    double maxY = maxCoord(NUM_VECS, N, 1, A);
 
-    double min_coord1 = 3000;
-    double max_coord1 = 0;
-    minMaxCoord(NUM_VECS, N, 1, A, min_coord1, max_coord1);
-    printf("min y: $f, max y: %f\n", min_coord1, max_coord1);
+    printf("min x: %f, max x: %f, min y: %f, max y: %f\n", minX, maxX, minY, maxY);
+
+    int i,j, k;
+    double temp[N]; 
+    for (i = 0; i < NUM_VECS; i++){
+        for (k = i+1; k < NUM_VECS; k++) {
+            if (A[i * N + 1] > A[k * N + 1]) {  // sorting by y values
+                for (j = 0; j < N; j++) {
+                    temp[j] = A[i * N + j];
+                    A[i * N + j] = A[k * N + j];
+                    A[k * N + j] = temp[j];
+                }
+            }
+        }
+    }
+
+    //int denom = (num_procs - 1)/2;
+    //double a = (maxX - minX)/denom;
+    //double b = (maxY - minY)/denom;
+    //int p;
     
-    
-    printf("Sending address of first row of each chunk\n");
+    minX = minX - 1; // so we can always use (< x <=), even for boundaries
+    //double chunk_minX, chunk_maxX;
+    //double chunk_minY, chunk_maxY;
+    int first_row;
+    //printf("Sending address of first row of each chunk\n");
+
     for (i = 1; i < num_procs; i++) {
         first_row = (i - 1) * chunk_size;
-
         c_row = 0;
         for (f_row = first_row; f_row < (first_row + chunk_size); f_row++) {
             c_col = 0;
@@ -121,72 +133,41 @@ static void manager(double *A) {
             }
             c_row++;
         }
+
+        //print_oned_mat("\nA_chunk\n", A_chunk, chunk_size, N);
+        //printf("\n");   
+
         // buf, count, datatype, dest, tag, comm
         MPI_Send(A_chunk, chunk_size * N, MPI_DOUBLE, i, chunk_size, MPI_COMM_WORLD);
     }
-
-/*    printf("Sending address of first row of each chunk\n");
-    for (i = 1; i < num_procs; i++) {
-        first_row = (i - 1) * chunk_size;
-
-        c_row = 0;
-        for (f_row = first_row; f_row < (first_row + chunk_size); f_row++) {
-            c_col = 0;
-            for (f_col = 0; f_col < N; f_col++) {
-                A_chunk[c_row*N + c_col] = *(A + f_row*N + f_col);
-                c_col++;
-            }
-            c_row++;
-        }
-        // buf, count, datatype, dest, tag, comm
-        MPI_Send(A_chunk, chunk_size * N, MPI_DOUBLE, i, chunk_size, MPI_COMM_WORLD);
-    }
-*/
-
+    
     // each worker process clusters a chunk of data rows and returns a 
     // matrix of the vectors selected to merge into a group with each iteration within the process
     // so each worker process returns a matrix of size chunk_size * N
     // we want to print each of these matrices    
 
-    //double mp_chunk[chunk_size * 4];
     double A_chunk_root[1*N]; 
     double last_call[num_procs * N];   
-    //double last_call[(num_procs-1) * N];
-    printf("Receiving merged pairs from workers\n");
+    
+    //printf("Receiving merged pairs from workers\n");
     for (i = 1; i < num_procs; i++) {
-        
         MPI_Recv(A_chunk_root, 1 * N, MPI_DOUBLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
-        first_row = (i - 1);
         for (int j = 0; j < N; j++ ) {
             last_call[i * N + j] = A_chunk_root[j];
         }
-        /*MPI_Recv(mp_chunk, chunk_size * 4, MPI_DOUBLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-        //print_oned_mat("Worker results: \n", mp_chunk, chunk_size, 4);
-
-        first_row = (i - 1) * chunk_size;
-        c_row = 0;
-        for (f_row = first_row; f_row < (first_row + chunk_size); f_row++) {
-            c_col = 0;
-            for (f_col = 0; f_col < 4; f_col++) {
-                merged_pairs[f_row*4 + f_col] = mp_chunk[c_row*4 + c_col];
-                c_col++;
-            }
-            c_row++;
-        }*/
     }
 
     sequential_naive(last_call, num_procs);
 
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
-    printf("Sending dietags for %d workers\n", num_procs-1); // to get all workers to exit
+    printf("\nSending dietags for %d workers\n", num_procs-1); // to get all workers to exit
     for (i = 0; i < num_procs; i++) {
         MPI_Send(0, 0, MPI_DOUBLE, i, 5000, MPI_COMM_WORLD);
     }
 
     // want to have some kind of iterator to go with the prints (so we can be sure of the order)
     //if (NUM_VECS <= 15) {print_oned_mat("\nResults: \n", merged_pairs, NUM_VECS, 4);}
-
     
     printf("\n||-----Done parallel part-----||.\n\n");    
 }
@@ -215,7 +196,7 @@ static void worker(int chunk_size) {
         if (NUM_VECS <= 15) {print_oned_mat("A_chunk: \n", A, chunk_size, N);}
         
         collectDistances(chunk_size, A, Dists); // collect pairwise distances of all the vectors
-        if (NUM_VECS <= 15) {print_oned_mat("\nDists: \n", Dists, chunk_size, chunk_size);}
+        //if (NUM_VECS <= 15) {print_oned_mat("\nDists: \n", Dists, chunk_size, chunk_size);}
 
         double min_val = 1000;
         double coords[3] = {0, 0, min_val};
@@ -230,7 +211,7 @@ static void worker(int chunk_size) {
         for (j = 0; j < N; j++) {
             new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
         }
-        printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\n\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+        printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
                 coords[2], val0, val1, chunk_size, my_rank,
                 *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
         printf("\n--------------------------------------------\n\n");
@@ -245,7 +226,7 @@ static void worker(int chunk_size) {
         resetMatrix(x, x, Dists);
             
         while (x > 1) {
-            if (NUM_VECS <= 15) {print_oned_mat("New A: \n", A, x, N);}
+            //if (NUM_VECS <= 15) {print_oned_mat("New A: \n", A, x, N);}
             collectDistances(x, A, Dists);
             //print_oned_mat("\nDists: \n", Dists, x, x);
 
@@ -258,7 +239,7 @@ static void worker(int chunk_size) {
             for (j = 0; j < N; j++) {
                 new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
             }
-            printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\n\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+            printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
                 coords[2], val0, val1, x, my_rank,
                 *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
 
@@ -274,9 +255,9 @@ static void worker(int chunk_size) {
             resetMatrix(x, x, Dists);
         }
 
-        print_oned_mat("\n---------New A: \n", A, x, N);
+        //print_oned_mat("\n---------New A: \n", A, x, N);
 
-        printf("Returning root of this subtree to manager\n");
+        printf("\nReturning root of this subtree to manager\n");
         MPI_Send(A, 1 * N, MPI_DOUBLE, 0, my_rank, MPI_COMM_WORLD);
         //printf("Returning merged pairs to manager\n");
         //MPI_Send(merged_pairs, chunk_size * 4, MPI_DOUBLE, 0, my_rank, MPI_COMM_WORLD);
@@ -299,11 +280,10 @@ static void sequential_naive(double *A, int num_rows) {
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank); //grab this process's rank
 
     print_oned_mat("\n--------------------------------------------\n\nSequential Matrix A: \n", 
-                   A, num_rows, N);
+                   A, num_rows, N);        
 
-    //parallelCollectDistances(num_rows, A, Dists);
     collectDistances(num_rows, A, Dists); // collect pairwise distances of all the vectors
-    if (num_rows <= 15) {print_oned_mat("\nDists: \n", Dists, num_rows, num_rows);}
+    //if (num_rows <= 15) {print_oned_mat("\nDists: \n", Dists, num_rows, num_rows);}
 
     double min_val = 1000;
     double coords[3] = {0, 0, min_val};
@@ -312,14 +292,13 @@ static void sequential_naive(double *A, int num_rows) {
 
     int val0 = (int) coords[0];
     int val1 = (int) coords[1];
-
-    double new_vec[2];
     int j;
+    double new_vec[2];
     for (j = 0; j < N; j++) {
         new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
     }
 
-    printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\n\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+    printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
                coords[2], val0, val1, num_rows, my_rank,
                *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
     printf("\n--------------------------------------------\n\n");
@@ -335,8 +314,7 @@ static void sequential_naive(double *A, int num_rows) {
     resetMatrix(x, x, Dists);
 
     while (x > 1) {
-        if (num_rows <= 15) {print_oned_mat("New A: \n", A, x, N);}
-        //parallelCollectDistances(x, A, Dists);
+        //if (num_rows <= 15) {print_oned_mat("New A: \n", A, x, N);}
         collectDistances(x, A, Dists);
         //print_oned_mat("\nDists: \n", Dists, x, x);
 
@@ -349,7 +327,7 @@ static void sequential_naive(double *A, int num_rows) {
         for (j = 0; j < N; j++) {
             new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
         }
-        printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\n\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+        printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
                coords[2], val0, val1, x, my_rank,
                *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
 

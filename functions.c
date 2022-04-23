@@ -6,12 +6,12 @@
 /* Functions */
 
 // if (x > y) return y else x
-int min(int x, int y) {
+double min(double x, double y) {
     return (x > y) ? y : x;
 }
 
 // if (x > y) return x else y
-int max(int x, int y) {
+double max(double x, double y) {
     return (x > y) ? x : y;
 }
 
@@ -71,16 +71,23 @@ void resetMatrix(int dim1, int dim2, double *matrix) {
     }
 }
 
-void minMaxCoord(int dim1, int dim2, int j, double *matrix, double minval, double maxval) {
+double maxCoord(int dim1, int dim2, int j, double *matrix) {
     int i;
+    double maxval = 0;
     for (i = 0; i < dim1; i++) {
-        if (minval > matrix[i * dim2 + j]) {
-            minval = matrix[i * dim2 + j];
-        }
-        if (maxval < matrix[i * dim2 + j) {
-            maxval = matrix[i * dim2 + j];
-        }
+        maxval = max(maxval, matrix[i * dim2 + j]);
     }
+    //printf("min %d: %f, max %d: %f\n", j, minval, j, maxval);
+    return maxval;//floor((maxval - minval)/2);
+}
+
+double minCoord(int dim1, int dim2, int j, double *matrix) {
+    int i;
+    double minval = 5000;
+    for (i = 0; i < dim1; i++) {
+        minval = min(minval, matrix[i * dim2 + j]);
+    }
+    return minval;
 }
 
 void print_oned_mat(const char *label, double *A, int dim1, int dim2) {
@@ -93,8 +100,21 @@ void print_oned_mat(const char *label, double *A, int dim1, int dim2) {
         printf("\n");
     }
 }
-
-
+/*
+void seqCollectDistances(int y, double *A, double *Dists) {
+    double sum;
+    int row0, row1, i2;
+    for (row0 = 0; row0 < y; row0++) {
+        for (row1 = row0+1; row1 < y; row1++) {
+            sum = 0;
+            for (i2 = 0; i2 < N; i2++) {
+                sum += pow(A[row0 * N + i2] - A[row1 * N + i2], 2);
+            }
+            //printf("row0: %d, row1: %d, val: %.3f\n", row0, row1, sqrt(sum));
+            Dists[row0 * y + row1] = sqrt(sum);
+        }
+    }
+}*/
 
 void collectDistances(int y, double *A, double *Dists) {
     double sum;
@@ -103,6 +123,7 @@ void collectDistances(int y, double *A, double *Dists) {
         for (row1 = row0+1; row1 < y; row1++) {
         //for (row1 = 0; row1 < y; row1++) {
             sum = 0;
+            //#pragma omp parallel for private(i2) reduction(+:sum)
             for (i2 = 0; i2 < N; i2++) {
                 sum += pow(A[row0 * N + i2] - A[row1 * N + i2], 2);
             }

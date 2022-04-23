@@ -2,8 +2,8 @@
 
 source("result_processing/rfuncs.R")
 
-num_vecs <- 25
-file_index <- 4
+num_vecs <- 15
+file_index <- 3
 
 
 pfiles <- list.files("outputs/parallel/", full.names = TRUE)
@@ -27,8 +27,10 @@ p_clustering <- grep("Minimum distance ", p_outputs, value = TRUE)
 # note that the "levels" are decreasing --> max is at the leaves, 1 is at the root
 
 p_levels <- lapply(p_clustering, function(x_i) {
-  y_i <- strsplit(strsplit(x_i, split = "level ")[[1]][2], ", process ")[[1]] %>% as.double()
-  data.table(level = y_i[1], proc = y_i[2])
+  t_i <- strsplit(x_i, split = "level ")[[1]][2]
+  u_i <- strsplit(t_i, ", process ")[[1]][1] %>% as.double()
+  v_i <- strsplit(strsplit(t_i, ", process ")[[1]][2], "\t")[[1]][1] %>% as.double()
+  data.table(level = u_i, proc = v_i)
 }) %>% bind_rows()
 
 # for m = 10
@@ -38,7 +40,9 @@ p_levels <- lapply(p_clustering, function(x_i) {
 # p_pairs[14] <- gsub("5.00\t3.50", "", p_pairs[14])
 
 df <- lapply(p_pairs, function(x_i) {
-  y_i <- x_i %>% gsub("From ", "", .) %>% gsub(" and ", "\t", .) %>% 
+  y_i <- strsplit(x_i, "From ")[[1]][2] %>% 
+    # gsub("From ", "", .) %>% 
+    gsub(" and ", "\t", .) %>% 
     gsub(" to ", "\t", .) %>% 
     strsplit(., "\t") %>% unlist()
   y_i[nchar(y_i) > 0] %>% t() %>% as.data.frame()
@@ -58,7 +62,9 @@ p_x2 <- df %>% set_colnames(c("x1", "x2", "center")) %>%
 
 
 p_x1 <- lapply(p_pairs, function(x_i) {
-  x_i %>% gsub("From ", "", .) %>% gsub(" and ", "\t", .) %>% 
+  strsplit(x_i, "From ")[[1]][2] %>% 
+    # gsub("From ", "", .) %>% 
+    gsub(" and ", "\t", .) %>% 
     gsub(" to ", "\t", .) %>% 
     strsplit(., "\t") %>% unlist()
 })
@@ -70,7 +76,10 @@ p_new_center <- orderedPairFormatting(p_x1, 3) %>% add_column(type = "2")
 
 
 
-p_toplot <- bind_rows(p_first_pair, p_second_pair) %>% bind_rows(., p_new_center)
+p_toplot <- bind_rows(p_first_pair, p_second_pair) %>% bind_rows(., p_new_center) %>% 
+  as.data.table()
+# p_toplot <- p_toplot[!(val == 4)]
+# p_toplot <- p_toplot[!(x == 0 & y == 0)]
 
 p_d1 <- p_toplot[p_toplot$type == 1,] %>% arrange(val) %>% 
   add_column(new_val = rep(c(0,1), nrow(p_toplot[p_toplot$type == 1,])/2))
@@ -96,10 +105,19 @@ p_toplot$type[p_toplot$type == "2"] <- "Center"
 p_toplot <- p_toplot %>% mutate(across(val, as.double))
 p_df <- p_df %>% mutate(across(val, as.double))
 
-toplot_1 <- as.data.table(p_toplot)[val <= floor(num_vecs/2)]
-df_1 <- as.data.table(p_df)[val <= floor(num_vecs/2)]
-toplot_2 <- as.data.table(p_toplot)
-df_2 <- as.data.table(p_df)
+if (num_vecs == 5) {
+  toplot_1 <- as.data.table(p_toplot)[val <= 4]
+  df_1 <- as.data.table(p_df)[val <= 4]
+  
+  toplot_2 <- as.data.table(p_toplot)[val > 4]
+  df_2 <- as.data.table(p_df)
+}else {
+  toplot_1 <- as.data.table(p_toplot)[val <= floor(num_vecs/2)]
+  df_1 <- as.data.table(p_df)[val <= floor(num_vecs/2)]
+  
+  toplot_2 <- as.data.table(p_toplot)[val > floor(num_vecs/2)]
+  df_2 <- as.data.table(p_df)
+}
 
 ggplot(data = toplot_1, aes(x = x, y = y, color = type)) + geom_point() + 
   xlim(min(toplot_2$x), max(toplot_2$x)) + 
@@ -109,6 +127,8 @@ ggplot(data = toplot_1, aes(x = x, y = y, color = type)) + geom_point() +
   labs(color = "Point type")
 ggsave(paste0("levels_lower_p6m", num_vecs, ".png"))
 
+toplot_1$type <- paste("Old_", toplot_1$type, sep = "")
+toplot_2 <- bind_rows(toplot_2, toplot_1)
 
 ggplot(data = toplot_2, aes(x = x, y = y, color = type)) + geom_point() + 
   xlim(min(toplot_2$x), max(toplot_2$x)) + 
