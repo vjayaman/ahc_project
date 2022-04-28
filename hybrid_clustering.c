@@ -23,6 +23,7 @@ int main(int argc, char *argv[]) {
     double x_i[N];
     int i, j;
     
+    // Initialize matrix A of random values, dimension NUM_VECS X N
     srand(200);
     for (i = 0; i < NUM_VECS; i++) {
         for (j = 0; j < N; j++) {
@@ -44,6 +45,8 @@ int main(int argc, char *argv[]) {
     MPI_Barrier(MPI_COMM_WORLD);
     start_time = MPI_Wtime();
 
+    // if myjob has more than one process specified, run the parallel 
+    // implementation, otherwise, the sequential
     if (num_procs > 1) {
         int chunk_size = NUM_VECS / (num_procs - 1); // not including process 0 
         if (!my_rank) {
@@ -72,29 +75,27 @@ int main(int argc, char *argv[]) {
 
 
 static void manager(double *A) {
-    //int m = NUM_VECS;//+1;
-    //int i;   
-    int num_procs;
-    MPI_Status status;
-    int f_row, f_col, c_row, c_col;
-
-
+    int num_procs, f_row, f_col, c_row, c_col;
+    
+    MPI_Status status;  
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
+
     int chunk_size = NUM_VECS / (num_procs - 1); // not including process 0
     double A_chunk[chunk_size * N]; 
 
+    // Print the initial matrix of vectors for clustering
     print_oned_mat("\n--------------------------------------------\n\nMatrix A: \n", 
                    A, NUM_VECS, N);
     printf("\n\n");
 
+    // Identify the bounds of the matrix (both in x and y directions)
     double minX = minCoord(NUM_VECS, N, 0, A);
     double maxX = maxCoord(NUM_VECS, N, 0, A);
-    
     double minY = minCoord(NUM_VECS, N, 1, A);
     double maxY = maxCoord(NUM_VECS, N, 1, A);
+    printf("Min x: %f, Max x: %f, Min y: %f, Max y: %f\n", minX, maxX, minY, maxY);
 
-    printf("min x: %f, max x: %f, min y: %f, max y: %f\n", minX, maxX, minY, maxY);
-
+    // Simple sort of the vectors of A by their y value
     int i,j, k;
     double temp[N]; 
     for (i = 0; i < NUM_VECS; i++){
@@ -108,18 +109,12 @@ static void manager(double *A) {
             }
         }
     }
-
-    //int denom = (num_procs - 1)/2;
-    //double a = (maxX - minX)/denom;
-    //double b = (maxY - minY)/denom;
-    //int p;
     
+    // This was when the grid mapping was considered
     minX = minX - 1; // so we can always use (< x <=), even for boundaries
-    //double chunk_minX, chunk_maxX;
-    //double chunk_minY, chunk_maxY;
+    
+    // Copy a chunk of the matrix and send to any worker process
     int first_row;
-    //printf("Sending address of first row of each chunk\n");
-
     for (i = 1; i < num_procs; i++) {
         first_row = (i - 1) * chunk_size;
         c_row = 0;
@@ -139,15 +134,15 @@ static void manager(double *A) {
         MPI_Send(A_chunk, chunk_size * N, MPI_DOUBLE, i, chunk_size, MPI_COMM_WORLD);
     }
     
-    // each worker process clusters a chunk of data rows and returns a 
-    // matrix of the vectors selected to merge into a group with each iteration within the process
-    // so each worker process returns a matrix of size chunk_size * N
-    // we want to print each of these matrices    
-
+    // each worker process clusters a chunk of data rows and returns the root 
+    // of the subtree for that chunk
+    // manager then clusters these subtrees
+    
     double A_chunk_root[1*N]; 
     double last_call[num_procs * N];   
     
-    //printf("Receiving merged pairs from workers\n");
+    // manager receives a vector (subtree root) from each worker and 
+    // saves into a matrix for sequential clustering
     for (i = 1; i < num_procs; i++) {
         MPI_Recv(A_chunk_root, 1 * N, MPI_DOUBLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
@@ -159,63 +154,71 @@ static void manager(double *A) {
                     last_call, num_procs-1, N);     
     sequential_naive(last_call, num_procs-1);
 
+    // Confirming the number of workers
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
-    printf("\nSending dietags for %d workers\n", num_procs-1); // to get all workers to exit
+
+    // to get all workers to exit
+    printf("\nSending dietags for %d workers\n", num_procs-1); 
     for (i = 0; i < num_procs; i++) {
         MPI_Send(0, 0, MPI_DOUBLE, i, 5000, MPI_COMM_WORLD);
     }
 
-    // want to have some kind of iterator to go with the prints (so we can be sure of the order)
-    //if (NUM_VECS <= 15) {print_oned_mat("\nResults: \n", merged_pairs, NUM_VECS, 4);}
-    
     printf("\n||-----Done parallel part-----||.\n\n");    
 }
 
 
 static void worker(int chunk_size) {
     double A[chunk_size * N];
-    int my_rank;
+    int my_rank, j;
     MPI_Status status;  
     double merged_pairs[chunk_size * 4]; // check not chunk_size+1
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank); //grab this process's rank
 
     for (;;) {
+        // worker receives a chunk of vectors
         MPI_Recv(A, chunk_size * N, MPI_DOUBLE, 0, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
         if (status.MPI_TAG == 5000) {return;}
 
+        // if the number of workers does not equal the number of vectors:
         if (chunk_size > 1) {
+            // garbage removal
             double Dists[chunk_size * chunk_size]; 
             resetMatrix(chunk_size, chunk_size, Dists);
             double A_new[chunk_size * N];
-            print_oned_mat("\nInitDists: \n", Dists, chunk_size, chunk_size);
             
-            collectDistances(chunk_size, A, Dists); // collect pairwise distances of all the vectors
-            print_oned_mat("\nDists: \n", Dists, chunk_size, chunk_size);
+            // collect pairwise distances of all the vectors
+            collectDistances(chunk_size, A, Dists); 
+            //print_oned_mat("\nDists: \n", Dists, chunk_size, chunk_size);
 
+            // arbitrary minimum value; coords will contain indices of minimum 
+            // value in the Dists matrix as well as the minimum value itself
             double min_val = 1000;
             double coords[3] = {0, 0, min_val};
-
             minDist(min_val, chunk_size, Dists, coords, chunk_size);
 
             int val0 = (int) coords[0];
             int val1 = (int) coords[1];
 
+            // identify the new center of this merged pair and print for result processing
             double new_vec[2];
-            int j;
             for (j = 0; j < N; j++) {
                 new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
             }
+
             printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
                 coords[2], val0, val1, chunk_size, my_rank,
                 *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
             printf("\n--------------------------------------------\n\n");            
 
+            // update the matrix of active vectors for clustering 
+            // i.e. add the new center and remove its elements from A
+            // x is the level of clustering (starts large and decrements to 2 before we return a result)
+            // we have a list of merged pairs as well, and reset the Dists matrix (so there is no leftover data)
             updateActiveMatrix(chunk_size, coords, A, A_new);
             int x_old = chunk_size;
             int x = chunk_size - 1;
             addToMergedList(merged_pairs, A, val0, val1, x);
-
             copyNewToOld(A_new, A, x_old, x);
             resetMatrix(x, x, Dists);
             
@@ -252,7 +255,6 @@ static void worker(int chunk_size) {
 
         //printf("\nReturning root of this subtree to manager\n");
         MPI_Send(A, 1 * N, MPI_DOUBLE, 0, my_rank, MPI_COMM_WORLD);
-        //printf("Returning merged pairs to manager\n");
     }
 }
 

@@ -101,7 +101,7 @@ a3 <- parallel_times[num_vecs == nv] %>% add_column(type = "Parallel (mine)")
 
 n15 <- bind_rows(a1, a2) %>% bind_rows(., a3) %>% 
   set_colnames(c("Number of processes", "Number of vectors", "Time (sec)", "Implementation"))
-xtable(x = n15, type = "latex", digits = 5)
+print(xtable(x = n15, type = "latex", digits = c(0,0,0,8,1)), include.rownames = FALSE)
 
 # fix n = 60, vary p
 nv <- 60
@@ -112,7 +112,7 @@ a3 <- parallel_times[num_vecs == nv] %>% add_column(type = "Parallel (mine)")
 
 n60 <- bind_rows(a1, a2) %>% bind_rows(., a3) %>% 
   set_colnames(c("Number of processes", "Number of vectors", "Time (sec)", "Implementation"))
-xtable(x = n60, type = "latex", digits = 5)
+print(xtable(x = n60, type = "latex", digits = c(0,0,0,8,1)), include.rownames = FALSE)
 
 # fix n = 300, vary p
 nv <- 300
@@ -124,5 +124,5 @@ a3 <- parallel_times[num_vecs == nv] %>% add_column(type = "Parallel (mine)")
 n300 <- bind_rows(a1, a2) %>% bind_rows(., a3) %>% 
   set_colnames(c("Number of processes", "Number of vectors", "Time (sec)", "Implementation"))
 
-xtable(x = n300, type = "latex", digits = 5)
+print(xtable(x = n300, type = "latex", digits = c(0,0,0,8,1)), include.rownames = FALSE)
 

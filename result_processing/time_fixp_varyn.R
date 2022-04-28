@@ -6,6 +6,7 @@ library(fastcluster)
 library(data.table)
 library(xtable)
 
+
 # # PARALLEL: fix p vary n -----------------------------------------------------
 
 # fix p vary n
@@ -77,14 +78,19 @@ sequential_times <- lapply(1:length(num_vec_list), function(i) {
 
 
 pt <- parallel_times %>% select(2,3) %>% 
-  set_colnames(c("Number of vectors", "Parallel (sec)"))
+  set_colnames(c("# vectors", "Parallel (sec)"))
 nst <- naive_sequential_times %>% select(2,3) %>% 
-  set_colnames(c("Number of vectors", "Naive sequential (sec)"))
+  set_colnames(c("# vectors", "Naive seq. (sec)"))
 st <- sequential_times %>% select(2,3) %>% 
-  set_colnames(c("Number of vectors", "Best sequential (sec)"))
+  set_colnames(c("# vectors", "Best seq. (sec)"))
 
-times <- merge.data.table(pt, nst, by = "Number of vectors") %>% 
-  merge.data.table(., st, by = "Number of vectors")
+times <- merge.data.table(pt, nst, by = "# vectors") %>% 
+  merge.data.table(., st, by = "# vectors") %>% 
+  mutate(Speedup = `Best seq. (sec)` / `Parallel (sec)`, 
+         `Cost Optimality` = `Best seq. (sec)` / (unique(parallel_times$num_nodes) * `Parallel (sec)`))
 
-xtable(x = times, type = "latex", file = "figs_and_tbls/time_fixp_varyn.tex")
+
+print(xtable(x = times, type = "latex", file = "figs_and_tbls/time_fixp_varyn.tex", 
+             digits = c(1,0,3,3,3,3,3)), 
+      include.rownames = FALSE)
 

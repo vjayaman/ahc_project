@@ -22,7 +22,6 @@ void minDist(double min_val, int x, double *Dists, double *coords, int dim2);
 void updateActiveMatrix(int num_vecs, double *coords, double *A, double *A_new);
 //void seqCollectDistances(int y, double *A, double *Dists);
 void collectDistances(int y, double *A, double *Dists);
-void parallelCollectDistances(int y, double *A, double *Dists);
 void copyNewToOld(double *A_new, double *A, int x_old, int x_new);
 void resetMatrix(int dim1, int dim2, double *matrix); 
 double concatenate(double x, double y);
