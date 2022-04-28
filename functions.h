@@ -33,5 +33,6 @@ double min(double x, double y);
 double max(double x, double y);
 double maxCoord(int dim1, int dim2, int j, double *matrix);
 double minCoord(int dim1, int dim2, int j, double *matrix);
+//memset(str_full, 0, sizeof(str_full));
 
 #endif

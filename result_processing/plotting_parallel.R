@@ -2,8 +2,8 @@
 
 source("result_processing/rfuncs.R")
 
-num_vecs <- 15
-file_index <- 3
+num_vecs <- 5
+file_index <- 1
 
 
 pfiles <- list.files("outputs/parallel/", full.names = TRUE)
@@ -103,37 +103,58 @@ p_toplot$type[p_toplot$type == "2"] <- "Center"
 # ggsave(paste0("parallel_plot.png"))
 
 p_toplot <- p_toplot %>% mutate(across(val, as.double))
+p_toplot <- p_toplot %>% mutate(val = max(p_toplot$val) - val)
+
 p_df <- p_df %>% mutate(across(val, as.double))
+p_df <- p_df %>% mutate(val = max(p_df$val) - val)# %>% unique()
 
-if (num_vecs == 5) {
-  toplot_1 <- as.data.table(p_toplot)[val <= 4]
-  df_1 <- as.data.table(p_df)[val <= 4]
-  
-  toplot_2 <- as.data.table(p_toplot)[val > 4]
-  df_2 <- as.data.table(p_df)
-}else {
-  toplot_1 <- as.data.table(p_toplot)[val <= floor(num_vecs/2)]
-  df_1 <- as.data.table(p_df)[val <= floor(num_vecs/2)]
-  
-  toplot_2 <- as.data.table(p_toplot)[val > floor(num_vecs/2)]
-  df_2 <- as.data.table(p_df)
-}
+toplot_1 <- as.data.table(p_toplot) %>% filter(val <= floor(num_vecs/2))
+df_1 <- as.data.table(p_df)[val <= floor(num_vecs/2)]
 
-ggplot(data = toplot_1, aes(x = x, y = y, color = type)) + geom_point() + 
+toplot_2 <- as.data.table(p_toplot)[val > floor(num_vecs/2)]
+df_2 <- as.data.table(p_df)
+
+toplot_1$val <- as.character(toplot_1$val)
+toplot_2$val <- as.character(toplot_2$val)
+
+toplot_2 <- bind_rows(toplot_2, toplot_1)
+
+
+ggplot(data = toplot_1, aes(x = x, y = y, color = val)) + geom_point() + 
   xlim(min(toplot_2$x), max(toplot_2$x)) + 
   ylim(min(toplot_2$y), max(toplot_2$y)) + 
   geom_segment(aes(x = df_1$x, y = df_1$y, xend = df_1$xend, yend = df_1$yend)) + 
-  ggtitle(paste0("Parallel implementation 1 for ", num_vecs, " vectors and N = 2")) + 
-  labs(color = "Point type")
+  ggtitle(paste0("Parallel implementation 1 for ", num_vecs, " vectors and N = 2 (halfway)")) + 
+  labs(color = "Level (root is 0)")
 ggsave(paste0("levels_lower_p6m", num_vecs, ".png"))
 
-toplot_1$type <- paste("Old_", toplot_1$type, sep = "")
-toplot_2 <- bind_rows(toplot_2, toplot_1)
 
-ggplot(data = toplot_2, aes(x = x, y = y, color = type)) + geom_point() + 
+
+ggplot(data = toplot_2, aes(x = x, y = y, color = val)) + geom_point() + 
   xlim(min(toplot_2$x), max(toplot_2$x)) + 
   ylim(min(toplot_2$y), max(toplot_2$y)) + 
-  geom_segment(aes(x = df_2$x, y = df_2$y, xend = df_2$xend, yend = df_2$yend)) + 
+  geom_segment(aes(x = df_2$x, y = df_2$y, xend = df_2$xend, yend = df_2$yend, color = val)) + 
   ggtitle(paste0("Parallel implementation 1 for ", num_vecs, " vectors and N = 2")) + 
-  labs(color = "Point type")
+  labs(color = "Level (root is 0)")
 ggsave(paste0("levels_upper_p6m", num_vecs, ".png"))
+
+
+
+# ggplot(p_toplot, aes(x = x, y = y, color = type)) + geom_point() + 
+#   geom_segment(aes(x = p_df[val <= 1]$x, y = p_df[val <= 1]$y, 
+#                    xend = p_df[val <= 1]$xend, yend = p_df[val <= 1]$yend)) + 
+#   geom_segment(aes(x = p_df[val == 2]$x, y = p_df[val == 2]$y, 
+#                    xend = p_df[val == 2]$xend, yend = p_df[val == 2]$yend))
+
+# for (x in sort(unique(p_toplot$val))) {
+#   a1 <- p_toplot[which(p_toplot$val <= x)]
+#   df_v <- p_df %>% select(-type) %>% merge.data.table(., a1, by = c("val", "x", "y"))
+#   ggplot(data = df_v, aes(x = x, y = y, color = type)) + geom_point() + 
+#     xlim(min(p_toplot$x), max(p_toplot$x)) +
+#     ylim(min(p_toplot$y), max(p_toplot$y)) +
+#     geom_segment(aes(x = x, y = y,xend = xend, yend = yend)) +
+#     ggtitle(paste0("Parallel implementation 1 for ", num_vecs, " vectors and N = 2")) + 
+#     labs(color = "Point type")
+#   ggsave(paste0("plot_", x, "_", num_vecs, ".png"))
+# }
+

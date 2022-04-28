@@ -1,0 +1,505 @@
+
+--------------------------------------------
+
+Matrix A: 
+3.00	4.00	
+3.00	0.00	
+9.00	0.00	
+1.00	6.00	
+5.00	4.00	
+5.00	8.00	
+3.00	8.00	
+7.00	4.00	
+3.00	7.00	
+3.00	3.00	
+6.00	0.00	
+7.00	4.00	
+3.00	5.00	
+9.00	4.00	
+8.00	8.00	
+8.00	0.00	
+1.00	2.00	
+4.00	0.00	
+1.00	3.00	
+9.00	5.00	
+0.00	5.00	
+7.00	3.00	
+4.00	3.00	
+6.00	6.00	
+1.00	3.00	
+6.00	8.00	
+6.00	1.00	
+3.00	0.00	
+1.00	4.00	
+6.00	6.00	
+3.00	5.00	
+6.00	9.00	
+4.00	5.00	
+9.00	2.00	
+9.00	3.00	
+4.00	7.00	
+2.00	7.00	
+4.00	5.00	
+8.00	0.00	
+6.00	4.00	
+6.00	5.00	
+7.00	3.00	
+3.00	2.00	
+3.00	6.00	
+6.00	9.00	
+3.00	0.00	
+0.00	8.00	
+4.00	1.00	
+6.00	8.00	
+5.00	1.00	
+1.00	7.00	
+6.00	3.00	
+3.00	5.00	
+1.00	1.00	
+0.00	2.00	
+7.00	8.00	
+1.00	9.00	
+9.00	7.00	
+8.00	6.00	
+2.00	1.00	
+
+
+min x: 0.000000, max x: 9.000000, min y: 0.000000, max y: 9.000000
+
+Matrices for process 2: 
+
+
+Minimum distance 1.000 found at (2, 4), level 6, process 2	From [6.00, 1.00] and [5.00, 1.00] to [5.50, 1.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.414 found at (1, 2), level 5, process 2	From [3.00, 0.00] and [4.00, 1.00] to [3.50, 0.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.062 found at (2, 3), level 4, process 2	From [5.50, 1.00] and [3.50, 0.50] to [4.50, 0.75]
+
+--------------------------------------------
+
+
+
+Minimum distance 3.509 found at (1, 2), level 3, process 2	From [1.00, 1.00] and [4.50, 0.75] to [2.75, 0.88]
+
+Matrices for process 1: 
+
+--------------------------------------------
+
+
+
+Minimum distance 5.322 found at (0, 1), level 2, process 2	From [8.00, 0.00] and [2.75, 0.88] to [5.38, 0.44]
+
+--------------------------------------------
+
+
+
+
+Returning root of this subtree to manager
+Minimum distance 1.000 found at (0, 4), level 6, process 1	From [3.00, 0.00] and [4.00, 0.00] to [3.50, 0.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 0.500 found at (3, 4), level 5, process 1	From [3.00, 0.00] and [3.50, 0.00] to [3.25, 0.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.000 found at (0, 2), level 4, process 1	From [9.00, 0.00] and [8.00, 0.00] to [8.50, 0.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.500 found at (0, 2), level 3, process 1	From [6.00, 0.00] and [8.50, 0.00] to [7.25, 0.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 4.000 found at (0, 1), level 2, process 1	From [3.25, 0.00] and [7.25, 0.00] to [5.25, 0.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 3: 
+
+
+Minimum distance 1.000 found at (3, 4), level 6, process 3
+Matrices for process 4: 
+
+
+Minimum distance 1.000 found at (0, 5), level 6, process 4	From [3.00, 3.00] and [4.00, 3.00] to [3.50, 3.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.000 found at (1, 2), level 5, process 4	From [7.00, 3.00] and [6.00, 3.00] to [6.50, 3.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.500 found at (0, 2), level 4, process 4	From [1.00, 3.00] and [3.50, 3.00] to [2.25, 3.00]
+
+--------------------------------------------
+	From [0.00, 2.00] and [1.00, 2.00] to [0.50, 2.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.118 found at (3, 4), level 5, process 3	From [1.00, 3.00] and [0.50, 2.00] to [0.75, 2.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.414 found at (0, 1), level 4, process 3	From [2.00, 1.00] and [3.00, 2.00] to [2.50, 1.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.016 found at (1, 2), level 3, process 3	From [0.75, 2.50] and [2.50, 1.50] to [1.62, 2.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 7.375 found at (0, 1), level 2, process 3	From [9.00, 2.00] and [1.62, 2.00] to [5.31, 2.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+
+
+Minimum distance 2.500 found at (0, 1), level 3, process 4	From [9.00, 3.00] and [6.50, 3.00] to [7.75, 3.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 5.500 found at (0, 1), level 2, process 4	From [2.25, 3.00] and [7.75, 3.00] to [5.00, 3.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 5: 
+
+
+Minimum distance 1.000 found at (0, 3), level 6, process 5	From [7.00, 3.00] and [7.00, 4.00] to [7.00, 3.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.118 found at (3, 4), level 5, process 5	From [6.00, 4.00] and [7.00, 3.50] to [6.50, 3.75]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.000 found at (0, 2), level 4, process 5	From [1.00, 4.00] and [3.00, 4.00] to [2.00, 4.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.512 found at (0, 1), level 3, process 5	From [9.00, 4.00] and [6.50, 3.75] to [7.75, 3.88]
+
+--------------------------------------------
+
+
+
+Minimum distance 5.751 found at (0, 1), level 2, process 5	From [2.00, 4.00] and [7.75, 3.88] to [4.88, 3.94]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+--------------------------------------------
+
+Sequential Matrix A: 
+1193942078236688260944910498921371389657088.00	0.00	
+5.25	0.00	
+5.38	0.44	
+5.31	2.00	
+5.00	3.00	
+
+Matrices for process 9: 
+
+
+Minimum distance 1.000 found at (4, 5), level 6, process 9	From [6.00, 8.00] and [7.00, 8.00] to [6.50, 8.00]
+
+--------------------------------------------
+
+Matrices for process 6: 
+
+
+Minimum distance 1.000 found at (3, 5), level 6, process 6	4.88	3.94	
+3.97	8.69	
+3.06	4.75	
+4.62	5.38	
+5.25	6.50	
+3.94	7.81	
+
+
+
+Matrices for process 10: 
+
+
+Minimum distance 1.000 found at (0, 1), level 6, process 10	From [6.00, 8.00] and [5.00, 8.00] to [5.50, 8.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.118 found at (1, 4), level 5, process 10	From [6.00, 9.00] and [5.50, 8.00] to [5.75, 8.50]
+
+Matrices for process 7: 
+
+
+Minimum distance 1.000 found at (0, 2), level 6, process 7	From [3.00, 5.00] and [4.00, 5.00] to [3.50, 5.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 0.500 found at (1, 4), level 5, process 7	From [3.00, 5.00] and [3.50, 5.00] to [3.25, 5.00]
+Minimum distance 0.455 found at (1, 2), level 11, process 0	From [5.25, 0.00] and [5.38, 0.44] to [5.31, 0.22]
+
+--------------------------------------------
+
+
+
+Minimum distance 0.876 found at (4, 8), level 10, process 0	From [3.97, 8.69] and [3.94, 7.81] to [3.95, 8.25]
+
+--------------------------------------------
+
+
+
+Minimum distance 0.946 found at (2, 3), level 9, process 0	From [5.00, 3.00] and [4.88, 3.94] to [4.94, 3.47]
+
+
+
+Minimum distance 1.414 found at (0, 3), level 5, process 9	From [4.00, 7.00] and [3.00, 8.00] to [3.50, 7.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.581 found at (0, 3), level 4, process 9	From [2.00, 7.00] and [3.50, 7.50] to [2.75, 7.25]
+
+--------------------------------------------
+
+Matrices for process 8: 
+
+
+Minimum distance 1.000 found at (0, 4), level 6, process 8	From [1.00, 6.00] and [1.00, 7.00] to [1.00, 6.50]
+
+--------------------------------------------
+
+
+
+
+--------------------------------------------
+
+
+
+Minimum distance 1.287 found at (3, 4), level 8, process 0	From [4.62, 5.38] and [5.25, 6.50] to [4.94, 5.94]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.516 found at (1, 5), level 7, process 0	From [5.31, 2.00] and [4.94, 3.47] to [5.12, 2.73]
+
+--------------------------------------------
+
+
+--------------------------------------------
+
+
+
+Minimum distance 0.559 found at (1, 3), level 4, process 10	From [6.00, 9.00] and [5.75, 8.50] to [5.88, 8.75]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.253 found at (0, 2), level 3, process 10	From [8.00, 8.00] and [5.88, 8.75] to [6.94, 8.38]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.000 found at (1, 2), level 5, process 8	From [3.00, 6.00] and [3.00, 7.00] to [3.00, 6.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.414 found at (0, 1), level 4, process 8	From [8.00, 6.00] and [9.00, 7.00] to [8.50, 6.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.000 found at (0, 1), level 3, process 8	From [1.00, 6.50] and [3.00, 6.50] to [2.00, 6.50]
+
+--------------------------------------------
+
+
+Minimum distance 2.219 found at (1, 4), level 6, process 0	From [3.06, 4.75] and [4.94, 5.94] to [4.00, 5.34]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.523 found at (1, 3), level 5, process 0	From [5.31, 0.22] and [5.12, 2.73] to [5.22, 1.48]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.907 found at (1, 2), level 4, process 0	From [3.95, 8.25] and [4.00, 5.34] to [3.98, 6.80]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.850 found at (0, 2), level 3, process 9	From [0.00, 8.00] and [2.75, 7.25] to [1.38, 7.62]
+
+--------------------------------------------
+
+
+
+Minimum distance 5.139 found at (0, 1), level 2, process 9	From [6.50, 8.00] and [1.38, 7.62] to [3.94, 7.81]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+From [4.00, 5.00] and [3.00, 5.00] to [3.50, 5.00]
+
+--------------------------------------------
+
+
+
+Minimum distance 1.803 found at (0, 4), level 5, process 6	From [5.00, 4.00] and [3.50, 5.00] to [4.25, 4.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.236 found at (0, 1), level 4, process 6	From [7.00, 4.00] and [9.00, 5.00] to [8.00, 4.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 3.750 found at (1, 2), level 3, process 6	From [4.25, 4.50] and [8.00, 4.50] to [6.12, 4.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 6.145 found at (0, 1), level 2, process 6	From [0.00, 5.00] and [6.12, 4.50] to [3.06, 4.75]
+
+--------------------------------------------
+
+
+
+
+Minimum distance 5.463 found at (1, 2), level 3, process 0	From [5.22, 1.48] and [3.98, 6.80] to [4.60, 4.14]
+
+--------------------------------------------
+
+
+
+Minimum distance 5.463 found at (1, 2), level 2, process 0	From [4.60, 4.14] and [3.98, 6.80] to [4.29, 5.47]
+
+--------------------------------------------
+
+
+Sequential results: 
+Minimum distance 5.970 found at (0, 1), level 2, process 10	From [1.00, 9.00] and [6.94, 8.38] to [3.97, 8.69]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+--------------------------------------------
+
+
+
+Minimum distance 1.000 found at (0, 1), level 4, process 7	From [6.00, 5.00] and [6.00, 6.00] to [6.00, 5.50]
+
+--------------------------------------------
+
+
+
+Minimum distance 0.500 found at (0, 2), level 3, process 7	From [6.00, 6.00] and [6.00, 5.50] to [6.00, 5.75]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.850 found at (0, 1), level 2, process 7	From [3.25, 5.00] and [6.00, 5.75] to [4.62, 5.38]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+0.00	1193942078236688260944910498921371389657088.00	0.00	0.00	
+4.60	4.14	3.98	6.80	
+5.22	1.48	3.98	6.80	
+3.95	8.25	4.00
+
+
+Minimum distance 6.500 found at (0, 1), level 2, process 8	From [8.50, 6.50] and [2.00, 6.50] to [5.25, 6.50]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+	5.34	
+5.31	0.22	
+Returning root of this subtree to manager
+5.12	2.73	
+3.06	4.75	4.94	5.94	
+5.31	2.00	4.94	3.47	
+4.62	5.38	5.25	6.50	
+5.00	3.00	4.88	3.94	
+3.97	8.69	3.94	7.81	
+5.25	0.00	5.38	0.44	
+0.00	0.00	0.00	0.00	
+
+||-----Done sequential-----||.
+
+
+Sending dietags for 10 workers
+
+||-----Done parallel part-----||.
+
+Total time (sec): 0.004679

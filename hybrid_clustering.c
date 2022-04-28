@@ -44,10 +44,8 @@ int main(int argc, char *argv[]) {
     MPI_Barrier(MPI_COMM_WORLD);
     start_time = MPI_Wtime();
 
-    //printf("Number of processes: %d\n", num_procs);
-    
     if (num_procs > 1) {
-        int chunk_size = NUM_VECS / (num_procs - 1); // not including process 0
+        int chunk_size = NUM_VECS / (num_procs - 1); // not including process 0 
         if (!my_rank) {
             manager(A);
         }else {
@@ -157,8 +155,9 @@ static void manager(double *A) {
             last_call[i * N + j] = A_chunk_root[j];
         }
     }
-
-    sequential_naive(last_call, num_procs);
+    print_oned_mat("\n--------------------------------------------\n\nLastcall Matrix A: \n", 
+                    last_call, num_procs-1, N);     
+    sequential_naive(last_call, num_procs-1);
 
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
     printf("\nSending dietags for %d workers\n", num_procs-1); // to get all workers to exit
@@ -183,90 +182,78 @@ static void worker(int chunk_size) {
     for (;;) {
         MPI_Recv(A, chunk_size * N, MPI_DOUBLE, 0, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
-        if (status.MPI_TAG == 5000) {
-            return;
-        }
+        if (status.MPI_TAG == 5000) {return;}
 
-        //int vec_chunk = chunk_size; // == status.MPI_TAG;
-        double Dists[chunk_size * chunk_size]; 
-        resetMatrix(chunk_size, chunk_size, Dists);
-        double A_new[chunk_size * N];
-
-        printf("\nMatrices for process %d: \n", my_rank);
-        if (NUM_VECS <= 15) {print_oned_mat("A_chunk: \n", A, chunk_size, N);}
-        
-        collectDistances(chunk_size, A, Dists); // collect pairwise distances of all the vectors
-        //if (NUM_VECS <= 15) {print_oned_mat("\nDists: \n", Dists, chunk_size, chunk_size);}
-
-        double min_val = 1000;
-        double coords[3] = {0, 0, min_val};
-
-        minDist(min_val, chunk_size, Dists, coords, chunk_size);
-
-        int val0 = (int) coords[0];
-        int val1 = (int) coords[1];
-
-        double new_vec[2];
-        int j;
-        for (j = 0; j < N; j++) {
-            new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
-        }
-        printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
-                coords[2], val0, val1, chunk_size, my_rank,
-                *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
-        printf("\n--------------------------------------------\n\n");
-
-        //memset(str_full, 0, sizeof(str_full));
-        updateActiveMatrix(chunk_size, coords, A, A_new);
-        int x_old = chunk_size;
-        int x = chunk_size - 1;
-        addToMergedList(merged_pairs, A, val0, val1, x);
-
-        copyNewToOld(A_new, A, x_old, x);
-        resetMatrix(x, x, Dists);
+        if (chunk_size > 1) {
+            double Dists[chunk_size * chunk_size]; 
+            resetMatrix(chunk_size, chunk_size, Dists);
+            double A_new[chunk_size * N];
+            print_oned_mat("\nInitDists: \n", Dists, chunk_size, chunk_size);
             
-        while (x > 1) {
-            //if (NUM_VECS <= 15) {print_oned_mat("New A: \n", A, x, N);}
-            collectDistances(x, A, Dists);
-            //print_oned_mat("\nDists: \n", Dists, x, x);
+            collectDistances(chunk_size, A, Dists); // collect pairwise distances of all the vectors
+            print_oned_mat("\nDists: \n", Dists, chunk_size, chunk_size);
 
-            min_val = 1000;
-            minDist(min_val, x, Dists, coords, chunk_size);
+            double min_val = 1000;
+            double coords[3] = {0, 0, min_val};
 
-            val0 = (int) coords[0];
-            val1 = (int) coords[1];
+            minDist(min_val, chunk_size, Dists, coords, chunk_size);
 
+            int val0 = (int) coords[0];
+            int val1 = (int) coords[1];
+
+            double new_vec[2];
+            int j;
             for (j = 0; j < N; j++) {
                 new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
             }
             printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
-                coords[2], val0, val1, x, my_rank,
+                coords[2], val0, val1, chunk_size, my_rank,
                 *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
+            printf("\n--------------------------------------------\n\n");            
 
-            printf("\n--------------------------------------------\n\n");
-
-            resetMatrix(x, x, A_new);
-            updateActiveMatrix(x, coords, A, A_new);    
-
-            x_old = x;
-            x = x - 1;
+            updateActiveMatrix(chunk_size, coords, A, A_new);
+            int x_old = chunk_size;
+            int x = chunk_size - 1;
             addToMergedList(merged_pairs, A, val0, val1, x);
+
             copyNewToOld(A_new, A, x_old, x);
             resetMatrix(x, x, Dists);
-        }
+            
+            while (x > 1) {
+                //if (NUM_VECS <= 15) {print_oned_mat("New A: \n", A, x, N);}
+                collectDistances(x, A, Dists);
+                print_oned_mat("\nDists: \n", Dists, x, x);
 
-        //print_oned_mat("\n---------New A: \n", A, x, N);
+                min_val = 1000;
+                minDist(min_val, x, Dists, coords, chunk_size);
 
-        printf("\nReturning root of this subtree to manager\n");
+                val0 = (int) coords[0];
+                val1 = (int) coords[1];
+
+                for (j = 0; j < N; j++) {
+                    new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
+                }
+                printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+                    coords[2], val0, val1, x, my_rank,
+                    *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
+
+                printf("\n--------------------------------------------\n\n");
+
+                resetMatrix(x, x, A_new);
+                updateActiveMatrix(x, coords, A, A_new);    
+
+                x_old = x;
+                x = x - 1;
+                addToMergedList(merged_pairs, A, val0, val1, x);
+                copyNewToOld(A_new, A, x_old, x);
+                resetMatrix(x, x, Dists);
+            }
+        }           
+
+        //printf("\nReturning root of this subtree to manager\n");
         MPI_Send(A, 1 * N, MPI_DOUBLE, 0, my_rank, MPI_COMM_WORLD);
         //printf("Returning merged pairs to manager\n");
-        //MPI_Send(merged_pairs, chunk_size * 4, MPI_DOUBLE, 0, my_rank, MPI_COMM_WORLD);
     }
-    
-    // the prints are all out of order, want to fix that
-    //print_oned_mat("\Worker results: \n", merged_pairs, chunk_size, 4);
-    //printf("Returning merged pairs to manager\n");
-    //MPI_Send(merged_pairs, chunk_size * 4, MPI_DOUBLE, 0, my_rank, MPI_COMM_WORLD);
 }
 
 
@@ -283,7 +270,7 @@ static void sequential_naive(double *A, int num_rows) {
                    A, num_rows, N);        
 
     collectDistances(num_rows, A, Dists); // collect pairwise distances of all the vectors
-    //if (num_rows <= 15) {print_oned_mat("\nDists: \n", Dists, num_rows, num_rows);}
+    print_oned_mat("\nDists: \n", Dists, num_rows, num_rows);
 
     double min_val = 1000;
     double coords[3] = {0, 0, min_val};
