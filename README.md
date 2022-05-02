@@ -1,5 +1,5 @@
 # COMP 7850 - Project
-Agglomerative hierarchical clustering project for COMP 7850
+Agglomerative hierarchical clustering project for COMP 7850: https://github.com/vjayaman/ahc\_project
 
 To run, change NUM\_VECS value in *functions.h* and edit lines 6 and/or 8 in *myjob* file.
 (Note: using *myjob* and *makefile* files provided by professor for assignments). 
