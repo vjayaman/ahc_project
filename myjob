@@ -5,4 +5,8 @@
 # Set the number of processes here:
 #$ -pe mpi 1
 # Change the name of the executable here:
+<<<<<<< HEAD
 mpirun ./hybrid_clustering > outputs/seq/m0005.txt
+=======
+mpirun ./hybrid_clustering > outputs/parallel/p6m2000.txt
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408

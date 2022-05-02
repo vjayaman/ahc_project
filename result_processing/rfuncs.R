@@ -260,3 +260,11 @@ parTraceSequences <- function(s_x3, x, r, seq_list, p) {
   }
   return(seq_list)
 }
+
+
+orderedPairToDF <- function(df, col_n) {
+  pull(df, col_n) %>% gsub("\\]|\\[", "", .) %>% strsplit(., ",") %>% as.data.frame() %>% 
+    t() %>% as.data.table() %>% set_colnames(c("x","y")) %>% 
+    mutate(across(c(x,y), as.double)) %>% 
+    add_column(df, .before = 1)
+}

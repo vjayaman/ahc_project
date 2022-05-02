@@ -35,7 +35,11 @@ parallel_times <- parallelFixNVaryP(pfiles, "m015") %>%
   bind_rows(., parallelFixNVaryP(pfiles, "m300")) %>% as.data.table()
 
 
+<<<<<<< HEAD
 # # General seq. -------------------------------------------------------------
+=======
+# # NAIVE SEQUENTIAL -------------------------------------------------------------
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 sfiles <- list.files("outputs/fix_n_vary_p/seq/", full.names = TRUE)
 snames <- sfiles %>% gsub("outputs/fix_n_vary_p/seq/", "", .) %>% gsub(".txt", "", .)
@@ -88,6 +92,7 @@ sequential_times <- lapply(1:length(num_vec_list), function(i) {
   
   end_time <- Sys.time() - start_time
   
+<<<<<<< HEAD
   data.frame(num_nodes = 1, num_vecs, time = as.character(end_time) %>% as.double())
 }) %>% bind_rows() %>% as.data.table()
 
@@ -130,10 +135,38 @@ n60 <- merge.data.table(a1, a2, by = c("seq p", "# vectors")) %>%
   mutate(Speedup = `Best seq.` / `Parallel (mine)`)
 
 print(xtable(x = n60, type = "latex", digits = c(0,0,0,5,5,0,5,5)), include.rownames = FALSE)
+=======
+  df <- data.frame(num_nodes = 1, num_vecs, 
+                   time = as.character(end_time) %>% as.double())
+}) %>% bind_rows() %>% as.data.table()
+
+# fix n = 15, vary p
+nv <- 15
+
+a1 <- sequential_times[num_vecs == nv] %>% add_column(type = "Best sequential (fastcluster)")
+a2 <- naive_sequential_times[num_vecs == nv] %>% add_column(type = "Naive sequential (mine)")
+a3 <- parallel_times[num_vecs == nv] %>% add_column(type = "Parallel (mine)")
+
+n15 <- bind_rows(a1, a2) %>% bind_rows(., a3) %>% 
+  set_colnames(c("Number of processes", "Number of vectors", "Time (sec)", "Implementation"))
+print(xtable(x = n15, type = "latex", digits = c(0,0,0,8,1)), include.rownames = FALSE)
+
+# fix n = 60, vary p
+nv <- 60
+
+a1 <- sequential_times[num_vecs == nv] %>% add_column(type = "Best sequential (fastcluster)")
+a2 <- naive_sequential_times[num_vecs == nv] %>% add_column(type = "Naive sequential (mine)")
+a3 <- parallel_times[num_vecs == nv] %>% add_column(type = "Parallel (mine)")
+
+n60 <- bind_rows(a1, a2) %>% bind_rows(., a3) %>% 
+  set_colnames(c("Number of processes", "Number of vectors", "Time (sec)", "Implementation"))
+print(xtable(x = n60, type = "latex", digits = c(0,0,0,8,1)), include.rownames = FALSE)
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 # fix n = 300, vary p
 nv <- 300
 
+<<<<<<< HEAD
 a1 <- sequential_times[num_vecs == nv] %>% 
   set_colnames(c("seq p", "# vectors", "Best seq."))
 
@@ -148,4 +181,14 @@ n300 <- merge.data.table(a1, a2, by = c("seq p", "# vectors")) %>%
   mutate(Speedup = `Best seq.` / `Parallel (mine)`)
 
 print(xtable(x = n300, type = "latex", digits = c(0,0,0,5,5,0,5,5)), include.rownames = FALSE)
+=======
+a1 <- sequential_times[num_vecs == nv] %>% add_column(type = "Best sequential (fastcluster)")
+a2 <- naive_sequential_times[num_vecs == nv] %>% add_column(type = "Naive sequential (mine)")
+a3 <- parallel_times[num_vecs == nv] %>% add_column(type = "Parallel (mine)")
+
+n300 <- bind_rows(a1, a2) %>% bind_rows(., a3) %>% 
+  set_colnames(c("Number of processes", "Number of vectors", "Time (sec)", "Implementation"))
+
+print(xtable(x = n300, type = "latex", digits = c(0,0,0,8,1)), include.rownames = FALSE)
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 

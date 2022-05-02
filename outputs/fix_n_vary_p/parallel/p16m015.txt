@@ -19,6 +19,7 @@ Matrix A:
 8.00	8.00	
 
 
+<<<<<<< HEAD
 Min x: 1.000000, Max x: 9.000000, Min y: 0.000000, Max y: 8.000000
 
 --------------------------------------------
@@ -44,6 +45,195 @@ Lastcall Matrix A:
 
 Sequential Matrix A: 
 3.00	0.00	
+=======
+min x: 1.000000, max x: 9.000000, min y: 0.000000, max y: 8.000000
+
+Matrices for process 2: 
+A_chunk: 
+
+Matrices for process 1: 
+A_chunk: 
+
+Matrices for process 3: 
+A_chunk: 
+9.00	0.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 2	From [9.00, 0.00] and [9.00, 0.00] to [9.00, 0.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+6.00	0.00	
+
+
+3.00	0.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 1	From [3.00, 0.00] and [3.00, 0.00] to [3.00, 0.00]
+
+--------------------------------------------
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 3	From [6.00, 0.00] and [6.00, 0.00] to [6.00, 0.00]
+
+--------------------------------------------
+
+
+
+Returning root of this subtree to manager
+Returning root of this subtree to manager
+
+Matrices for process 4: 
+A_chunk: 
+3.00	3.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 4	From [3.00, 3.00] and [3.00, 3.00] to [3.00, 3.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 5: 
+A_chunk: 
+7.00	4.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 5	From [7.00, 4.00] and [7.00, 4.00] to [7.00, 4.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 6: 
+A_chunk: 
+3.00	4.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 6	From [3.00, 4.00] and [3.00, 4.00] to [3.00, 4.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 7: 
+A_chunk: 
+5.00	4.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 7	From [5.00, 4.00] and [5.00, 4.00] to [5.00, 4.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 8: 
+A_chunk: 
+7.00	4.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 8	From [7.00, 4.00] and [7.00, 4.00] to [7.00, 4.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 9: 
+A_chunk: 
+9.00	4.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 9	From [9.00, 4.00] and [9.00, 4.00] to [9.00, 4.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 10: 
+A_chunk: 
+3.00	5.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 10	From [3.00, 5.00] and [3.00, 5.00] to [3.00, 5.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 11: 
+A_chunk: 
+1.00	6.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 11	From [1.00, 6.00] and [1.00, 6.00] to [1.00, 6.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 12: 
+A_chunk: 
+3.00	7.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 12	From [3.00, 7.00] and [3.00, 7.00] to [3.00, 7.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 13: 
+A_chunk: 
+3.00	8.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 13	From [3.00, 8.00] and [3.00, 8.00] to [3.00, 8.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 14: 
+A_chunk: 
+5.00	8.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 14	From [5.00, 8.00] and [5.00, 8.00] to [5.00, 8.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+
+Matrices for process 15: 
+A_chunk: 
+8.00	8.00	
+
+
+Minimum distance 1000.000 found at (0, 0), level 1, process 15	
+--------------------------------------------
+
+Sequential Matrix A: 
+0.00	0.00	
+3.00	0.00	
+From [8.00, 8.00] and [8.00, 8.00] to [8.00, 8.00]
+
+--------------------------------------------
+
+
+Returning root of this subtree to manager
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 9.00	0.00	
 6.00	0.00	
 3.00	3.00	
@@ -60,89 +250,146 @@ Sequential Matrix A:
 8.00	8.00	
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (3, 5), level 15, process 0	From [3.00, 3.00] and [3.00, 4.00] to [3.00, 3.50]
+=======
+Minimum distance 1.000 found at (4, 6), level 16, process 0	From [3.00, 3.00] and [3.00, 4.00] to [3.00, 3.50]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (9, 10), level 14, process 0	From [3.00, 7.00] and [3.00, 8.00] to [3.00, 7.50]
+=======
+Minimum distance 1.000 found at (10, 11), level 15, process 0	From [3.00, 7.00] and [3.00, 8.00] to [3.00, 7.50]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.500 found at (7, 11), level 13, process 0	From [3.00, 5.00] and [3.00, 3.50] to [3.00, 4.25]
+=======
+Minimum distance 1.500 found at (8, 12), level 14, process 0	From [3.00, 5.00] and [3.00, 3.50] to [3.00, 4.25]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.000 found at (3, 4), level 12, process 0	From [7.00, 4.00] and [5.00, 4.00] to [6.00, 4.00]
+=======
+Minimum distance 2.000 found at (4, 5), level 13, process 0	From [7.00, 4.00] and [5.00, 4.00] to [6.00, 4.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (3, 10), level 11, process 0	From [7.00, 4.00] and [6.00, 4.00] to [6.50, 4.00]
+=======
+Minimum distance 1.000 found at (4, 11), level 12, process 0	From [7.00, 4.00] and [6.00, 4.00] to [6.50, 4.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.062 found at (5, 7), level 10, process 0	From [5.00, 8.00] and [3.00, 7.50] to [4.00, 7.75]
+=======
+Minimum distance 2.062 found at (6, 8), level 11, process 0	From [5.00, 8.00] and [3.00, 7.50] to [4.00, 7.75]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.500 found at (3, 7), level 9, process 0	From [9.00, 4.00] and [6.50, 4.00] to [7.75, 4.00]
+=======
+Minimum distance 2.500 found at (4, 8), level 10, process 0	From [9.00, 4.00] and [6.50, 4.00] to [7.75, 4.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.658 found at (3, 5), level 8, process 0	From [1.00, 6.00] and [3.00, 4.25] to [2.00, 5.12]
+=======
+Minimum distance 2.658 found at (4, 6), level 9, process 0	From [1.00, 6.00] and [3.00, 4.25] to [2.00, 5.12]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 3.000 found at (0, 2), level 7, process 0	From [3.00, 0.00] and [6.00, 0.00] to [4.50, 0.00]
+=======
+Minimum distance 3.000 found at (0, 1), level 8, process 0	From [0.00, 0.00] and [3.00, 0.00] to [1.50, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 3.300 found at (2, 4), level 6, process 0	From [4.00, 7.75] and [2.00, 5.12] to [3.00, 6.44]
+=======
+Minimum distance 3.000 found at (0, 1), level 7, process 0	From [9.00, 0.00] and [6.00, 0.00] to [7.50, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 4.008 found at (1, 2), level 5, process 0	From [8.00, 8.00] and [7.75, 4.00] to [7.88, 6.00]
+=======
+Minimum distance 3.300 found at (1, 3), level 6, process 0	From [4.00, 7.75] and [2.00, 5.12] to [3.00, 6.44]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 4.500 found at (0, 1), level 4, process 0	From [9.00, 0.00] and [4.50, 0.00] to [6.75, 0.00]
+=======
+Minimum distance 4.008 found at (0, 1), level 5, process 0	From [8.00, 8.00] and [7.75, 4.00] to [7.88, 6.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 4.895 found at (0, 1), level 3, process 0	From [3.00, 6.44] and [7.88, 6.00] to [5.44, 6.22]
+=======
+Minimum distance 4.895 found at (2, 3), level 4, process 0	From [3.00, 6.44] and [7.88, 6.00] to [5.44, 6.22]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 6.356 found at (0, 1), level 2, process 0	From [6.75, 0.00] and [5.44, 6.22] to [6.09, 3.11]
+=======
+Minimum distance 6.000 found at (0, 1), level 3, process 0	From [1.50, 0.00] and [7.50, 0.00] to [4.50, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
+<<<<<<< HEAD
 Sequential results: 
 0.00	0.00	0.00	0.00	
 6.75	0.00	5.44	6.22	
@@ -160,6 +407,13 @@ Sequential results:
 3.00	7.00	3.00	8.00	
 3.00	3.00	3.00	4.00	
 0.00	0.00	0.00	0.00	
+=======
+
+Minimum distance 6.289 found at (0, 1), level 2, process 0	From [5.44, 6.22] and [4.50, 0.00] to [4.97, 3.11]
+
+--------------------------------------------
+
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 ||-----Done sequential-----||.
 
@@ -168,4 +422,8 @@ Sending dietags for 15 workers
 
 ||-----Done parallel part-----||.
 
+<<<<<<< HEAD
 Total time (sec): 0.008295
+=======
+Total time (sec): 0.009866
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408

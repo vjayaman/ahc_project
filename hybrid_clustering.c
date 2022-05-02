@@ -139,7 +139,11 @@ static void manager(double *A) {
     // manager then clusters these subtrees
     
     double A_chunk_root[1*N]; 
+<<<<<<< HEAD
     double last_call[(num_procs-1) * N];   
+=======
+    double last_call[num_procs * N];   
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
     
     // manager receives a vector (subtree root) from each worker and 
     // saves into a matrix for sequential clustering
@@ -150,8 +154,13 @@ static void manager(double *A) {
             last_call[(i-1) * N + j] = A_chunk_root[j];
         }
     }
+<<<<<<< HEAD
     //print_oned_mat("\n--------------------------------------------\n\nLastcall Matrix A: \n", 
       //              last_call, num_procs-1, N);     
+=======
+    print_oned_mat("\n--------------------------------------------\n\nLastcall Matrix A: \n", 
+                    last_call, num_procs-1, N);     
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
     sequential_naive(last_call, num_procs-1);
 
     // Confirming the number of workers
@@ -206,7 +215,11 @@ static void worker(int chunk_size) {
                 new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
             }
 
+<<<<<<< HEAD
             printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d: From [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+=======
+            printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
                 coords[2], val0, val1, chunk_size, my_rank,
                 *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
             printf("\n--------------------------------------------\n\n");            
@@ -225,7 +238,11 @@ static void worker(int chunk_size) {
             while (x > 1) {
                 //if (NUM_VECS <= 15) {print_oned_mat("New A: \n", A, x, N);}
                 collectDistances(x, A, Dists);
+<<<<<<< HEAD
                 //print_oned_mat("\nDists: \n", Dists, x, x);
+=======
+                print_oned_mat("\nDists: \n", Dists, x, x);
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
                 min_val = 1000;
                 minDist(min_val, x, Dists, coords, chunk_size);
@@ -236,7 +253,11 @@ static void worker(int chunk_size) {
                 for (j = 0; j < N; j++) {
                     new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
                 }
+<<<<<<< HEAD
                 printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d: From [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+=======
+                printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
                     coords[2], val0, val1, x, my_rank,
                     *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
 
@@ -272,7 +293,11 @@ static void sequential_naive(double *A, int num_rows) {
                    A, num_rows, N);        
 
     collectDistances(num_rows, A, Dists); // collect pairwise distances of all the vectors
+<<<<<<< HEAD
     //print_oned_mat("\nDists: \n", Dists, num_rows, num_rows);
+=======
+    print_oned_mat("\nDists: \n", Dists, num_rows, num_rows);
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
     double min_val = 1000;
     double coords[3] = {0, 0, min_val};
@@ -287,7 +312,11 @@ static void sequential_naive(double *A, int num_rows) {
         new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
     }
 
+<<<<<<< HEAD
     printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d: From [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+=======
+    printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
                coords[2], val0, val1, num_rows, my_rank,
                *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
     printf("\n--------------------------------------------\n\n");
@@ -316,7 +345,11 @@ static void sequential_naive(double *A, int num_rows) {
         for (j = 0; j < N; j++) {
             new_vec[j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
         }
+<<<<<<< HEAD
         printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d: From [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+=======
+        printf("\n\nMinimum distance %.3f found at (%d, %d), level %d, process %d\tFrom [%.2f, %.2f] and [%.2f, %.2f] to [%.2f, %.2f]\n", 
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
                coords[2], val0, val1, x, my_rank,
                *(A + val0*N + 0), *(A + val0*N + 1), *(A + val1*N + 0), *(A + val1*N + 1), new_vec[0], new_vec[1]);
 

@@ -29,45 +29,78 @@ Matrix A:
 1.00	3.00	
 
 
+<<<<<<< HEAD
 Min x: 0.000000, Max x: 9.000000, Min y: 0.000000, Max y: 8.000000
+=======
+min x: 0.000000, max x: 9.000000, min y: 0.000000, max y: 8.000000
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (0, 4), level 5, process 1: From [3.00, 0.00] and [4.00, 0.00] to [3.50, 0.00]
+=======
+
+Minimum distance 1.000 found at (0, 4), level 5, process 1	From [3.00, 0.00] and [4.00, 0.00] to [3.50, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (0, 2), level 4, process 1: From [9.00, 0.00] and [8.00, 0.00] to [8.50, 0.00]
+=======
+Minimum distance 1.000 found at (0, 2), level 4, process 1	From [9.00, 0.00] and [8.00, 0.00] to [8.50, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.500 found at (0, 1), level 3, process 1: From [6.00, 0.00] and [3.50, 0.00] to [4.75, 0.00]
+=======
+Minimum distance 2.500 found at (0, 1), level 3, process 1	From [6.00, 0.00] and [3.50, 0.00] to [4.75, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 3.750 found at (0, 1), level 2, process 1: From [8.50, 0.00] and [4.75, 0.00] to [6.62, 0.00]
+=======
+Minimum distance 3.750 found at (0, 1), level 2, process 1	From [8.50, 0.00] and [4.75, 0.00] to [6.62, 0.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
+<<<<<<< HEAD
 
 Minimum distance 1.000 found at (0, 2), level 5, process 2: From [1.00, 2.00] and [1.00, 3.00] to [1.00, 2.50]
+=======
+Matrices for process 2: 
+
+
+Minimum distance 1.000 found at (0, 2), level 5, process 2	From [1.00, 2.00] and [1.00, 3.00] to [1.00, 2.50]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (0, 2), level 4, process 2: From [3.00, 3.00] and [4.00, 3.00] to [3.50, 3.00]
+=======
+Minimum distance 1.000 found at (0, 2), level 4, process 2	From [3.00, 3.00] and [4.00, 3.00] to [3.50, 3.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.550 found at (1, 2), level 3, process 2: From [1.00, 2.50] and [3.50, 3.00] to [2.25, 2.75]
 
 --------------------------------------------
@@ -75,12 +108,23 @@ Minimum distance 2.550 found at (1, 2), level 3, process 2: From [1.00, 2.50] an
 
 
 Minimum distance 4.757 found at (0, 1), level 2, process 2: From [7.00, 3.00] and [2.25, 2.75] to [4.62, 2.88]
+=======
+Minimum distance 2.550 found at (1, 2), level 3, process 2	From [1.00, 2.50] and [3.50, 3.00] to [2.25, 2.75]
 
 --------------------------------------------
 
 
 
+Minimum distance 4.757 found at (0, 1), level 2, process 2	From [7.00, 3.00] and [2.25, 2.75] to [4.62, 2.88]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
+--------------------------------------------
+
+
+Matrices for process 3: 
+
+
+<<<<<<< HEAD
 
 Minimum distance 1.000 found at (1, 4), level 5, process 5: From [3.00, 7.00] and [3.00, 8.00] to [3.00, 7.50]
 
@@ -91,72 +135,136 @@ Sequential Matrix A:
 4.62	2.88	
 4.50	5.12	
 4.38	3.50	
+=======
+Minimum distance 2.000 found at (1, 2), level 5, process 3	From [5.00, 4.00] and [7.00, 4.00] to [6.00, 4.00]
 
 --------------------------------------------
 
 
 
+Minimum distance 1.000 found at (2, 3), level 4, process 3	From [7.00, 4.00] and [6.00, 4.00] to [6.50, 4.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+
+--------------------------------------------
+
+
+
+<<<<<<< HEAD
 Minimum distance 2.062 found at (1, 3), level 4, process 5: From [5.00, 8.00] and [3.00, 7.50] to [4.00, 7.75]
+=======
+Minimum distance 2.500 found at (1, 2), level 3, process 3	From [9.00, 4.00] and [6.50, 4.00] to [7.75, 4.00]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
+Sequential Matrix A: 
+0.00	0.00	
+6.62	0.00	
+4.62	2.88	
+4.50	5.12	
+4.38	3.50
+Matrices for process 4: 
 
 
+<<<<<<< HEAD
 Minimum distance 3.473 found at (0, 2), level 3, process 5: From [1.00, 6.00] and [4.00, 7.75] to [2.50, 6.88]
 5.25	7.44	
 
 
 Minimum distance 0.673 found at (1, 3), level 5, process 0: From [4.62, 2.88] and [4.38, 3.50] to [4.50, 3.19]
+=======
+Minimum distance 1.000 found at (0, 1), level 5, process 4	From [3.00, 4.00] and [3.00, 5.00] to [3.00, 4.50]
+	
+5.25	7.44	
+
+
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.938 found at (1, 3), level 4, process 0: From [4.50, 5.12] and [4.50, 3.19] to [4.50, 4.16]
+=======
+Minimum distance 3.041 found at (1, 3), level 4, process 4	From [0.00, 5.00] and [3.00, 4.50] to [1.50, 4.75]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 1.000 found at (0, 1), level 5, process 4: From [3.00, 4.00] and [3.00, 5.00] to [3.00, 4.50]
 
 --------------------------------------------
+=======
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+
+Matrices for process 5: 
 
 
-
+<<<<<<< HEAD
 Minimum distance 3.041 found at (1, 3), level 4, process 4: From [0.00, 5.00] and [3.00, 4.50] to [1.50, 4.75]
+=======
+Minimum distance 1.000 found at (1, 4), level 5, process 5	From [3.00, 7.00] and [3.00, 8.00] to [3.00, 7.50]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 3.162 found at (0, 1), level 3, process 4: From [9.00, 5.00] and [6.00, 6.00] to [7.50, 5.50]
+=======
+Minimum distance 6.824 found at (0, 1), level 2, process 3	From [1.00, 3.00] and [7.75, 4.00] to [4.38, 3.50]
+Minimum distance 0.673 found at (2, 4), level 6, process 0	From [4.62, 2.88] and [4.38, 3.50] to [4.50, 3.19]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 5.614 found at (0, 1), level 2, process 5: From [8.00, 8.00] and [2.50, 6.88] to [5.25, 7.44]
 
 --------------------------------------------
 
 Minimum distance 2.000 found at (1, 2), level 5, process 3: From [5.00, 4.00] and [7.00, 4.00] to [6.00, 4.00]
+=======
+Minimum distance 1.938 found at (2, 4), level 5, process 0	From [4.50, 5.12] and [4.50, 3.19] to [4.50, 4.16]
 
 --------------------------------------------
 
 
 
+Minimum distance 3.366 found at (2, 3), level 4, process 0	From [5.25, 7.44] and [4.50, 4.16] to [4.88, 5.80]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+
+--------------------------------------------
+
+
+
+<<<<<<< HEAD
 Minimum distance 1.000 found at (2, 3), level 4, process 3: From [7.00, 4.00] and [6.00, 4.00] to [6.50, 4.00]
+=======
+Minimum distance 6.055 found at (1, 2), level 3, process 0	From [6.62, 0.00] and [4.88, 5.80] to [5.75, 2.90]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
+<<<<<<< HEAD
 Minimum distance 2.500 found at (1, 2), level 3, process 3: From [9.00, 4.00] and [6.50, 4.00] to [7.75, 4.00]
+=======
+Minimum distance 6.439 found at (0, 1), level 2, process 0	From [0.00, 0.00] and [5.75, 2.90] to [2.88, 1.45]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
+<<<<<<< HEAD
 
 Minimum distance 6.824 found at (0, 1), level 2, process 3: From [1.00, 3.00] and [7.75, 4.00] to [4.38, 3.50]
 
@@ -165,8 +273,20 @@ Minimum distance 3.366 found at (1, 2), level 3, process 0: From [5.25, 7.44] an
 
 --------------------------------------------
 
+=======
+Sequential results: 
+Minimum distance 3.162 found at (0, 1), level 3, process 4	From [9.00, 5.00] and [6.00, 6.00] to [7.50, 5.50]
+
+--------------------------------------------
 
 
+
+Minimum distance 6.047 found at (0, 1), level 2, process 4	From [1.50, 4.75] and [7.50, 5.50] to [4.50, 5.12]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+
+--------------------------------------------
+
+<<<<<<< HEAD
 Minimum distance 6.055 found at (0, 1), level 2, process 0: From [6.62, 0.00] and [4.88, 5.80] to [5.75, 2.90]
 
 --------------------------------------------
@@ -176,11 +296,26 @@ Minimum distance 6.055 found at (0, 1), level 2, process 0: From [6.62, 0.00] an
 
 
 Sending dietags for 5 workers
+=======
 
 --------------------------------------------
 
 
 
+Minimum distance 2.062 found at (1, 3), level 4, process 5	From [5.00, 8.00] and [3.00, 7.50] to [4.00, 7.75]
+
+--------------------------------------------
+
+
+
+Minimum distance 3.473 found at (0, 2), level 3, process 5	From [1.00, 6.00] and [4.00, 7.75] to [2.50, 6.88]
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+
+--------------------------------------------
+
+
+
+<<<<<<< HEAD
 Minimum distance 6.047 found at (0, 1), level 2, process 4: From [1.50, 4.75] and [7.50, 5.50] to [4.50, 5.12]
 
 --------------------------------------------
@@ -188,7 +323,32 @@ Minimum distance 6.047 found at (0, 1), level 2, process 4: From [1.50, 4.75] an
 
 --------------------------------------------
 
+=======
+Minimum distance 5.614 found at (0, 1), level 2, process 5	From [8.00, 8.00] and [2.50, 6.88] to [5.25, 7.44]
+
+--------------------------------------------
+
+0.00	0.00	0.00	0.00	
+0.00	0.00	5.75	2.90	
+6.62	0.00	4.88	5.80	
+5.25	7.44	4.50	4.16	
+4.50	5.12	4.50	3.19	
+4.62	2.88	4.38	3.50	
+0.00	0.00	0.00	0.00	
+
+||-----Done sequential-----||.
+
+
+Sending dietags for 5 workers
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+
+--------------------------------------------
+
 
 ||-----Done parallel part-----||.
 
+<<<<<<< HEAD
 Total time (sec): 0.002275
+=======
+Total time (sec): 0.002775
+>>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
