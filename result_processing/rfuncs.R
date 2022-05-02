@@ -32,12 +32,20 @@ levelCharNumTbl <- function(s_lvlinds, s_outputs) {
   return(s_x2)
 }
 
-orderedPairFormatting <- function(x1, index) {
-  lapply(1:length(x1), function(i) {
-    x2 <- x1[[i]][nchar(x1[[i]]) > 0]
-    x2[index] %>% gsub("\\]|\\[", "", .) %>% strsplit(., ",") %>% unlist() %>% as.double()
-  }) %>% as.data.frame() %>% t() %>% as.data.frame() %>% as_tibble() %>% 
-    rownames_to_column("val") %>% set_colnames(c("val", "x", "y"))
+# orderedPairFormatting <- function(x1, index) {
+#   lapply(1:length(x1), function(i) {
+#     x2 <- x1[[i]][nchar(x1[[i]]) > 0]
+#     x2[index] %>% gsub("\\]|\\[", "", .) %>% strsplit(., ",") %>% unlist() %>% as.double()
+#   }) %>% as.data.frame() %>% t() %>% as.data.frame() %>% as_tibble() %>% 
+#     rownames_to_column("val") %>% set_colnames(c("val", "x", "y"))
+# }
+
+orderedPairs <- function(x1, index) {
+  lapply(1:nrow(x1), function(i) {
+    df <- x1[i,..index] %>% gsub("\\]|\\[", "", .) %>% strsplit(., ",") %>% unlist() %>% as.double() %>% t() %>% 
+      as.data.table() %>% 
+      data.table(x1[i,c("proc","level")], .)
+  }) %>% bind_rows() %>% set_colnames(c("proc", "level", "x", "y"))
 }
 
 sepCols <- function(col_index, df) {

@@ -2,8 +2,8 @@
 
 source("result_processing/rfuncs.R")
 
-num_vecs <- 25
-file_index <- 4
+num_vecs <- 15
+file_index <- 3
 
 # ------------------------------------------------------------------------------
 # SEQUENTIAL -------------------------------------------------------------------
@@ -44,14 +44,6 @@ s_df <- bind_rows(s_d2, s_d2) %>% bind_rows(s_d2)
 
 s_toplot$type[s_toplot$type == "1"] <- "Merged pair"
 s_toplot$type[s_toplot$type == "2"] <- "Center"
-
-
-# s_plot <- ggplot(data = s_toplot, aes(x = x, y = y, color = type)) + geom_point() + 
-#   geom_segment(aes(x = s_df$x, y = s_df$y, xend = s_df$xend, yend = s_df$yend)) + 
-#   ggtitle(paste0("Sequential implementation 1 for ", num_vecs, " vectors and N = 2")) + 
-#   labs(color = "Point type")
-# s_plot
-# ggsave(paste0("sequential_plot.png"))
 
 s_toplot <- s_toplot %>% mutate(across(val, as.double))
 s_df <- s_df %>% mutate(across(val, as.double))

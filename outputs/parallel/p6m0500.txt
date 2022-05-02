@@ -504,229 +504,193 @@ Matrix A:
 1.00	9.00	
 
 
-Sending address of first row of each chunk
-Receiving merged pairs from workers
+Min x: 0.000000, Max x: 9.000000, Min y: 0.000000, Max y: 9.000000
 
-Matrices for process 1: 
 
+Minimum distance 1.000 found at (0, 4), level 100, process 1: From [3.00, 0.00] and [4.00, 0.00] to [3.50, 0.00]
 
-Minimum distance 1.000 found at (0, 9)
-	From [3.00, 4.00] and [3.00, 3.00] to [3.00, 3.50]
-
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 15)
-	From [3.00, 0.00] and [4.00, 0.00] to [3.50, 0.00]
+Minimum distance 1.000 found at (0, 15), level 100, process 2: From [9.00, 2.00] and [8.00, 2.00] to [8.50, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (23, 97)
-	From [3.00, 0.00] and [3.50, 0.00] to [3.25, 0.00]
+Minimum distance 0.500 found at (12, 98), level 99, process 2: From [9.00, 2.00] and [8.50, 2.00] to [8.75, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (40, 96)
-	From [3.00, 0.00] and [3.25, 0.00] to [3.12, 0.00]
+Minimum distance 0.500 found at (3, 98), level 99, process 1: From [3.00, 0.00] and [3.50, 0.00] to [3.25, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.125 found at (72, 95)
-	From [3.00, 0.00] and [3.12, 0.00] to [3.06, 0.00]
+Minimum distance 0.250 found at (19, 97), level 98, process 2: From [9.00, 2.00] and [8.75, 2.00] to [8.88, 2.00]
 
 --------------------------------------------
 
 
-Matrices for process 4: 
 
-Matrices for process 2: 
+Minimum distance 1.000 found at (0, 3), level 100, process 5: From [6.00, 8.00] and [7.00, 8.00] to [6.50, 8.00]
+
+--------------------------------------------
 
-Matrices for process 5: 
 
 
+Minimum distance 0.125 found at (32, 96), level 97, process 2: From [9.00, 2.00] and [8.88, 2.00] to [8.94, 2.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 41)
 
 
-Minimum distance 1.000 found at (0, 12)
-	From [2.00, 9.00] and [3.00, 9.00] to [2.50, 9.00]
+Minimum distance 0.500 found at (4, 98), level 99, process 5: From [7.00, 8.00] and [6.50, 8.00] to [6.75, 8.00]
 
 --------------------------------------------
 
-	From [6.00, 7.00] and [6.00, 6.00] to [6.00, 6.50]
 
---------------------------------------------
 
-Minimum distance 1.000 found at (0, 78)
-	From [8.00, 2.00] and [7.00, 2.00] to [7.50, 2.00]
+Minimum distance 1.000 found at (0, 8), level 100, process 4: From [4.00, 5.00] and [4.00, 6.00] to [4.00, 5.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 5)
-	From [2.00, 7.00] and [1.00, 7.00] to [1.50, 7.00]
+Minimum distance 0.250 found at (4, 97), level 98, process 1: From [3.00, 0.00] and [3.25, 0.00] to [3.12, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (32, 98)
-	From [2.00, 9.00] and [2.50, 9.00] to [2.25, 9.00]
+Minimum distance 1.000 found at (0, 3), level 100, process 3: From [4.00, 4.00] and [3.00, 4.00] to [3.50, 4.00]
 
 --------------------------------------------
-
 
 
-Minimum distance 0.500 found at (93, 98)
-	
 
-Minimum distance 0.500 found at (25, 97)
-	From [2.00, 7.00] and [1.50, 7.00] to [1.75, 7.00]
+Minimum distance 0.062 found at (34, 95), level 96, process 2: From [9.00, 2.00] and [8.94, 2.00] to [8.97, 2.00]
 
 --------------------------------------------
 
 
-Matrices for process 3: 
-From [6.00, 6.00] and [6.00, 6.50] to [6.00, 6.25]
 
+Minimum distance 0.250 found at (10, 97), level 98, process 5: From [7.00, 8.00] and [6.75, 8.00] to [6.88, 8.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (33, 97)
-	From [2.00, 9.00] and [2.25, 9.00] to [2.12, 9.00]
+Minimum distance 0.500 found at (0, 98), level 99, process 4: From [4.00, 5.00] and [4.00, 5.50] to [4.00, 5.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 6)
-	
+Minimum distance 0.031 found at (36, 94), level 95, process 2: From [9.00, 2.00] and [8.97, 2.00] to [8.98, 2.00]
 
-From [9.00, 9.00] and [9.00, 8.00] to [9.00, 8.50]
-
 --------------------------------------------
-
-Minimum distance 1.000 found at (0, 20)
-	From [9.00, 4.00] and [9.00, 3.00] to [9.00, 3.50]
 
---------------------------------------------
 
 
+Minimum distance 0.125 found at (4, 96), level 97, process 1: From [3.00, 0.00] and [3.12, 0.00] to [3.06, 0.00]
 
-Minimum distance 0.500 found at (17, 96)
-	
+--------------------------------------------
 
-Minimum distance 0.125 found at (85, 96)
-	From [2.00, 9.00] and [2.12, 9.00] to [2.06, 9.00]
 
---------------------------------------------
 
-From [9.00, 8.00] and [9.00, 8.50] to [9.00, 8.25]
+Minimum distance 0.500 found at (4, 98), level 99, process 3: From [3.00, 4.00] and [3.50, 4.00] to [3.25, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 7)
-	From [5.00, 4.00] and [4.00, 4.00] to [4.50, 4.00]
+Minimum distance 0.125 found at (18, 96), level 97, process 5: From [7.00, 8.00] and [6.88, 8.00] to [6.94, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (51, 95)
-	From [9.00, 9.00] and [9.00, 8.25] to [9.00, 8.62]
+Minimum distance 0.750 found at (26, 97), level 98, process 4: From [4.00, 6.00] and [4.00, 5.25] to [4.00, 5.62]
 
+
+Minimum distance 0.984 found at (20, 93), level 94, process 2: From [8.00, 2.00] and [8.98, 2.00] to [8.49, 2.00]
+
 --------------------------------------------
 
+--------------------------------------------
 
 
-Minimum distance 1.000 found at (0, 6)
 
 
-Minimum distance 1.000 found at (0, 12)
-	From [9.00, 0.00] and [8.00, 0.00] to [8.50, 0.00]
+Minimum distance 0.062 found at (18, 95), level 96, process 5: From [7.00, 8.00] and [6.94, 8.00] to [6.97, 8.00]
 
 --------------------------------------------
 
-	From [1.00, 3.00] and [1.00, 4.00] to [1.00, 3.50]
 
+
+Minimum distance 0.062 found at (12, 95), level 96, process 1: From [3.00, 0.00] and [3.06, 0.00] to [3.03, 0.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (50, 98)
-	From [9.00, 3.00] and [9.00, 3.50] to [9.00, 3.25]
+Minimum distance 1.000 found at (0, 3), level 93, process 2: From [1.00, 2.00] and [2.00, 2.00] to [1.50, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 18)
-	
+Minimum distance 0.031 found at (34, 94), level 95, process 5: From [7.00, 8.00] and [6.97, 8.00] to [6.98, 8.00]
 
-Minimum distance 0.500 found at (23, 94)
-	From [5.00, 4.00] and [4.50, 4.00] to [4.75, 4.00]
 
---------------------------------------------
+Minimum distance 0.375 found at (26, 96), level 97, process 4: From [4.00, 6.00] and [4.00, 5.62] to [4.00, 5.81]
 
-From [6.00, 5.00] and [6.00, 4.00] to [6.00, 4.50]
 
---------------------------------------------
+Minimum distance 0.250 found at (13, 97), level 98, process 3: From [3.00, 4.00] and [3.25, 4.00] to [3.12, 4.00]
 
+--------------------------------------------
 
+--------------------------------------------
 
-Minimum distance 0.750 found at (24, 93)
-	From [4.00, 4.00] and [4.75, 4.00] to [4.38, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (53, 97)
-	From [9.00, 3.00] and [9.00, 3.25] to [9.00, 3.12]
 
---------------------------------------------
+Minimum distance 0.984 found at (16, 93), level 94, process 5: From [6.00, 8.00] and [6.98, 8.00] to [6.49, 8.00]
 
 
+Minimum distance 0.500 found at (0, 91), level 92, process 2: From [1.00, 2.00] and [1.50, 2.00] to [1.25, 2.00]
+
+--------------------------------------------
 
-Minimum distance 0.375 found at (29, 92)
-	From [4.00, 4.00] and [4.38, 4.00] to [4.19, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.188 found at (86, 91)
-	From [4.00, 4.00] and [4.19, 4.00] to [4.09, 4.00]
+Minimum distance 0.250 found at (0, 90), level 91, process 2: From [1.00, 2.00] and [1.25, 2.00] to [1.12, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (85, 96)
-	From [9.00, 4.00] and [9.00, 3.12] to [9.00, 3.56]
+Minimum distance 1.000 found at (0, 5), level 96, process 4: From [7.00, 5.00] and [7.00, 6.00] to [7.00, 5.50]
 
 
-Minimum distance 1.000 found at (0, 17)
-	From [9.00, 5.00] and [9.00, 4.00] to [9.00, 4.50]
+Minimum distance 0.031 found at (40, 94), level 95, process 1: From [3.00, 0.00] and [3.03, 0.00] to [3.02, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (39, 95)
-	From [1.00, 4.00] and [1.00, 3.50] to [1.00, 3.75]
+Minimum distance 0.492 found at (19, 92), level 93, process 5: From [6.00, 8.00] and [6.49, 8.00] to [6.25, 8.00]
 
 --------------------------------------------
 
@@ -735,992 +699,844 @@ Minimum distance 0.500 found at (39, 95)
 
 
 
-Minimum distance 0.500 found at (19, 93)
-	From [6.00, 4.00] and [6.00, 4.50] to [6.00, 4.25]
+Minimum distance 0.125 found at (18, 96), level 97, process 3: From [3.00, 4.00] and [3.12, 4.00] to [3.06, 4.00]
 
 --------------------------------------------
 
 
+Minimum distance 0.125 found at (11, 89), level 90, process 2: From [1.00, 2.00] and [1.12, 2.00] to [1.06, 2.00]
 
-Minimum distance 0.500 found at (31, 93)
-	From [8.00, 0.00] and [8.50, 0.00] to [8.25, 0.00]
-
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (64, 89)
-	From [9.00, 5.00] and [9.00, 4.50] to [9.00, 4.75]
-
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 1), level 92, process 5: From [3.00, 8.00] and [4.00, 8.00] to [3.50, 8.00]
 
 
-Minimum distance 1.000 found at (0, 5)
-	From [0.00, 7.00] and [1.00, 7.00] to [0.50, 7.00]
+Minimum distance 0.062 found at (14, 88), level 89, process 2: From [1.00, 2.00] and [1.06, 2.00] to [1.03, 2.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 23)
-	From [5.00, 0.00] and [6.00, 0.00] to [5.50, 0.00]
 
---------------------------------------------
 
+Minimum distance 0.500 found at (5, 94), level 95, process 4: From [7.00, 6.00] and [7.00, 5.50] to [7.00, 5.75]
 
 
-Minimum distance 0.500 found at (6, 87)
-	From [1.00, 7.00] and [0.50, 7.00] to [0.75, 7.00]
+Minimum distance 0.984 found at (18, 93), level 94, process 1: From [4.00, 0.00] and [3.02, 0.00] to [3.51, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (33, 86)
-	From [0.00, 7.00] and [0.75, 7.00] to [0.38, 7.00]
+Minimum distance 0.500 found at (0, 90), level 91, process 5: From [3.00, 8.00] and [3.50, 8.00] to [3.25, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (43, 94)
-	From [5.00, 0.00] and [5.50, 0.00] to [5.25, 0.00]
+Minimum distance 0.031 found at (23, 87), level 88, process 2: From [1.00, 2.00] and [1.03, 2.00] to [1.02, 2.00]
 
 --------------------------------------------
+
 
+--------------------------------------------
 
 
-Minimum distance 0.250 found at (51, 94)
-	
 
-Minimum distance 0.375 found at (51, 85)
-	From [0.00, 7.00] and [0.38, 7.00] to [0.19, 7.00]
+Minimum distance 0.062 found at (29, 95), level 96, process 3: From [3.00, 4.00] and [3.06, 4.00] to [3.03, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (50, 92)
-	From [6.00, 4.00] and [6.00, 4.25] to [6.00, 4.12]
+Minimum distance 0.250 found at (15, 93), level 94, process 4: From [7.00, 6.00] and [7.00, 5.75] to [7.00, 5.88]
 
---------------------------------------------
 
-From [1.00, 4.00] and [1.00, 3.75] to [1.00, 3.88]
+Minimum distance 0.016 found at (25, 86), level 87, process 2: From [1.00, 2.00] and [1.02, 2.00] to [1.01, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 3)
-	From [4.00, 6.00] and [4.00, 7.00] to [4.00, 6.50]
+Minimum distance 0.250 found at (8, 89), level 90, process 5: From [3.00, 8.00] and [3.25, 8.00] to [3.12, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (73, 92)
-	From [9.00, 0.00] and [8.25, 0.00] to [8.62, 0.00]
+Minimum distance 0.492 found at (22, 92), level 93, process 1: From [4.00, 0.00] and [3.51, 0.00] to [3.75, 0.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 73)
-	From [4.00, 7.00] and [5.00, 7.00] to [4.50, 7.00]
 
 
-Minimum distance 1.000 found at (1, 23)
-	From [7.00, 4.00] and [7.00, 5.00] to [7.00, 4.50]
+Minimum distance 0.125 found at (9, 88), level 89, process 5: From [3.00, 8.00] and [3.12, 8.00] to [3.06, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (21, 91)
-	From [6.00, 5.00] and [6.00, 4.12] to [6.00, 4.56]
+Minimum distance 0.008 found at (25, 85), level 86, process 2: From [1.00, 2.00] and [1.01, 2.00] to [1.00, 2.00]
 
 --------------------------------------------
 
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 23), level 93, process 4: From [9.00, 6.00] and [8.00, 6.00] to [8.50, 6.00]
 
 
-Minimum distance 0.500 found at (72, 82)
-	From [7.00, 5.00] and [7.00, 4.50] to [7.00, 4.75]
+Minimum distance 0.969 found at (6, 94), level 95, process 3: From [4.00, 4.00] and [3.03, 4.00] to [3.52, 4.00]
 
-
-Minimum distance 0.875 found at (76, 93)
-	
 --------------------------------------------
 
-From [1.00, 3.00] and [1.00, 3.88] to [1.00, 3.44]
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 2), level 92, process 1: From [9.00, 0.00] and [8.00, 0.00] to [8.50, 0.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 41)
-	From [1.00, 6.00] and [1.00, 7.00] to [1.00, 6.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 9)
-	From [8.00, 8.00] and [7.00, 8.00] to [7.50, 8.00]
+Minimum distance 0.062 found at (18, 87), level 88, process 5: From [3.00, 8.00] and [3.06, 8.00] to [3.03, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (12, 92)
+Minimum distance 0.996 found at (13, 84), level 85, process 2: From [2.00, 2.00] and [1.00, 2.00] to [1.50, 2.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (1, 18)
-	From [7.00, 8.00] and [7.00, 7.00] to [7.00, 7.50]
 
---------------------------------------------
 
-	From [4.00, 7.00] and [4.50, 7.00] to [4.25, 7.00]
+Minimum distance 0.498 found at (23, 83), level 84, process 2: From [2.00, 2.00] and [1.50, 2.00] to [1.75, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (27, 80)
-	From [7.00, 8.00] and [7.00, 7.50] to [7.00, 7.75]
+Minimum distance 0.031 found at (24, 86), level 87, process 5: From [3.00, 8.00] and [3.03, 8.00] to [3.02, 8.00]
 
 --------------------------------------------
 
 
+Minimum distance 0.500 found at (6, 91), level 92, process 4: From [9.00, 6.00] and [8.50, 6.00] to [8.75, 6.00]
 
-Minimum distance 0.500 found at (46, 89)
-	From [7.00, 8.00] and [7.50, 8.00] to [7.25, 8.00]
 
-
-Minimum distance 1.000 found at (0, 12)
-	From [6.00, 9.00] and [7.00, 9.00] to [6.50, 9.00]
-
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (83, 90)
-	From [1.00, 6.00] and [1.00, 6.50] to [1.00, 6.25]
+Minimum distance 0.751 found at (24, 82), level 83, process 2: From [1.00, 2.00] and [1.75, 2.00] to [1.38, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (67, 79)
-	From [7.00, 8.00] and [7.00, 7.75] to [7.00, 7.88]
+Minimum distance 0.984 found at (1, 85), level 86, process 5: From [4.00, 8.00] and [3.02, 8.00] to [3.51, 8.00]
 
---------------------------------------------
 
+Minimum distance 0.500 found at (1, 90), level 91, process 1: From [8.00, 0.00] and [8.50, 0.00] to [8.25, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 65)
-	From [5.00, 2.00] and [5.00, 1.00] to [5.00, 1.50]
+Minimum distance 0.484 found at (20, 93), level 94, process 3: From [4.00, 4.00] and [3.52, 4.00] to [3.76, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (1, 30)
-	From [1.00, 3.00] and [1.00, 4.00] to [1.00, 3.50]
+Minimum distance 0.250 found at (7, 90), level 91, process 4: From [9.00, 6.00] and [8.75, 6.00] to [8.88, 6.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (57, 88)
-	From [7.00, 8.00] and [7.25, 8.00] to [7.12, 8.00]
+Minimum distance 0.492 found at (6, 84), level 85, process 5: From [4.00, 8.00] and [3.51, 8.00] to [3.75, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (31, 77)
-	From [1.00, 4.00] and [1.00, 3.50] to [1.00, 3.75]
+Minimum distance 1.000 found at (0, 4), level 82, process 2: From [3.00, 2.00] and [4.00, 2.00] to [3.50, 2.00]
 
 --------------------------------------------
 
 
-
-Minimum distance 0.500 found at (29, 91)
-	From [6.00, 9.00] and [6.50, 9.00] to [6.25, 9.00]
-
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (1, 18)
-	From [2.00, 0.00] and [2.00, 1.00] to [2.00, 0.50]
+Minimum distance 0.500 found at (2, 80), level 81, process 2: From [3.00, 2.00] and [3.50, 2.00] to [3.25, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 30)
-	From [5.00, 4.00] and [6.00, 4.00] to [5.50, 4.00]
+Minimum distance 0.246 found at (12, 83), level 84, process 5: From [4.00, 8.00] and [3.75, 8.00] to [3.88, 8.00]
 
---------------------------------------------
 
+Minimum distance 0.125 found at (8, 89), level 90, process 4: From [9.00, 6.00] and [8.88, 6.00] to [8.94, 6.00]
 
 
-Minimum distance 0.500 found at (23, 90)
-	From [5.00, 2.00] and [5.00, 1.50] to [5.00, 1.75]
+Minimum distance 0.250 found at (13, 89), level 90, process 1: From [8.00, 0.00] and [8.25, 0.00] to [8.12, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (53, 87)
-	From [8.00, 8.00] and [7.12, 8.00] to [7.56, 8.00]
+Minimum distance 0.242 found at (29, 92), level 93, process 3: From [4.00, 4.00] and [3.76, 4.00] to [3.88, 4.00]
 
 --------------------------------------------
 
-
+--------------------------------------------
 
-Minimum distance 0.500 found at (39, 75)
-	From [2.00, 1.00] and [2.00, 0.50] to [2.00, 0.75]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (43, 90)
-	From [6.00, 9.00] and [6.25, 9.00] to [6.12, 9.00]
+Minimum distance 0.250 found at (10, 79), level 80, process 2: From [3.00, 2.00] and [3.25, 2.00] to [3.12, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (1, 4)
-	From [5.00, 5.00] and [4.00, 5.00] to [4.50, 5.00]
+Minimum distance 0.123 found at (15, 82), level 83, process 5: From [4.00, 8.00] and [3.88, 8.00] to [3.94, 8.00]
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 9), level 89, process 4: From [6.00, 6.00] and [5.00, 6.00] to [5.50, 6.00]
 
 
-Minimum distance 0.438 found at (75, 86)
-	From [8.00, 8.00] and [7.56, 8.00] to [7.78, 8.00]
+Minimum distance 0.125 found at (14, 88), level 89, process 1: From [8.00, 0.00] and [8.12, 0.00] to [8.06, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 17)
-	From [5.00, 8.00] and [6.00, 8.00] to [5.50, 8.00]
+--------------------------------------------
 
+
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (43, 89)
-	From [5.00, 2.00] and [5.00, 1.75] to [5.00, 1.88]
+Minimum distance 0.125 found at (14, 78), level 79, process 2: From [3.00, 2.00] and [3.12, 2.00] to [3.06, 2.00]
 
 --------------------------------------------
 
 
-Minimum distance 0.500 found at (3, 73)
-	From [4.00, 5.00] and [4.50, 5.00] to [4.25, 5.00]
 
---------------------------------------------
+Minimum distance 1.000 found at (0, 1), level 82, process 5: From [2.00, 8.00] and [1.00, 8.00] to [1.50, 8.00]
 
 
+Minimum distance 0.500 found at (0, 87), level 88, process 4: From [6.00, 6.00] and [5.50, 6.00] to [5.75, 6.00]
 
 
-Minimum distance 0.250 found at (33, 72)
-	From [4.00, 5.00] and [4.25, 5.00] to [4.12, 5.00]
+Minimum distance 0.062 found at (23, 87), level 88, process 1: From [8.00, 0.00] and [8.06, 0.00] to [8.03, 0.00]
 
 --------------------------------------------
 
 
-
-Minimum distance 1.000 found at (0, 15)
-	
+--------------------------------------------
 
-Minimum distance 0.125 found at (55, 89)
-	From [4.00, 1.00] and [3.00, 1.00] to [3.50, 1.00]
 
---------------------------------------------
 
-From [6.00, 9.00] and [6.12, 9.00] to [6.06, 9.00]
+Minimum distance 0.062 found at (18, 77), level 78, process 2: From [3.00, 2.00] and [3.06, 2.00] to [3.03, 2.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 0.125 found at (43, 71)
-	From [4.00, 5.00] and [4.12, 5.00] to [4.06, 5.00]
 
---------------------------------------------
 
+Minimum distance 0.121 found at (29, 91), level 92, process 3: From [4.00, 4.00] and [3.88, 4.00] to [3.94, 4.00]
 
 
-Minimum distance 0.500 found at (34, 87)
-	From [6.00, 8.00] and [5.50, 8.00] to [5.75, 8.00]
+Minimum distance 0.500 found at (1, 80), level 81, process 5: From [1.00, 8.00] and [1.50, 8.00] to [1.25, 8.00]
 
 --------------------------------------------
 
 
+Minimum distance 0.250 found at (2, 86), level 87, process 4: From [6.00, 6.00] and [5.75, 6.00] to [5.88, 6.00]
 
-Minimum distance 1.000 found at (0, 71)
-	
 
-Minimum distance 1.000 found at (0, 3)
-	From [7.00, 8.00] and [7.00, 9.00] to [7.00, 8.50]
-From [5.00, 0.00] and [5.00, 1.00] to [5.00, 0.50]
+Minimum distance 0.969 found at (11, 76), level 77, process 2: From [4.00, 2.00] and [3.03, 2.00] to [3.52, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (1, 27)
-	
+--------------------------------------------
 
-Minimum distance 0.062 found at (73, 88)
-	From [6.00, 9.00] and [6.06, 9.00] to [6.03, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.969 found at (1, 86), level 87, process 1: From [9.00, 0.00] and [8.03, 0.00] to [8.52, 0.00]
 
 --------------------------------------------
 
-From [4.00, 8.00] and [3.00, 8.00] to [3.50, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (10, 69)
+Minimum distance 0.250 found at (4, 79), level 80, process 5: From [1.00, 8.00] and [1.25, 8.00] to [1.12, 8.00]
 
 
-Minimum distance 1.000 found at (0, 55)
-		From [4.00, 8.00] and [3.50, 8.00] to [3.75, 8.00]
+Minimum distance 0.125 found at (2, 85), level 86, process 4: From [6.00, 6.00] and [5.88, 6.00] to [5.94, 6.00]
 
---------------------------------------------
 
-From [9.00, 3.00] and [9.00, 4.00] to [9.00, 3.50]
+Minimum distance 0.484 found at (15, 75), level 76, process 2: From [4.00, 2.00] and [3.52, 2.00] to [3.76, 2.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 0.750 found at (54, 68)
-	From [3.00, 8.00] and [3.75, 8.00] to [3.38, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 2)
-	From [3.00, 8.00] and [3.00, 7.00] to [3.00, 7.50]
+Minimum distance 1.000 found at (0, 6), level 75, process 2: From [7.00, 2.00] and [6.00, 2.00] to [6.50, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 8)
-	From [2.00, 1.00] and [1.00, 1.00] to [1.50, 1.00]
+Minimum distance 0.125 found at (4, 78), level 79, process 5: From [1.00, 8.00] and [1.12, 8.00] to [1.06, 8.00]
 
+
+Minimum distance 1.000 found at (0, 7), level 91, process 3: From [2.00, 4.00] and [1.00, 4.00] to [1.50, 4.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (57, 82)
-	From [9.00, 4.00] and [9.00, 3.50] to [9.00, 3.75]
+Minimum distance 0.062 found at (2, 84), level 85, process 4: From [6.00, 6.00] and [5.94, 6.00] to [5.97, 6.00]
 
 
-Minimum distance 1.000 found at (1, 39)
-	From [9.00, 0.00] and [9.00, 1.00] to [9.00, 0.50]
+Minimum distance 0.484 found at (4, 85), level 86, process 1: From [9.00, 0.00] and [8.52, 0.00] to [8.76, 0.00]
 
 --------------------------------------------
-
 
 
-Minimum distance 1.000 found at (0, 10)
-	
 
-Minimum distance 0.500 found at (29, 66)
-	From [9.00, 0.00] and [9.00, 0.50] to [9.00, 0.25]
+Minimum distance 0.500 found at (3, 73), level 74, process 2: From [7.00, 2.00] and [6.50, 2.00] to [6.75, 2.00]
 
 --------------------------------------------
 
-From [0.00, 2.00] and [1.00, 2.00] to [0.50, 2.00]
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 3), level 78, process 5: From [8.00, 8.00] and [9.00, 8.00] to [8.50, 8.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 0.250 found at (40, 65)
-	From [9.00, 0.00] and [9.00, 0.25] to [9.00, 0.12]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 10)
-	From [7.00, 4.00] and [7.00, 3.00] to [7.00, 3.50]
 
---------------------------------------------
 
+Minimum distance 0.250 found at (8, 72), level 73, process 2: From [7.00, 2.00] and [6.75, 2.00] to [6.88, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (59, 81)
-	
+Minimum distance 0.500 found at (0, 76), level 77, process 5: From [8.00, 8.00] and [8.50, 8.00] to [8.25, 8.00]
 
-Minimum distance 0.500 found at (2, 86)
-	From [2.00, 1.00] and [1.50, 1.00] to [1.75, 1.00]
 
---------------------------------------------
+Minimum distance 0.031 found at (12, 83), level 84, process 4: From [6.00, 6.00] and [5.97, 6.00] to [5.98, 6.00]
+
 
-From [9.00, 3.00] and [9.00, 3.75] to [9.00, 3.38]
+Minimum distance 0.242 found at (8, 84), level 85, process 1: From [9.00, 0.00] and [8.76, 0.00] to [8.88, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (40, 64)
-	From [9.00, 1.00] and [9.00, 0.12] to [9.00, 0.56]
+Minimum distance 0.125 found at (9, 71), level 72, process 2: From [7.00, 2.00] and [6.88, 2.00] to [6.94, 2.00]
 
 --------------------------------------------
 
 
-
-Minimum distance 0.438 found at (45, 63)
-	From [9.00, 1.00] and [9.00, 0.56] to [9.00, 0.78]
+--------------------------------------------
 
 
-Minimum distance 0.500 found at (30, 86)
-	
 --------------------------------------------
 
-From [1.00, 2.00] and [0.50, 2.00] to [0.75, 2.00]
 
---------------------------------------------
 
+Minimum distance 0.500 found at (9, 89), level 90, process 3: From [1.00, 4.00] and [1.50, 4.00] to [1.25, 4.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (1, 10)
-	From [1.00, 5.00] and [2.00, 5.00] to [1.50, 5.00]
 
+Minimum distance 0.250 found at (5, 75), level 76, process 5: From [8.00, 8.00] and [8.25, 8.00] to [8.12, 8.00]
 
-Minimum distance 0.375 found at (69, 80)
-	From [9.00, 3.00] and [9.00, 3.38] to [9.00, 3.19]
 
---------------------------------------------
+Minimum distance 0.984 found at (4, 82), level 83, process 4: From [5.00, 6.00] and [5.98, 6.00] to [5.49, 6.00]
 
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (1, 84)
-	From [7.00, 4.00] and [7.00, 3.50] to [7.00, 3.75]
+Minimum distance 0.121 found at (8, 83), level 84, process 1: From [9.00, 0.00] and [8.88, 0.00] to [8.94, 0.00]
 
 --------------------------------------------
+
 
 
+Minimum distance 0.938 found at (6, 70), level 71, process 2: From [6.00, 2.00] and [6.94, 2.00] to [6.47, 2.00]
 
-Minimum distance 0.250 found at (30, 85)
-	
+--------------------------------------------
 
-Minimum distance 0.250 found at (61, 85)
-	
 
-Minimum distance 0.500 found at (19, 61)
-	From [1.00, 5.00] and [1.50, 5.00] to [1.25, 5.00]
 
+
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 9)
-	From [1.00, 2.00] and [0.75, 2.00] to [0.88, 2.00]
+Minimum distance 1.000 found at (3, 20), level 70, process 2: From [0.00, 2.00] and [0.00, 3.00] to [0.00, 2.50]
 
 --------------------------------------------
 
-From [2.00, 1.00] and [1.75, 1.00] to [1.88, 1.00]
+Minimum distance 0.125 found at (6, 74), level 75, process 5: From [8.00, 8.00] and [8.12, 8.00] to [8.06, 8.00]
 
 --------------------------------------------
 
-From [6.00, 2.00] and [6.00, 3.00] to [6.00, 2.50]
 
---------------------------------------------
 
+Minimum distance 0.492 found at (5, 81), level 82, process 4: From [5.00, 6.00] and [5.49, 6.00] to [5.25, 6.00]
 
 
-Minimum distance 0.250 found at (39, 60)
-	From [1.00, 5.00] and [1.25, 5.00] to [1.12, 5.00]
+Minimum distance 0.500 found at (4, 68), level 69, process 2: From [0.00, 2.00] and [0.00, 2.50] to [0.00, 2.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (1, 13)
-	From [0.00, 0.00] and [0.00, 1.00] to [0.00, 0.50]
+Minimum distance 0.062 found at (10, 73), level 74, process 5: From [8.00, 8.00] and [8.06, 8.00] to [8.03, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (23, 83)
-	From [7.00, 3.00] and [7.00, 3.75] to [7.00, 3.38]
+Minimum distance 0.061 found at (12, 82), level 83, process 1: From [9.00, 0.00] and [8.94, 0.00] to [8.97, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 3)
-	
+Minimum distance 0.250 found at (14, 88), level 89, process 3: From [1.00, 4.00] and [1.25, 4.00] to [1.12, 4.00]
 
-Minimum distance 0.500 found at (7, 58)
-	From [0.00, 0.00] and [0.00, 0.50] to [0.00, 0.25]
-From [4.00, 2.00] and [4.00, 1.00] to [4.00, 1.50]
-
 --------------------------------------------
+
+
 
+Minimum distance 0.250 found at (4, 67), level 68, process 2: From [0.00, 2.00] and [0.00, 2.25] to [0.00, 2.12]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 35)
-	From [4.00, 4.00] and [3.00, 4.00] to [3.50, 4.00]
+Minimum distance 0.969 found at (3, 72), level 73, process 5: From [9.00, 8.00] and [8.03, 8.00] to [8.52, 8.00]
 
---------------------------------------------
 
+Minimum distance 0.246 found at (8, 80), level 81, process 4: From [5.00, 6.00] and [5.25, 6.00] to [5.12, 6.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 6)
-	From [6.00, 5.00] and [5.00, 5.00] to [5.50, 5.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (51, 77)
-	From [4.00, 4.00] and [3.50, 4.00] to [3.75, 4.00]
 
 
-Minimum distance 1.000 found at (2, 27)
-	From [0.00, 8.00] and [0.00, 9.00] to [0.00, 8.50]
+Minimum distance 0.030 found at (12, 81), level 82, process 1: From [9.00, 0.00] and [8.97, 0.00] to [8.98, 0.00]
 
 --------------------------------------------
 
 
+
+Minimum distance 1.000 found at (0, 1), level 80, process 4: From [1.00, 6.00] and [0.00, 6.00] to [0.50, 6.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (3, 56)
-	From [0.00, 8.00] and [0.00, 8.50] to [0.00, 8.25]
+Minimum distance 0.125 found at (5, 66), level 67, process 2: From [0.00, 2.00] and [0.00, 2.12] to [0.00, 2.06]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (2, 16)
-	From [6.00, 3.00] and [7.00, 3.00] to [6.50, 3.00]
+Minimum distance 0.484 found at (3, 71), level 72, process 5: From [9.00, 8.00] and [8.52, 8.00] to [8.76, 8.00]
 
 
-Minimum distance 1.000 found at (0, 11)
-	From [6.00, 0.00] and [6.00, 1.00] to [6.00, 0.50]
+Minimum distance 0.062 found at (5, 65), level 66, process 2: From [0.00, 2.00] and [0.00, 2.06] to [0.00, 2.03]
 
 --------------------------------------------
-
 
 
-Minimum distance 0.500 found at (51, 83)
-	
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 3)
-	From [2.00, 4.00] and [2.00, 5.00] to [2.00, 4.50]
+Minimum distance 0.969 found at (34, 64), level 65, process 2: From [0.00, 3.00] and [0.00, 2.03] to [0.00, 2.52]
 
 --------------------------------------------
 
-From [4.00, 1.00] and [4.00, 1.50] to [4.00, 1.25]
 
---------------------------------------------
+
+Minimum distance 0.242 found at (4, 70), level 71, process 5: From [9.00, 8.00] and [8.76, 8.00] to [8.88, 8.00]
+
 
+Minimum distance 0.500 found at (2, 78), level 79, process 4: From [1.00, 6.00] and [0.50, 6.00] to [0.75, 6.00]
 
 
-Minimum distance 0.500 found at (28, 54)
-	From [6.00, 3.00] and [6.50, 3.00] to [6.25, 3.00]
+Minimum distance 0.015 found at (21, 80), level 81, process 1: From [9.00, 0.00] and [8.98, 0.00] to [8.99, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (58, 83)
-	From [6.00, 5.00] and [5.50, 5.00] to [5.75, 5.00]
+Minimum distance 0.125 found at (16, 87), level 88, process 3: From [1.00, 4.00] and [1.12, 4.00] to [1.06, 4.00]
 
 --------------------------------------------
 
-
+--------------------------------------------
 
-Minimum distance 1.000 found at (2, 18)
-	From [1.00, 1.00] and [1.00, 0.00] to [1.00, 0.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (22, 52)
-	From [1.00, 1.00] and [1.00, 0.50] to [1.00, 0.75]
 
---------------------------------------------
+Minimum distance 1.000 found at (0, 55), level 70, process 5: From [5.00, 8.00] and [5.00, 9.00] to [5.00, 8.50]
 
 
+Minimum distance 0.250 found at (4, 77), level 78, process 4: From [1.00, 6.00] and [0.75, 6.00] to [0.88, 6.00]
 
-Minimum distance 0.500 found at (33, 75)
-	
 
-Minimum distance 0.250 found at (55, 82)
-	
+Minimum distance 0.484 found at (40, 63), level 64, process 2: From [0.00, 3.00] and [0.00, 2.52] to [0.00, 2.76]
 
-Minimum distance 1.000 found at (4, 24)
-	From [6.00, 5.00] and [6.00, 4.00] to [6.00, 4.50]
+--------------------------------------------
 
+
 --------------------------------------------
 
-From [2.00, 5.00] and [2.00, 4.50] to [2.00, 4.75]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 14)
-	From [3.00, 5.00] and [4.00, 5.00] to [3.50, 5.00]
+Minimum distance 1.000 found at (0, 1), level 80, process 1: From [6.00, 0.00] and [7.00, 0.00] to [6.50, 0.00]
 
 --------------------------------------------
+
 
-From [4.00, 1.00] and [4.00, 1.25] to [4.00, 1.12]
 
+Minimum distance 0.242 found at (45, 62), level 63, process 2: From [0.00, 3.00] and [0.00, 2.76] to [0.00, 2.88]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (4, 24)
+Minimum distance 0.500 found at (3, 68), level 69, process 5: From [5.00, 8.00] and [5.00, 8.50] to [5.00, 8.25]
 
 
-Minimum distance 1.000 found at (0, 15)
-	
+Minimum distance 0.875 found at (4, 76), level 77, process 4: From [0.00, 6.00] and [0.88, 6.00] to [0.44, 6.00]
 
-Minimum distance 1.000 found at (0, 27)
-	From [2.00, 5.00] and [1.00, 5.00] to [1.50, 5.00]
 
+Minimum distance 1.000 found at (5, 23), level 62, process 2: From [9.00, 3.00] and [8.00, 3.00] to [8.50, 3.00]
+
 --------------------------------------------
-From [1.00, 0.00] and [2.00, 0.00] to [1.50, 0.00]
+
 
 --------------------------------------------
 
-	From [9.00, 3.00] and [9.00, 2.00] to [9.00, 2.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (9, 49)
-	From [9.00, 3.00] and [9.00, 2.50] to [9.00, 2.75]
+Minimum distance 0.500 found at (6, 60), level 61, process 2: From [9.00, 3.00] and [8.50, 3.00] to [8.75, 3.00]
 
 --------------------------------------------
 
 
 
+Minimum distance 0.250 found at (3, 67), level 68, process 5: From [5.00, 8.00] and [5.00, 8.25] to [5.00, 8.12]
 
-Minimum distance 1.000 found at (0, 11)
-	
 
-Minimum distance 1.000 found at (9, 10)
-	From [2.00, 2.00] and [3.00, 2.00] to [2.50, 2.00]
+Minimum distance 0.438 found at (4, 75), level 76, process 4: From [0.00, 6.00] and [0.44, 6.00] to [0.22, 6.00]
 
+
+Minimum distance 0.500 found at (0, 78), level 79, process 1: From [7.00, 0.00] and [6.50, 0.00] to [6.75, 0.00]
+
 --------------------------------------------
+
 
 
+Minimum distance 0.062 found at (23, 86), level 87, process 3: From [1.00, 4.00] and [1.06, 4.00] to [1.03, 4.00]
 
-Minimum distance 1.000 found at (0, 15)
-	From [0.00, 9.00] and [1.00, 9.00] to [0.50, 9.00]
+--------------------------------------------
 
+
 --------------------------------------------
 
-From [6.00, 5.00] and [6.00, 6.00] to [6.00, 5.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (20, 47)
-	From [2.00, 2.00] and [2.50, 2.00] to [2.25, 2.00]
+Minimum distance 0.250 found at (8, 59), level 60, process 2: From [9.00, 3.00] and [8.75, 3.00] to [8.88, 3.00]
 
 --------------------------------------------
+
 
 
+Minimum distance 0.875 found at (52, 66), level 67, process 5: From [5.00, 9.00] and [5.00, 8.12] to [5.00, 8.56]
 
-Minimum distance 0.500 found at (11, 80)
-	From [3.00, 5.00] and [3.50, 5.00] to [3.25, 5.00]
 
+Minimum distance 0.250 found at (3, 77), level 78, process 1: From [7.00, 0.00] and [6.75, 0.00] to [6.88, 0.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (24, 46)
-	From [3.00, 2.00] and [2.25, 2.00] to [2.62, 2.00]
+Minimum distance 0.125 found at (14, 58), level 59, process 2: From [9.00, 3.00] and [8.88, 3.00] to [8.94, 3.00]
 
 --------------------------------------------
 
+
+--------------------------------------------
 
 
-Minimum distance 0.500 found at (7, 72)
-	From [0.00, 9.00] and [0.50, 9.00] to [0.25, 9.00]
 
+Minimum distance 1.000 found at (0, 2), level 75, process 4: From [3.00, 6.00] and [2.00, 6.00] to [2.50, 6.00]
 
-Minimum distance 0.500 found at (35, 80)
-	
 
-Minimum distance 1.000 found at (10, 18)
-	From [8.00, 5.00] and [8.00, 4.00] to [8.00, 4.50]
+Minimum distance 0.062 found at (15, 57), level 58, process 2: From [9.00, 3.00] and [8.94, 3.00] to [8.97, 3.00]
 
 --------------------------------------------
 
 
---------------------------------------------
 
-From [6.00, 5.00] and [6.00, 5.50] to [6.00, 5.25]
+Minimum distance 1.000 found at (0, 17), level 66, process 5: From [0.00, 8.00] and [0.00, 9.00] to [0.00, 8.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (41, 81)
-	From [2.00, 5.00] and [1.50, 5.00] to [1.75, 5.00]
+Minimum distance 0.031 found at (15, 56), level 57, process 2: From [9.00, 3.00] and [8.97, 3.00] to [8.98, 3.00]
 
 --------------------------------------------
-
-
 
-Minimum distance 0.500 found at (22, 44)
-	From [8.00, 4.00] and [8.00, 4.50] to [8.00, 4.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (59, 71)
-	From [1.00, 9.00] and [0.25, 9.00] to [0.62, 9.00]
+Minimum distance 0.500 found at (0, 73), level 74, process 4: From [3.00, 6.00] and [2.50, 6.00] to [2.75, 6.00]
 
 
-Minimum distance 1.000 found at (10, 15)
-	From [1.00, 9.00] and [1.00, 8.00] to [1.00, 8.50]
+Minimum distance 0.125 found at (7, 76), level 77, process 1: From [7.00, 0.00] and [6.88, 0.00] to [6.94, 0.00]
 
 --------------------------------------------
 
 
+
+Minimum distance 0.031 found at (23, 85), level 86, process 3: From [1.00, 4.00] and [1.03, 4.00] to [1.02, 4.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (25, 79)
-	From [3.00, 5.00] and [3.25, 5.00] to [3.12, 5.00]
+Minimum distance 0.500 found at (0, 64), level 65, process 5: From [0.00, 8.00] and [0.00, 8.50] to [0.00, 8.25]
 
 --------------------------------------------
+
 
 
+Minimum distance 0.016 found at (26, 55), level 56, process 2: From [9.00, 3.00] and [8.98, 3.00] to [8.99, 3.00]
 
-Minimum distance 1.000 found at (11, 18)
-	From [3.00, 4.00] and [3.00, 5.00] to [3.00, 4.50]
+--------------------------------------------
 
+
 --------------------------------------------
+
 
 
+Minimum distance 0.250 found at (1, 72), level 73, process 4: From [3.00, 6.00] and [2.75, 6.00] to [2.88, 6.00]
 
-Minimum distance 1.000 found at (0, 20)
-	
 
-Minimum distance 0.500 found at (16, 41)
-	From [3.00, 4.00] and [3.00, 4.50] to [3.00, 4.25]
+Minimum distance 0.062 found at (7, 75), level 76, process 1: From [7.00, 0.00] and [6.94, 0.00] to [6.97, 0.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.000 found at (0, 4)
-	From [7.00, 0.00] and [7.00, 1.00] to [7.00, 0.50]
 
+Minimum distance 0.250 found at (0, 63), level 64, process 5: From [0.00, 8.00] and [0.00, 8.25] to [0.00, 8.12]
+
 --------------------------------------------
 
 
-From [3.00, 5.00] and [3.00, 6.00] to [3.00, 5.50]
 
+Minimum distance 0.008 found at (28, 54), level 55, process 2: From [9.00, 3.00] and [8.99, 3.00] to [9.00, 3.00]
+
 --------------------------------------------
+
 
 
+Minimum distance 0.996 found at (26, 53), level 54, process 2: From [8.00, 3.00] and [9.00, 3.00] to [8.50, 3.00]
 
-Minimum distance 1.000 found at (12, 17)
-	From [6.00, 7.00] and [5.00, 7.00] to [5.50, 7.00]
+--------------------------------------------
 
 --------------------------------------------
 
 
 
+Minimum distance 0.875 found at (0, 71), level 72, process 4: From [2.00, 6.00] and [2.88, 6.00] to [2.44, 6.00]
 
 
-Minimum distance 1.000 found at (0, 3)
-	From [4.00, 9.00] and [4.00, 8.00] to [4.00, 8.50]
-Minimum distance 1.000 found at (24, 32)
-	From [2.00, 0.75] and [1.00, 0.75] to [1.50, 0.75]
 
+Minimum distance 0.125 found at (0, 62), level 63, process 5: From [0.00, 8.00] and [0.00, 8.12] to [0.00, 8.06]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (16, 78)
-	From [4.00, 5.00] and [3.12, 5.00] to [3.56, 5.00]
+Minimum distance 0.031 found at (18, 74), level 75, process 1: From [7.00, 0.00] and [6.97, 0.00] to [6.98, 0.00]
 
 --------------------------------------------
-
 
 
-Minimum distance 1.000 found at (0, 8)
-	
 
-Minimum distance 1.000 found at (0, 59)
-	From [5.00, 6.00] and [6.00, 6.00] to [5.50, 6.00]
+Minimum distance 0.498 found at (32, 52), level 53, process 2: From [8.00, 3.00] and [8.50, 3.00] to [8.25, 3.00]
 
 --------------------------------------------
 
 
 --------------------------------------------
 
-From [0.00, 9.00] and [0.00, 8.00] to [0.00, 8.50]
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 11), level 71, process 4: From [0.00, 7.00] and [1.00, 7.00] to [0.50, 7.00]
 
 
-Minimum distance 1.000 found at (17, 24)
-	From [4.09, 4.00] and [4.06, 5.00] to [4.08, 4.50]
 
---------------------------------------------
 
+Minimum distance 0.938 found at (29, 61), level 62, process 5: From [0.00, 9.00] and [0.00, 8.06] to [0.00, 8.53]
 
+--------------------------------------------
 
-Minimum distance 1.008 found at (10, 25)
 
 
-Minimum distance 0.500 found at (31, 68)
-	From [4.00, 8.00] and [4.00, 8.50] to [4.00, 8.25]
-	From [1.00, 6.00] and [1.12, 5.00] to [1.06, 5.50]
+Minimum distance 0.016 found at (18, 73), level 74, process 1: From [7.00, 0.00] and [6.98, 0.00] to [6.99, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.024 found at (3, 23)
+Minimum distance 0.249 found at (36, 51), level 52, process 2: From [8.00, 3.00] and [8.25, 3.00] to [8.12, 3.00]
 
 --------------------------------------------
 
-	From [8.00, 1.00] and [9.00, 0.78] to [8.50, 0.89]
 
 --------------------------------------------
 
 
 
+Minimum distance 0.500 found at (6, 69), level 70, process 4: From [0.00, 7.00] and [0.50, 7.00] to [0.25, 7.00]
+Minimum distance 0.984 found at (17, 84), level 85, process 3: From [2.00, 4.00] and [1.02, 4.00] to [1.51, 4.00]
 
-
-Minimum distance 1.000 found at (1, 2)
-	
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 4)
-	From [9.00, 4.00] and [9.00, 5.00] to [9.00, 4.50]
 
---------------------------------------------
 
-From [5.00, 7.00] and [5.00, 8.00] to [5.00, 7.50]
+Minimum distance 0.469 found at (29, 60), level 61, process 5: From [0.00, 9.00] and [0.00, 8.53] to [0.00, 8.77]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (42, 77)
-	From [0.00, 9.00] and [0.00, 8.50] to [0.00, 8.75]
-Minimum distance 1.031 found at (18, 25)
-	From [7.00, 4.75] and [6.00, 4.50] to [6.50, 4.62]
+Minimum distance 0.008 found at (18, 72), level 73, process 1: From [7.00, 0.00] and [6.99, 0.00] to [7.00, 0.00]
 
 --------------------------------------------
 
 
 
+Minimum distance 0.875 found at (28, 50), level 51, process 2: From [9.00, 3.00] and [8.12, 3.00] to [8.56, 3.00]
 
 --------------------------------------------
 
-Minimum distance 1.031 found at (22, 27)
-	From [0.00, 8.25] and [1.00, 8.50] to [0.50, 8.38]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (38, 66)
-	From [5.00, 7.00] and [5.00, 7.50] to [5.00, 7.25]
+Minimum distance 0.250 found at (13, 68), level 69, process 4: From [0.00, 7.00] and [0.25, 7.00] to [0.12, 7.00]
 
 
-Minimum distance 1.107 found at (26, 29)
-	From [3.00, 4.25] and [4.08, 4.50] to [3.54, 4.38]
+Minimum distance 0.438 found at (28, 49), level 50, process 2: From [9.00, 3.00] and [8.56, 3.00] to [8.78, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.118 found at (15, 25)
-	
+Minimum distance 0.234 found at (32, 59), level 60, process 5: From [0.00, 9.00] and [0.00, 8.77] to [0.00, 8.88]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (43, 76)
-	From [0.00, 9.00] and [0.00, 8.75] to [0.00, 8.88]
-From [9.00, 4.75] and [8.00, 4.25] to [8.50, 4.50]
+Minimum distance 0.219 found at (32, 48), level 49, process 2: From [9.00, 3.00] and [8.78, 3.00] to [8.89, 3.00]
 
 --------------------------------------------
 
+--------------------------------------------
 
 
-Minimum distance 1.174 found at (11, 26)
-	From [0.00, 5.00] and [1.06, 5.50] to [0.53, 5.25]
 
---------------------------------------------
+Minimum distance 0.125 found at (17, 67), level 68, process 4: From [0.00, 7.00] and [0.12, 7.00] to [0.06, 7.00]
 
 
+Minimum distance 0.996 found at (5, 71), level 72, process 1: From [6.00, 0.00] and [7.00, 0.00] to [6.50, 0.00]
 
-Minimum distance 1.000 found at (4, 7)
-	From [3.00, 8.00] and [3.00, 9.00] to [3.00, 8.50]
+--------------------------------------------
 
 
-Minimum distance 0.500 found at (38, 76)
-	From [9.00, 5.00] and [9.00, 4.50] to [9.00, 4.75]
 
---------------------------------------------
 
+Minimum distance 0.117 found at (41, 58), level 59, process 5: From [0.00, 9.00] and [0.00, 8.88] to [0.00, 8.94]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (49, 79)
-	From [5.00, 6.00] and [5.50, 6.00] to [5.25, 6.00]
+Minimum distance 1.000 found at (5, 9), level 48, process 2: From [6.00, 3.00] and [7.00, 3.00] to [6.50, 3.00]
 
 --------------------------------------------
 
@@ -1729,541 +1545,436 @@ Minimum distance 0.500 found at (49, 79)
 
 
 
-Minimum distance 1.250 found at (12, 20)
-	From [7.00, 2.00] and [6.25, 3.00] to [6.62, 2.50]
+Minimum distance 0.062 found at (23, 66), level 67, process 4: From [0.00, 7.00] and [0.06, 7.00] to [0.03, 7.00]
 
---------------------------------------------
 
+Minimum distance 0.498 found at (13, 70), level 71, process 1: From [6.00, 0.00] and [6.50, 0.00] to [6.25, 0.00]
 
+--------------------------------------------
 
-Minimum distance 1.329 found at (10, 15)
-	From [8.00, 7.00] and [7.00, 7.88] to [7.50, 7.44]
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 2), level 84, process 3: From [7.00, 4.00] and [6.00, 4.00] to [6.50, 4.00]
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (22, 64)
-	From [3.00, 9.00] and [3.00, 8.50] to [3.00, 8.75]
 
 
-Minimum distance 1.346 found at (9, 20)
-	From [1.00, 2.00] and [1.50, 0.75] to [1.25, 1.38]
+Minimum distance 0.059 found at (49, 57), level 58, process 5: From [0.00, 9.00] and [0.00, 8.94] to [0.00, 8.97]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.410 found at (11, 21)
+Minimum distance 0.500 found at (9, 46), level 47, process 2: From [7.00, 3.00] and [6.50, 3.00] to [6.75, 3.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (0, 25)
-		From [0.19, 7.00] and [0.50, 8.38] to [0.34, 7.69]
 
---------------------------------------------
 
+Minimum distance 0.969 found at (20, 65), level 66, process 4: From [1.00, 7.00] and [0.03, 7.00] to [0.52, 7.00]
 
 
-Minimum distance 1.414 found at (1, 3)
-	From [4.00, 1.00] and [5.00, 2.00] to [4.50, 1.50]
+Minimum distance 1.000 found at (0, 3), level 70, process 1: From [2.00, 0.00] and [1.00, 0.00] to [1.50, 0.00]
 
 --------------------------------------------
-
 
-Minimum distance 0.250 found at (22, 63)
-	From [3.00, 9.00] and [3.00, 8.75] to [3.00, 8.88]
 
 
-Minimum distance 1.000 found at (0, 24)
-	From [8.00, 8.00] and [7.00, 8.00] to [7.50, 8.00]
+Minimum distance 0.250 found at (10, 45), level 46, process 2: From [7.00, 3.00] and [6.75, 3.00] to [6.88, 3.00]
 
 --------------------------------------------
 
-From [3.00, 8.00] and [3.00, 7.00] to [3.00, 7.50]
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 2), level 57, process 5: From [2.00, 9.00] and [3.00, 9.00] to [2.50, 9.00]
 
-
+--------------------------------------------
 
-Minimum distance 0.707 found at (3, 25)
-	From [4.00, 1.00] and [4.50, 1.50] to [4.25, 1.25]
 
---------------------------------------------
 
+Minimum distance 0.125 found at (12, 44), level 45, process 2: From [7.00, 3.00] and [6.88, 3.00] to [6.94, 3.00]
 
 --------------------------------------------
 
+--------------------------------------------
 
 
-Minimum distance 1.414 found at (2, 4)
-	From [6.00, 1.00] and [7.00, 0.00] to [6.50, 0.50]
 
---------------------------------------------
+Minimum distance 0.484 found at (22, 64), level 65, process 4: From [1.00, 7.00] and [0.52, 7.00] to [0.76, 7.00]
 
 
 
-Minimum distance 1.000 found at (4, 21)
-	From [0.00, 4.00] and [0.00, 3.00] to [0.00, 3.50]
+Minimum distance 0.500 found at (3, 55), level 56, process 5: From [3.00, 9.00] and [2.50, 9.00] to [2.75, 9.00]
 
 --------------------------------------------
 
 
-Minimum distance 0.500 found at (30, 74)
-	
 
-Minimum distance 1.000 found at (0, 35)
-	From [8.00, 0.00] and [7.00, 0.00] to [7.50, 0.00]
+Minimum distance 0.500 found at (4, 68), level 69, process 1: From [2.00, 0.00] and [1.50, 0.00] to [1.75, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (42, 74)
-	From [8.00, 8.00] and [7.50, 8.00] to [7.75, 8.00]
+Minimum distance 0.062 found at (22, 43), level 44, process 2: From [7.00, 3.00] and [6.94, 3.00] to [6.97, 3.00]
 
 --------------------------------------------
 
-From [3.00, 8.00] and [3.00, 7.50] to [3.00, 7.75]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.707 found at (4, 23)
-	From [6.00, 1.00] and [6.50, 0.50] to [6.25, 0.75]
+Minimum distance 0.242 found at (26, 63), level 64, process 4: From [1.00, 7.00] and [0.76, 7.00] to [0.88, 7.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.450 found at (1, 14)
-	From [4.00, 3.00] and [3.54, 4.38] to [3.77, 3.69]
+Minimum distance 0.031 found at (22, 42), level 43, process 2: From [7.00, 3.00] and [6.97, 3.00] to [6.98, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (6, 61)
-	From [0.00, 4.00] and [0.00, 3.50] to [0.00, 3.75]
+Minimum distance 0.250 found at (7, 54), level 55, process 5: From [3.00, 9.00] and [2.75, 9.00] to [2.88, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.121 found at (26, 62), level 63, process 4: From [1.00, 7.00] and [0.88, 7.00] to [0.94, 7.00]
 
 
+Minimum distance 0.016 found at (24, 41), level 42, process 2: From [7.00, 3.00] and [6.98, 3.00] to [6.99, 3.00]
 
-Minimum distance 1.510 found at (9, 17)
-	From [2.62, 2.00] and [1.25, 1.38] to [1.94, 1.69]
-
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 1.572 found at (5, 13)
-	From [1.00, 3.75] and [0.53, 5.25] to [0.77, 4.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.581 found at (4, 8)
-	From [4.00, 6.50] and [5.50, 7.00] to [4.75, 6.75]
+Minimum distance 0.250 found at (4, 67), level 68, process 1: From [2.00, 0.00] and [1.75, 0.00] to [1.88, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (39, 60)
-	From [0.00, 3.00] and [0.00, 3.75] to [0.00, 3.38]
+Minimum distance 0.500 found at (1, 82), level 83, process 3: From [6.00, 4.00] and [6.50, 4.00] to [6.25, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (46, 73)
-	
+Minimum distance 0.125 found at (11, 53), level 54, process 5: From [3.00, 9.00] and [2.88, 9.00] to [2.94, 9.00]
 
-Minimum distance 1.602 found at (0, 11)
-	From [9.00, 8.00] and [7.50, 7.44] to [8.25, 7.72]
 
---------------------------------------------
+Minimum distance 0.061 found at (30, 61), level 62, process 4: From [1.00, 7.00] and [0.94, 7.00] to [0.97, 7.00]
 
 
+Minimum distance 0.992 found at (9, 40), level 41, process 2: From [6.00, 3.00] and [6.99, 3.00] to [6.50, 3.00]
 
-Minimum distance 1.650 found at (2, 3)
-	From [2.06, 9.00] and [3.38, 8.00] to [2.72, 8.50]
-
 --------------------------------------------
-
 
 
-Minimum distance 1.768 found at (1, 9)
-	From [3.00, 0.00] and [4.25, 1.25] to [3.62, 0.62]
-
 --------------------------------------------
 
-From [3.00, 7.00] and [3.00, 7.75] to [3.00, 7.38]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.790 found at (6, 8)
-	From [6.62, 2.50] and [6.25, 0.75] to [6.44, 1.62]
+Minimum distance 0.125 found at (4, 66), level 67, process 1: From [2.00, 0.00] and [1.88, 0.00] to [1.94, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.820 found at (2, 5)
-	From [9.00, 2.75] and [8.50, 4.50] to [8.75, 3.62]
+Minimum distance 0.496 found at (11, 39), level 40, process 2: From [6.00, 3.00] and [6.50, 3.00] to [6.25, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.994 found at (6, 11)
+Minimum distance 0.062 found at (13, 52), level 53, process 5: From [3.00, 9.00] and [2.94, 9.00] to [2.97, 9.00]
 
 
-Minimum distance 1.000 found at (0, 1)
-	From [1.00, 2.00] and [1.00, 3.00] to [1.00, 2.50]
+Minimum distance 1.000 found at (0, 3), level 61, process 4: From [4.00, 7.00] and [3.00, 7.00] to [3.50, 7.00]
 
---------------------------------------------
 
-	From [1.94, 1.69] and [3.62, 0.62] to [2.78, 1.16]
+Minimum distance 0.248 found at (14, 38), level 39, process 2: From [6.00, 3.00] and [6.25, 3.00] to [6.12, 3.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 2.189 found at (2, 10)
-	From [8.50, 0.89] and [6.44, 1.62] to [7.47, 1.26]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.462 found at (2, 9)
-	From [6.50, 4.62] and [8.75, 3.62] to [7.62, 4.12]
+Minimum distance 0.031 found at (13, 51), level 52, process 5: From [3.00, 9.00] and [2.97, 9.00] to [2.98, 9.00]
 
 
-Minimum distance 1.000 found at (4, 23)
-	From [3.00, 2.00] and [4.00, 2.00] to [3.50, 2.00]
+Minimum distance 0.500 found at (0, 59), level 60, process 4: From [4.00, 7.00] and [3.50, 7.00] to [3.75, 7.00]
 
---------------------------------------------
 
+Minimum distance 0.124 found at (16, 37), level 38, process 2: From [6.00, 3.00] and [6.12, 3.00] to [6.06, 3.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 2.510 found at (2, 7)
-	From [0.34, 7.69] and [2.72, 8.50] to [1.53, 8.09]
+Minimum distance 0.062 found at (5, 65), level 66, process 1: From [2.00, 0.00] and [1.94, 0.00] to [1.97, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.574 found at (0, 4)
-	From [6.00, 9.00] and [4.75, 6.75] to [5.38, 7.88]
+Minimum distance 0.062 found at (18, 36), level 37, process 2: From [6.00, 3.00] and [6.06, 3.00] to [6.03, 3.00]
 
 --------------------------------------------
-
 
 
-
-Minimum distance 1.000 found at (0, 1)
-	
+--------------------------------------------
 
-Minimum distance 0.500 found at (15, 77)
-	From [8.00, 0.00] and [7.50, 0.00] to [7.75, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (16, 58)
-	From [3.00, 2.00] and [3.50, 2.00] to [3.25, 2.00]
-From [2.00, 5.00] and [2.00, 4.00] to [2.00, 4.50]
+Minimum distance 1.000 found at (5, 14), level 36, process 2: From [4.00, 3.00] and [3.00, 3.00] to [3.50, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.717 found at (1, 4)
-	From [3.77, 3.69] and [2.78, 1.16] to [3.28, 2.42]
+Minimum distance 0.016 found at (41, 50), level 51, process 5: From [3.00, 9.00] and [2.98, 9.00] to [2.99, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.250 found at (1, 58), level 59, process 4: From [4.00, 7.00] and [3.75, 7.00] to [3.88, 7.00]
 
 
-Minimum distance 2.871 found at (3, 4)
-	From [7.47, 1.26] and [7.62, 4.12] to [7.55, 2.69]
+Minimum distance 0.031 found at (6, 64), level 65, process 1: From [2.00, 0.00] and [1.97, 0.00] to [1.98, 0.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 2.879 found at (2, 4)
-	From [8.25, 7.72] and [5.38, 7.88] to [6.81, 7.80]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.258 found at (1, 3)
-	From [0.77, 4.50] and [3.28, 2.42] to [2.02, 3.46]
+Minimum distance 0.500 found at (5, 34), level 35, process 2: From [4.00, 3.00] and [3.50, 3.00] to [3.75, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.794 found at (0, 4)
-	From [0.00, 0.25] and [2.02, 3.46] to [1.01, 1.86]
+Minimum distance 0.250 found at (5, 81), level 82, process 3: From [6.00, 4.00] and [6.25, 4.00] to [6.12, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 5.158 found at (1, 2)
-	From [7.55, 2.69] and [6.81, 7.80] to [7.18, 5.24]
-
---------------------------------------------
+Minimum distance 0.992 found at (14, 49), level 50, process 5: From [2.00, 9.00] and [2.99, 9.00] to [2.50, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.125 found at (3, 57), level 58, process 4: From [4.00, 7.00] and [3.88, 7.00] to [3.94, 7.00]
 
 
-Minimum distance 0.500 found at (3, 72)
-	From [1.00, 3.00] and [1.00, 2.50] to [1.00, 2.75]
+Minimum distance 0.250 found at (5, 33), level 34, process 2: From [4.00, 3.00] and [3.75, 3.00] to [3.88, 3.00]
 
 --------------------------------------------
 
 
 
+
+--------------------------------------------
 
-Minimum distance 6.260 found at (0, 1)
-	From [1.53, 8.09] and [1.01, 1.86] to [1.27, 4.97]
 
 --------------------------------------------
 
 
 
-Minimum distance 5.915 found at (0, 1)
-	From [7.18, 5.24] and [1.27, 4.97] to [4.23, 5.11]
+Minimum distance 0.016 found at (8, 63), level 64, process 1: From [2.00, 0.00] and [1.98, 0.00] to [1.99, 0.00]
 
 --------------------------------------------
 
+Minimum distance 0.125 found at (11, 32), level 33, process 2: From [4.00, 3.00] and [3.88, 3.00] to [3.94, 3.00]
 
-Minimum distance 1.000 found at (4, 23)
-	
+--------------------------------------------
 
-Minimum distance 0.500 found at (11, 71)
-	
 
----------New A: 
-4.23	5.11	
-Returning root of this subtree to manager
-From [7.00, 0.00] and [7.00, 1.00] to [7.00, 0.50]
 
+Minimum distance 0.938 found at (14, 31), level 32, process 2: From [3.00, 3.00] and [3.94, 3.00] to [3.47, 3.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 19)
-	From [6.00, 9.00] and [6.00, 8.00] to [6.00, 8.50]
+Minimum distance 0.496 found at (16, 48), level 49, process 5: From [2.00, 9.00] and [2.50, 9.00] to [2.25, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.062 found at (4, 56), level 57, process 4: From [4.00, 7.00] and [3.94, 7.00] to [3.97, 7.00]
 
 
-Minimum distance 0.500 found at (27, 56)
-	From [2.00, 5.00] and [2.00, 4.50] to [2.00, 4.75]
+Minimum distance 1.000 found at (5, 6), level 31, process 2: From [1.00, 3.00] and [2.00, 3.00] to [1.50, 3.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (4, 75)
-	From [6.00, 9.00] and [6.00, 8.50] to [6.00, 8.75]
 
 --------------------------------------------
+
+
 
-From [7.00, 0.00] and [7.00, 0.50] to [7.00, 0.25]
+Minimum distance 0.992 found at (7, 62), level 63, process 1: From [1.00, 0.00] and [1.99, 0.00] to [1.50, 0.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (1, 29)
-	From [4.00, 3.00] and [4.00, 2.00] to [4.00, 2.50]
+Minimum distance 0.500 found at (5, 29), level 30, process 2: From [1.00, 3.00] and [1.50, 3.00] to [1.25, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (34, 70)
-	
+Minimum distance 0.248 found at (18, 47), level 48, process 5: From [2.00, 9.00] and [2.25, 9.00] to [2.12, 9.00]
 
-Minimum distance 0.250 found at (38, 74)
-	
 
-Minimum distance 0.250 found at (27, 55)
-	From [2.00, 4.00] and [2.00, 4.75] to [2.00, 4.38]
+Minimum distance 0.031 found at (7, 55), level 56, process 4: From [4.00, 7.00] and [3.97, 7.00] to [3.98, 7.00]
 
+
+Minimum distance 0.250 found at (6, 28), level 29, process 2: From [1.00, 3.00] and [1.25, 3.00] to [1.12, 3.00]
+
 --------------------------------------------
 
-From [6.00, 9.00] and [6.00, 8.75] to [6.00, 8.88]
 
 --------------------------------------------
 
-From [7.00, 0.00] and [7.00, 0.25] to [7.00, 0.12]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.125 found at (62, 73)
-	From [6.00, 9.00] and [6.00, 8.88] to [6.00, 8.94]
+Minimum distance 1.000 found at (0, 8), level 62, process 1: From [0.00, 0.00] and [0.00, 1.00] to [0.00, 0.50]
 
 --------------------------------------------
-
 
-Minimum distance 1.000 found at (4, 19)
-	From [0.00, 6.00] and [0.00, 7.00] to [0.00, 6.50]
 
 
-Minimum distance 1.000 found at (1, 9)
-	From [6.00, 6.00] and [6.00, 5.00] to [6.00, 5.50]
+Minimum distance 0.125 found at (6, 27), level 28, process 2: From [1.00, 3.00] and [1.12, 3.00] to [1.06, 3.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 32)
-	
+Minimum distance 0.062 found at (7, 26), level 27, process 2: From [1.00, 3.00] and [1.06, 3.00] to [1.03, 3.00]
 
 --------------------------------------------
 
-From [4.00, 6.00] and [4.00, 7.00] to [4.00, 6.50]
 
---------------------------------------------
+Minimum distance 0.124 found at (22, 46), level 47, process 5: From [2.00, 9.00] and [2.12, 9.00] to [2.06, 9.00]
 
 
+Minimum distance 0.016 found at (12, 54), level 55, process 4: From [4.00, 7.00] and [3.98, 7.00] to [3.99, 7.00]
 
-Minimum distance 1.000 found at (1, 8)
-	From [1.00, 8.00] and [0.00, 8.00] to [0.50, 8.00]
 
 
-Minimum distance 0.500 found at (10, 53)
-	
+Minimum distance 0.031 found at (7, 25), level 26, process 2: From [1.00, 3.00] and [1.03, 3.00] to [1.02, 3.00]
+
 --------------------------------------------
 
-From [0.00, 6.00] and [0.00, 6.50] to [0.00, 6.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (2, 69)
-	From [6.00, 6.00] and [6.00, 5.50] to [6.00, 5.75]
+Minimum distance 0.500 found at (0, 60), level 61, process 1: From [0.00, 0.00] and [0.00, 0.50] to [0.00, 0.25]
 
 --------------------------------------------
-
 
 
-Minimum distance 0.500 found at (16, 71)
-	From [0.00, 8.00] and [0.50, 8.00] to [0.25, 8.00]
 
+Minimum distance 0.125 found at (8, 80), level 81, process 3: From [6.00, 4.00] and [6.12, 4.00] to [6.06, 4.00]
 
-Minimum distance 1.000 found at (5, 22)
-	
-
-Minimum distance 0.500 found at (46, 68)
-	
 --------------------------------------------
 
-From [5.00, 5.00] and [5.00, 6.00] to [5.00, 5.50]
 
---------------------------------------------
 
-From [4.00, 7.00] and [4.00, 6.50] to [4.00, 6.75]
+Minimum distance 0.062 found at (27, 45), level 46, process 5: From [2.00, 9.00] and [2.06, 9.00] to [2.03, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.008 found at (28, 53), level 54, process 4: From [4.00, 7.00] and [3.99, 7.00] to [4.00, 7.00]
 
+--------------------------------------------
 
-Minimum distance 0.250 found at (46, 70)
-	From [0.00, 8.00] and [0.25, 8.00] to [0.12, 8.00]
 
 
-Minimum distance 0.500 found at (7, 51)
-	From [5.00, 5.00] and [5.00, 5.50] to [5.00, 5.25]
+Minimum distance 0.984 found at (5, 24), level 25, process 2: From [2.00, 3.00] and [1.02, 3.00] to [1.51, 3.00]
 
 --------------------------------------------
 
 
---------------------------------------------
 
+Minimum distance 0.492 found at (5, 23), level 24, process 2: From [2.00, 3.00] and [1.51, 3.00] to [1.75, 3.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (6, 12)
-	
 
-Minimum distance 0.250 found at (53, 67)
-	
 
-Minimum distance 0.875 found at (43, 69)
-	From [1.00, 8.00] and [0.12, 8.00] to [0.56, 8.00]
 
 --------------------------------------------
-From [1.00, 8.00] and [2.00, 8.00] to [1.50, 8.00]
 
+
 --------------------------------------------
 
 
 
-Minimum distance 0.750 found at (30, 68)
-	From [6.00, 5.00] and [6.00, 5.75] to [6.00, 5.38]
+Minimum distance 0.250 found at (2, 59), level 60, process 1: From [0.00, 0.00] and [0.00, 0.25] to [0.00, 0.12]
 
 --------------------------------------------
 
-From [4.00, 7.00] and [4.00, 6.75] to [4.00, 6.88]
+Minimum distance 0.246 found at (5, 22), level 23, process 2: From [2.00, 3.00] and [1.75, 3.00] to [1.88, 3.00]
 
 --------------------------------------------
 
 
 
+Minimum distance 1.000 found at (5, 6), level 22, process 2: From [3.00, 4.00] and [2.00, 4.00] to [2.50, 4.00]
 
-Minimum distance 1.000 found at (7, 23)
-	From [7.00, 2.00] and [7.00, 3.00] to [7.00, 2.50]
-
+--------------------------------------------
 
-Minimum distance 1.000 found at (2, 7)
-	From [4.00, 1.00] and [4.00, 0.00] to [4.00, 0.50]
 
---------------------------------------------
 
 
---------------------------------------------
 
+Minimum distance 1.000 found at (0, 1), level 45, process 5: From [7.00, 9.00] and [8.00, 9.00] to [7.50, 9.00]
 
 
-Minimum distance 0.500 found at (9, 48)
-	From [7.00, 2.00] and [7.00, 2.50] to [7.00, 2.25]
+Minimum distance 0.996 found at (3, 52), level 53, process 4: From [3.00, 7.00] and [4.00, 7.00] to [3.50, 7.00]
+Minimum distance 1.000 found at (6, 7), level 21, process 2: From [4.00, 4.00] and [5.00, 4.00] to [4.50, 4.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (48, 66)
-	From [4.00, 6.00] and [4.00, 6.88] to [4.00, 6.44]
+Minimum distance 0.500 found at (6, 19), level 20, process 2: From [5.00, 4.00] and [4.50, 4.00] to [4.75, 4.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (2, 36)
-	From [6.00, 9.00] and [7.00, 9.00] to [6.50, 9.00]
 
 --------------------------------------------
 
@@ -2272,1820 +1983,1537 @@ Minimum distance 1.000 found at (2, 36)
 
 
 
-Minimum distance 0.500 found at (22, 67)
-	From [4.00, 1.00] and [4.00, 0.50] to [4.00, 0.75]
+Minimum distance 0.875 found at (5, 58), level 59, process 1: From [0.00, 1.00] and [0.00, 0.12] to [0.00, 0.56]
 
 --------------------------------------------
 
 
-Minimum distance 1.000 found at (7, 21)
-	
 
-Minimum distance 1.000 found at (0, 50)
-	
-From [4.00, 7.00] and [3.00, 7.00] to [3.50, 7.00]
+Minimum distance 0.250 found at (6, 18), level 19, process 2: From [5.00, 4.00] and [4.75, 4.00] to [4.88, 4.00]
 
 --------------------------------------------
 
-From [6.00, 3.00] and [6.00, 2.00] to [6.00, 2.50]
 
---------------------------------------------
-
-
 
-Minimum distance 0.250 found at (33, 66)
-	From [4.00, 1.00] and [4.00, 0.75] to [4.00, 0.88]
+Minimum distance 0.875 found at (6, 17), level 18, process 2: From [4.00, 4.00] and [4.88, 4.00] to [4.44, 4.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.000 found at (9, 19)
-	From [0.00, 2.00] and [1.00, 2.00] to [0.50, 2.00]
 
+Minimum distance 0.500 found at (0, 43), level 44, process 5: From [8.00, 9.00] and [7.50, 9.00] to [7.75, 9.00]
 
-Minimum distance 0.500 found at (8, 66)
-	From [6.00, 9.00] and [6.50, 9.00] to [6.25, 9.00]
 
---------------------------------------------
+Minimum distance 0.498 found at (18, 51), level 52, process 4: From [3.00, 7.00] and [3.50, 7.00] to [3.25, 7.00]
 
 
+Minimum distance 1.006 found at (5, 11), level 17, process 2: From [9.00, 4.00] and [8.89, 3.00] to [8.95, 3.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.875 found at (40, 65)
-	From [4.00, 0.00] and [4.00, 0.88] to [4.00, 0.44]
+Minimum distance 1.041 found at (7, 11), level 16, process 2: From [3.76, 2.00] and [3.47, 3.00] to [3.61, 2.50]
 
 --------------------------------------------
 
+
+--------------------------------------------
 
-Minimum distance 0.500 found at (12, 45)
-	
-From [0.00, 2.00] and [0.50, 2.00] to [0.25, 2.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (0, 24)
-	From [3.00, 2.00] and [3.00, 3.00] to [3.00, 2.50]
+Minimum distance 0.438 found at (11, 57), level 58, process 1: From [0.00, 1.00] and [0.00, 0.56] to [0.00, 0.78]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (2, 3)
-	From [9.00, 2.00] and [9.00, 3.00] to [9.00, 2.50]
+Minimum distance 1.092 found at (7, 9), level 15, process 2: From [6.47, 2.00] and [6.03, 3.00] to [6.25, 2.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (2, 15)
-	From [9.00, 7.00] and [9.00, 6.00] to [9.00, 6.50]
+Minimum distance 1.119 found at (6, 8), level 14, process 2: From [1.38, 2.00] and [1.88, 3.00] to [1.63, 2.50]
 
 --------------------------------------------
 
 
-Minimum distance 0.750 found at (19, 44)
-	From [1.00, 2.00] and [0.25, 2.00] to [0.62, 2.00]
 
---------------------------------------------
+Minimum distance 0.250 found at (4, 42), level 43, process 5: From [8.00, 9.00] and [7.75, 9.00] to [7.88, 9.00]
 
 
+Minimum distance 0.249 found at (24, 50), level 51, process 4: From [3.00, 7.00] and [3.25, 7.00] to [3.12, 7.00]
 
 
-Minimum distance 1.000 found at (9, 15)
-	From [0.00, 5.00] and [1.00, 5.00] to [0.50, 5.00]
+Minimum distance 1.346 found at (0, 11), level 13, process 2: From [5.00, 2.00] and [6.25, 2.50] to [5.62, 2.25]
 
 --------------------------------------------
 
 
-Minimum distance 1.000 found at (0, 24)
-	From [9.00, 5.00] and [8.00, 5.00] to [8.50, 5.00]
-
---------------------------------------------
 
+Minimum distance 0.673 found at (0, 11), level 12, process 2: From [5.00, 2.00] and [5.62, 2.25] to [5.31, 2.12]
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (19, 63)
-	
 
 
-Minimum distance 0.500 found at (43, 64)
-	From [9.00, 3.00] and [9.00, 2.50] to [9.00, 2.75]
 
 --------------------------------------------
 
-From [9.00, 7.00] and [9.00, 6.50] to [9.00, 6.75]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (9, 42)
-	From [0.00, 5.00] and [0.50, 5.00] to [0.25, 5.00]
+Minimum distance 0.219 found at (16, 56), level 57, process 1: From [0.00, 1.00] and [0.00, 0.78] to [0.00, 0.89]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (7, 62)
-	From [9.00, 5.00] and [8.50, 5.00] to [8.75, 5.00]
+Minimum distance 0.062 found at (10, 79), level 80, process 3: From [6.00, 4.00] and [6.06, 4.00] to [6.03, 4.00]
 
---------------------------------------------
 
+Minimum distance 0.125 found at (12, 41), level 42, process 5: From [8.00, 9.00] and [7.88, 9.00] to [7.94, 9.00]
 
 
-Minimum distance 0.250 found at (25, 62)
-	
+Minimum distance 0.875 found at (26, 49), level 50, process 4: From [4.00, 7.00] and [3.12, 7.00] to [3.56, 7.00]
 
-Minimum distance 1.008 found at (8, 31)
-	From [2.00, 9.00] and [3.00, 8.88] to [2.50, 8.94]
 
---------------------------------------------
+Minimum distance 0.109 found at (26, 55), level 56, process 1: From [0.00, 1.00] and [0.00, 0.89] to [0.00, 0.95]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (2, 32)
-	From [4.00, 7.00] and [5.00, 7.00] to [4.50, 7.00]
+Minimum distance 0.337 found at (0, 10), level 11, process 2: From [5.00, 2.00] and [5.31, 2.12] to [5.16, 2.06]
 
 --------------------------------------------
 
 
-From [9.00, 7.00] and [9.00, 6.75] to [9.00, 6.88]
 
+Minimum distance 0.168 found at (0, 9), level 10, process 2: From [5.00, 2.00] and [5.16, 2.06] to [5.08, 2.03]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.017 found at (14, 21)
-	From [8.00, 3.00] and [9.00, 3.19] to [8.50, 3.09]
+Minimum distance 0.084 found at (0, 8), level 9, process 2: From [5.00, 2.00] and [5.08, 2.03] to [5.04, 2.02]
 
+--------------------------------------------
 
-Minimum distance 0.250 found at (7, 61)
-	From [9.00, 5.00] and [8.75, 5.00] to [8.88, 5.00]
 
---------------------------------------------
 
+Minimum distance 1.506 found at (5, 7), level 8, process 2: From [3.61, 2.50] and [5.04, 2.02] to [4.33, 2.26]
 
 --------------------------------------------
 
+--------------------------------------------
 
 
-Minimum distance 0.875 found at (28, 61)
-	
+--------------------------------------------
 
-Minimum distance 1.024 found at (8, 17)
-	From [8.00, 7.00] and [7.78, 8.00] to [7.89, 7.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (38, 62)
-	From [4.00, 7.00] and [4.50, 7.00] to [4.25, 7.00]
+Minimum distance 0.062 found at (17, 40), level 41, process 5: From [8.00, 9.00] and [7.94, 9.00] to [7.97, 9.00]
 
 --------------------------------------------
 
 
+Minimum distance 1.000 found at (0, 30), level 49, process 4: From [2.00, 7.00] and [2.00, 8.00] to [2.00, 7.50]
 
-Minimum distance 1.000 found at (1, 3)
-	
 
-Minimum distance 0.512 found at (10, 38)
-	From [8.00, 7.00] and [7.89, 7.50] to [7.95, 7.25]
-From [2.00, 1.00] and [2.00, 0.00] to [2.00, 0.50]
+Minimum distance 1.000 found at (0, 5), level 55, process 1: From [5.00, 0.00] and [5.00, 1.00] to [5.00, 0.50]
 
 --------------------------------------------
 
-From [9.00, 6.00] and [9.00, 6.88] to [9.00, 6.44]
 
---------------------------------------------
 
 
+Minimum distance 1.567 found at (0, 4), level 7, process 2: From [8.49, 2.00] and [8.95, 3.50] to [8.72, 2.75]
+
 --------------------------------------------
 
 
 
+Minimum distance 1.670 found at (0, 3), level 6, process 2: From [0.00, 2.88] and [1.63, 2.50] to [0.81, 2.69]
 
+--------------------------------------------
 
-Minimum distance 1.031 found at (15, 26)
-Minimum distance 1.000 found at (2, 22)
-	From [2.00, 7.00] and [2.00, 6.00] to [2.00, 6.50]
 
---------------------------------------------
 
-	From [3.50, 1.00] and [3.25, 2.00] to [3.38, 1.50]
+Minimum distance 1.746 found at (1, 2), level 5, process 2: From [4.44, 4.00] and [4.33, 2.26] to [4.38, 3.13]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.438 found at (40, 60)
-	
+Minimum distance 2.074 found at (0, 3), level 4, process 2: From [2.50, 4.00] and [4.38, 3.13] to [3.44, 3.56]
 
-Minimum distance 0.500 found at (3, 59)
-	From [9.00, 6.00] and [9.00, 6.44] to [9.00, 6.22]
-
 --------------------------------------------
 
 
 
-Minimum distance 1.031 found at (16, 29)
-	From [6.00, 2.50] and [7.00, 2.25] to [6.50, 2.38]
+Minimum distance 2.770 found at (1, 2), level 3, process 2: From [0.81, 2.69] and [3.44, 3.56] to [2.13, 3.13]
 
 --------------------------------------------
+
 
-From [2.00, 0.00] and [2.00, 0.50] to [2.00, 0.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.118 found at (0, 18)
-	From [2.00, 1.00] and [1.50, 0.00] to [1.75, 0.50]
+Minimum distance 0.031 found at (23, 39), level 40, process 5: From [8.00, 9.00] and [7.97, 9.00] to [7.98, 9.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.000 found at (2, 39)
-	From [3.00, 2.00] and [2.00, 2.00] to [2.50, 2.00]
 
---------------------------------------------
 
 
+Minimum distance 6.602 found at (0, 1), level 2, process 2: From [8.72, 2.75] and [2.13, 3.13] to [5.42, 2.94]
 
-Minimum distance 1.000 found at (3, 31)
-	From [0.00, 1.00] and [0.00, 2.00] to [0.00, 1.50]
-
 --------------------------------------------
-
 
 
 
-Minimum distance 1.118 found at (8, 25)
-	From [1.00, 7.00] and [1.50, 8.00] to [1.25, 7.50]
+Minimum distance 0.500 found at (0, 53), level 54, process 1: From [5.00, 0.00] and [5.00, 0.50] to [5.00, 0.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.250 found at (3, 58)
-	From [2.00, 0.00] and [2.00, 0.25] to [2.00, 0.12]
+Minimum distance 0.031 found at (12, 78), level 79, process 3: From [6.00, 4.00] and [6.03, 4.00] to [6.02, 4.00]
 
 --------------------------------------------
 
+
+Minimum distance 0.984 found at (0, 38), level 39, process 5: From [7.00, 9.00] and [7.98, 9.00] to [7.49, 9.00]
+Minimum distance 0.500 found at (2, 47), level 48, process 4: From [2.00, 7.00] and [2.00, 7.50] to [2.00, 7.25]
+
+--------------------------------------------
 
 
-Minimum distance 1.118 found at (9, 13)
-	From [6.00, 1.00] and [5.00, 0.50] to [5.50, 0.75]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (3, 31)
-	From [0.00, 8.00] and [1.00, 8.00] to [0.50, 8.00]
+Minimum distance 0.250 found at (13, 46), level 47, process 4: From [2.00, 7.00] and [2.00, 7.25] to [2.00, 7.12]
 
+
+Minimum distance 0.250 found at (0, 52), level 53, process 1: From [5.00, 0.00] and [5.00, 0.25] to [5.00, 0.12]
+
 --------------------------------------------
+
 
 
+Minimum distance 0.984 found at (2, 77), level 78, process 3: From [7.00, 4.00] and [6.02, 4.00] to [6.51, 4.00]
 
-Minimum distance 0.125 found at (25, 57)
 
+Minimum distance 0.492 found at (1, 37), level 38, process 5: From [7.00, 9.00] and [7.49, 9.00] to [7.25, 9.00]
 
-Minimum distance 0.500 found at (20, 58)
-	From [0.00, 1.00] and [0.00, 1.50] to [0.00, 1.25]
+--------------------------------------------
 
+
 --------------------------------------------
 
 
 
-Minimum distance 1.203 found at (7, 26)
-	From [9.00, 2.00] and [8.50, 3.09] to [8.75, 2.55]
+Minimum distance 0.125 found at (0, 51), level 52, process 1: From [5.00, 0.00] and [5.00, 0.12] to [5.00, 0.06]
 
 --------------------------------------------
-	From [2.00, 0.00] and [2.00, 0.12] to [2.00, 0.06]
+
 
 --------------------------------------------
 
 
 
+Minimum distance 0.246 found at (7, 36), level 37, process 5: From [7.00, 9.00] and [7.25, 9.00] to [7.12, 9.00]
 
-Minimum distance 0.062 found at (28, 56)
 
+Minimum distance 0.125 found at (21, 45), level 46, process 4: From [2.00, 7.00] and [2.00, 7.12] to [2.00, 7.06]
 
-Minimum distance 1.000 found at (5, 6)
-	
 
-Minimum distance 0.601 found at (7, 31)
-	From [9.00, 2.00] and [8.75, 2.55] to [8.88, 2.27]
+Minimum distance 0.492 found at (7, 76), level 77, process 3: From [7.00, 4.00] and [6.51, 4.00] to [6.75, 4.00]
 
 --------------------------------------------
 
-
+--------------------------------------------
 
-Minimum distance 0.500 found at (27, 58)
-	From [0.00, 8.00] and [0.50, 8.00] to [0.25, 8.00]
 
 --------------------------------------------
 
-	From [2.00, 0.00] and [2.00, 0.06] to [2.00, 0.03]
 
---------------------------------------------
 
-From [7.00, 3.00] and [8.00, 3.00] to [7.50, 3.00]
+Minimum distance 0.938 found at (8, 50), level 51, process 1: From [5.00, 1.00] and [5.00, 0.06] to [5.00, 0.53]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.214 found at (9, 19)
-	From [6.00, 4.56] and [5.00, 5.25] to [5.50, 4.91]
 
+Minimum distance 0.123 found at (14, 35), level 36, process 5: From [7.00, 9.00] and [7.12, 9.00] to [7.06, 9.00]
+
 --------------------------------------------
 
 
+Minimum distance 0.062 found at (22, 44), level 45, process 4: From [2.00, 7.00] and [2.00, 7.06] to [2.00, 7.03]
 
-Minimum distance 1.000 found at (3, 20)
-	
 
-Minimum distance 1.250 found at (1, 13)
+Minimum distance 0.469 found at (17, 49), level 50, process 1: From [5.00, 1.00] and [5.00, 0.53] to [5.00, 0.77]
 
 
-Minimum distance 1.000 found at (3, 4)
-	From [4.00, 1.00] and [5.00, 1.00] to [4.50, 1.00]
+Minimum distance 0.246 found at (12, 75), level 76, process 3: From [7.00, 4.00] and [6.75, 4.00] to [6.88, 4.00]
 
 --------------------------------------------
 
-	From [5.00, 9.00] and [4.00, 8.25] to [4.50, 8.62]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (15, 56)
-	From [8.00, 3.00] and [7.50, 3.00] to [7.75, 3.00]
 
---------------------------------------------
-From [9.00, 9.00] and [8.00, 9.00] to [8.50, 9.00]
 
---------------------------------------------
 
 
 
 
-Minimum distance 0.625 found at (1, 28)
-	From [5.00, 9.00] and [4.50, 8.62] to [4.75, 8.81]
 
+Minimum distance 0.234 found at (17, 48), level 49, process 1: From [5.00, 1.00] and [5.00, 0.77] to [5.00, 0.88]
+
 --------------------------------------------
+
 
 
+Minimum distance 1.000 found at (0, 18), level 75, process 3: From [0.00, 4.00] and [0.00, 5.00] to [0.00, 4.50]
+Minimum distance 1.000 found at (9, 32), level 35, process 5: From [1.00, 9.00] and [0.00, 8.97] to [0.50, 8.99]
 
-Minimum distance 0.500 found at (6, 54)
-	
+--------------------------------------------
 
-Minimum distance 1.250 found at (8, 10)
-	From [2.00, 4.75] and [3.00, 5.50] to [2.50, 5.12]
+Minimum distance 1.000 found at (0, 3), level 44, process 4: From [8.00, 7.00] and [9.00, 7.00] to [8.50, 7.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (15, 56)
-	From [5.00, 1.00] and [4.50, 1.00] to [4.75, 1.00]
+Minimum distance 0.117 found at (24, 47), level 48, process 1: From [5.00, 1.00] and [5.00, 0.88] to [5.00, 0.94]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 1.275 found at (12, 15)
-	From [9.00, 9.00] and [8.50, 9.00] to [8.75, 9.00]
 
---------------------------------------------
 
 
 
-Minimum distance 0.750 found at (31, 53)
-	
+Minimum distance 0.500 found at (3, 42), level 43, process 4: From [9.00, 7.00] and [8.50, 7.00] to [8.75, 7.00]
 
-Minimum distance 0.250 found at (17, 55)
-	From [8.00, 3.00] and [7.75, 3.00] to [7.88, 3.00]
 
+Minimum distance 0.500 found at (0, 73), level 74, process 3: From [0.00, 4.00] and [0.00, 4.50] to [0.00, 4.25]
+Minimum distance 0.500 found at (10, 33), level 34, process 5: From [1.00, 9.00] and [0.50, 8.99] to [0.75, 8.99]
+
 --------------------------------------------
-From [0.00, 6.25] and [0.25, 5.00] to [0.12, 5.62]
 
+
 --------------------------------------------
+
 
 
+Minimum distance 0.059 found at (36, 46), level 47, process 1: From [5.00, 1.00] and [5.00, 0.94] to [5.00, 0.97]
 
-Minimum distance 1.346 found at (2, 18)
-	From [3.00, 0.00] and [1.75, 0.50] to [2.38, 0.25]
+--------------------------------------------
 
+
 --------------------------------------------
 
 
 
-Minimum distance 1.346 found at (3, 18)
-	From [5.00, 2.00] and [5.50, 0.75] to [5.25, 1.38]
-From [8.00, 9.00] and [8.75, 9.00] to [8.38, 9.00]
+Minimum distance 0.250 found at (15, 32), level 33, process 5: From [1.00, 9.00] and [0.75, 8.99] to [0.88, 9.00]
 
 --------------------------------------------
-
 
 
 
-Minimum distance 0.250 found at (22, 55)
-	From [5.00, 1.00] and [4.75, 1.00] to [4.88, 1.00]
+Minimum distance 0.250 found at (14, 41), level 42, process 4: From [9.00, 7.00] and [8.75, 7.00] to [8.88, 7.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.375 found at (34, 52)
+Minimum distance 1.000 found at (0, 1), level 46, process 1: From [4.00, 1.00] and [3.00, 1.00] to [3.50, 1.00]
 
+--------------------------------------------
 
-Minimum distance 0.875 found at (27, 54)
-	From [7.00, 3.00] and [7.88, 3.00] to [7.44, 3.00]
 
---------------------------------------------
 
+Minimum distance 0.250 found at (0, 72), level 73, process 3: From [0.00, 4.00] and [0.00, 4.25] to [0.00, 4.12]
 
 --------------------------------------------
+
 
+Minimum distance 0.125 found at (19, 31), level 32, process 5: From [1.00, 9.00] and [0.88, 9.00] to [0.94, 9.00]
 
 
-Minimum distance 1.414 found at (3, 7)
-	From [6.00, 6.25] and [5.00, 7.25] to [5.50, 6.75]
+Minimum distance 0.125 found at (14, 40), level 41, process 4: From [9.00, 7.00] and [8.88, 7.00] to [8.94, 7.00]
 
 --------------------------------------------
 
-	From [8.00, 9.00] and [8.38, 9.00] to [8.19, 9.00]
 
+
 --------------------------------------------
 
 
 
-Minimum distance 1.510 found at (6, 9)
-	From [0.00, 3.38] and [0.62, 2.00] to [0.31, 2.69]
+Minimum distance 0.500 found at (0, 44), level 45, process 1: From [4.00, 1.00] and [3.50, 1.00] to [3.75, 1.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.000 found at (5, 31)
 
+Minimum distance 0.875 found at (50, 71), level 72, process 3: From [0.00, 5.00] and [0.00, 4.12] to [0.00, 4.56]
 
+--------------------------------------------
 
-Minimum distance 1.601 found at (10, 18)
-	From [3.38, 1.50] and [2.38, 0.25] to [2.88, 0.88]
 
---------------------------------------------
+Minimum distance 0.063 found at (20, 30), level 31, process 5: From [1.00, 9.00] and [0.94, 9.00] to [0.97, 9.00]
 
+--------------------------------------------
 
 
-Minimum distance 0.875 found at (20, 54)
-	From [4.00, 1.00] and [4.88, 1.00] to [4.44, 1.00]
+Minimum distance 0.062 found at (16, 39), level 40, process 4: From [9.00, 7.00] and [8.94, 7.00] to [8.97, 7.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (3, 11)
-		From [5.00, 4.00] and [6.00, 4.00] to [5.50, 4.00]
+Minimum distance 0.250 found at (1, 43), level 44, process 1: From [4.00, 1.00] and [3.75, 1.00] to [3.88, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.601 found at (10, 17)
-	From [6.50, 2.38] and [5.25, 1.38] to [5.88, 1.88]
+Minimum distance 0.125 found at (2, 42), level 43, process 1: From [4.00, 1.00] and [3.88, 1.00] to [3.94, 1.00]
 
 --------------------------------------------
 
-From [8.00, 7.00] and [9.00, 7.00] to [8.50, 7.00]
 
---------------------------------------------
 
 
 
-Minimum distance 1.625 found at (5, 10)
-	From [0.62, 9.00] and [1.25, 7.50] to [0.94, 8.25]
+Minimum distance 0.031 found at (21, 29), level 30, process 5: From [1.00, 9.00] and [0.97, 9.00] to [0.98, 9.00]
 
---------------------------------------------
 
+Minimum distance 0.969 found at (5, 38), level 39, process 4: From [8.00, 7.00] and [8.97, 7.00] to [8.48, 7.00]
 
 
-Minimum distance 1.000 found at (4, 9)
+Minimum distance 0.438 found at (50, 70), level 71, process 3: From [0.00, 5.00] and [0.00, 4.56] to [0.00, 4.78]
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (15, 52)
-	
+--------------------------------------------
 
-Minimum distance 1.682 found at (4, 12)
-	From [3.75, 4.00] and [2.50, 5.12] to [3.12, 4.56]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (4, 9)
-	From [1.00, 1.00] and [2.00, 1.00] to [1.50, 1.00]
+Minimum distance 0.062 found at (6, 41), level 42, process 1: From [4.00, 1.00] and [3.94, 1.00] to [3.97, 1.00]
 
 --------------------------------------------
 
-	From [5.00, 5.00] and [5.00, 4.00] to [5.00, 4.50]
 
---------------------------------------------
 
-From [5.00, 4.00] and [5.50, 4.00] to [5.25, 4.00]
+Minimum distance 0.484 found at (5, 37), level 38, process 4: From [8.00, 7.00] and [8.48, 7.00] to [8.24, 7.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.707 found at (6, 16)
-	From [2.50, 8.94] and [0.94, 8.25] to [1.72, 8.59]
 
+Minimum distance 1.002 found at (2, 22), level 29, process 5: From [4.00, 9.00] and [3.94, 8.00] to [3.97, 8.50]
+
 --------------------------------------------
 
 
+Minimum distance 0.031 found at (7, 40), level 41, process 1: From [4.00, 1.00] and [3.97, 1.00] to [3.98, 1.00]
 
-Minimum distance 1.733 found at (3, 6)
+--------------------------------------------
 
 
-Minimum distance 1.000 found at (5, 8)
-	
 
-Minimum distance 1.000 found at (6, 24)
-	From [9.00, 2.00] and [8.00, 2.00] to [8.50, 2.00]
 
---------------------------------------------
-	From [9.00, 8.62] and [7.95, 7.25] to [8.47, 7.94]
 
+Minimum distance 0.219 found at (57, 69), level 70, process 3: From [0.00, 5.00] and [0.00, 4.78] to [0.00, 4.89]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.816 found at (1, 15)
-	From [7.00, 9.00] and [8.47, 7.94] to [7.74, 8.47]
+Minimum distance 0.501 found at (4, 27), level 28, process 5: From [4.00, 9.00] and [3.97, 8.50] to [3.98, 8.75]
 
---------------------------------------------
 
-From [0.00, 0.00] and [0.00, 1.00] to [0.00, 0.50]
+Minimum distance 0.242 found at (6, 36), level 37, process 4: From [8.00, 7.00] and [8.24, 7.00] to [8.12, 7.00]
+Minimum distance 0.016 found at (7, 39), level 40, process 1: From [4.00, 1.00] and [3.98, 1.00] to [3.99, 1.00]
 
 --------------------------------------------
 
 
 
+--------------------------------------------
 
-Minimum distance 0.908 found at (1, 14)
-	From [7.00, 9.00] and [7.74, 8.47] to [7.37, 8.73]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (17, 52)
-	From [2.00, 1.00] and [1.50, 1.00] to [1.75, 1.00]
+Minimum distance 0.008 found at (10, 38), level 39, process 1: From [4.00, 1.00] and [3.99, 1.00] to [4.00, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (5, 16)
+Minimum distance 1.000 found at (0, 1), level 69, process 3: From [8.00, 4.00] and [9.00, 4.00] to [8.50, 4.00]
 
 
-Minimum distance 0.500 found at (24, 50)
-	From [9.00, 2.00] and [8.50, 2.00] to [8.75, 2.00]
+Minimum distance 0.250 found at (5, 26), level 27, process 5: From [4.00, 9.00] and [3.98, 8.75] to [3.99, 8.88]
 
 --------------------------------------------
 
 
-Minimum distance 1.844 found at (4, 7)
-	From [5.50, 4.91] and [5.50, 6.75] to [5.50, 5.83]
 
---------------------------------------------
+Minimum distance 0.121 found at (9, 35), level 36, process 4: From [8.00, 7.00] and [8.12, 7.00] to [8.06, 7.00]
 
+--------------------------------------------
 
 
-Minimum distance 2.080 found at (1, 8)
-	From [7.00, 0.12] and [5.88, 1.88] to [6.44, 1.00]
-	From [5.00, 1.00] and [5.00, 0.00] to [5.00, 0.50]
+Minimum distance 0.996 found at (20, 37), level 38, process 1: From [3.00, 1.00] and [4.00, 1.00] to [3.50, 1.00]
 
 --------------------------------------------
-
 
 
 --------------------------------------------
 
 
 
-Minimum distance 2.202 found at (1, 3)
-	From [3.50, 7.00] and [4.75, 8.81] to [4.12, 7.91]
+Minimum distance 0.125 found at (8, 25), level 26, process 5: From [4.00, 9.00] and [3.99, 8.88] to [4.00, 8.94]
 
---------------------------------------------
 
 
 
-Minimum distance 2.492 found at (8, 10)
-	From [5.50, 5.83] and [4.12, 7.91] to [4.81, 6.87]
 
+Minimum distance 0.502 found at (10, 36), level 37, process 1: From [4.00, 1.00] and [3.50, 1.00] to [3.75, 1.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (4, 10)
-	From [0.00, 2.00] and [0.00, 3.00] to [0.00, 2.50]
+Minimum distance 0.251 found at (11, 35), level 36, process 1: From [4.00, 1.00] and [3.75, 1.00] to [3.87, 1.00]
 
 --------------------------------------------
+
 
+Minimum distance 0.500 found at (0, 67), level 68, process 3: From [9.00, 4.00] and [8.50, 4.00] to [8.75, 4.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (6, 11)
-	From [5.00, 8.00] and [4.00, 8.00] to [4.50, 8.00]
 
 
-Minimum distance 1.000 found at (6, 7)
-	From [1.00, 2.00] and [2.00, 2.00] to [1.50, 2.00]
+Minimum distance 0.063 found at (12, 24), level 25, process 5: From [4.00, 9.00] and [4.00, 8.94] to [4.00, 8.97]
 
 --------------------------------------------
+Minimum distance 1.000 found at (0, 1), level 35, process 4: From [5.00, 7.00] and [6.00, 7.00] to [5.50, 7.00]
 
+--------------------------------------------
 
-Minimum distance 2.750 found at (1, 8)
-	From [8.88, 2.27] and [6.44, 1.00] to [7.66, 1.64]
 
---------------------------------------------
 
 
+Minimum distance 0.500 found at (0, 33), level 34, process 4: From [5.00, 7.00] and [5.50, 7.00] to [5.25, 7.00]
 
-Minimum distance 2.856 found at (4, 7)
-	
 --------------------------------------------
 
 
-From [3.12, 4.56] and [4.81, 6.87] to [3.97, 5.71]
-
 --------------------------------------------
 
 
 
-Minimum distance 2.943 found at (1, 2)
-	From [0.12, 5.62] and [0.31, 2.69] to [0.22, 4.16]
 
+Minimum distance 1.003 found at (17, 22), level 24, process 5: From [1.06, 8.00] and [0.98, 9.00] to [1.02, 8.50]
 
-Minimum distance 1.000 found at (5, 16)
-	From [9.00, 7.00] and [8.00, 7.00] to [8.50, 7.00]
-
---------------------------------------------
 
+Minimum distance 0.125 found at (14, 34), level 35, process 1: From [4.00, 1.00] and [3.87, 1.00] to [3.94, 1.00]
 
+--------------------------------------------
 
-Minimum distance 0.500 found at (14, 46)
-	From [5.00, 8.00] and [4.50, 8.00] to [4.75, 8.00]
 
 
-Minimum distance 0.500 found at (22, 48)
+Minimum distance 0.250 found at (1, 66), level 67, process 3: From [9.00, 4.00] and [8.75, 4.00] to [8.88, 4.00]
 
 --------------------------------------------
-
-
 
-Minimum distance 3.381 found at (0, 4)
-	From [8.00, 5.00] and [7.66, 1.64] to [7.83, 3.32]
-
 --------------------------------------------
 
 
 
-Minimum distance 3.654 found at (1, 3)
-	From [1.72, 8.59] and [3.97, 5.71] to [2.84, 7.15]
 
---------------------------------------------
 
-	From [1.00, 2.00] and [1.50, 2.00] to [1.25, 2.00]
+Minimum distance 0.250 found at (4, 32), level 33, process 4: From [5.00, 7.00] and [5.25, 7.00] to [5.12, 7.00]
 
 --------------------------------------------
 
 
---------------------------------------------
+Minimum distance 1.000 found at (0, 1), level 34, process 1: From [1.00, 1.00] and [2.00, 1.00] to [1.50, 1.00]
 
+--------------------------------------------
 
 
-Minimum distance 3.985 found at (2, 4)
-	From [0.22, 4.16] and [2.84, 7.15] to [1.53, 5.66]
+Minimum distance 1.007 found at (2, 17), level 23, process 5: From [9.00, 9.00] and [8.88, 8.00] to [8.94, 8.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 4.966 found at (0, 3)
-	From [2.88, 0.88] and [1.53, 5.66] to [2.20, 3.27]
 
+Minimum distance 0.500 found at (0, 32), level 33, process 1: From [2.00, 1.00] and [1.50, 1.00] to [1.75, 1.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (5, 6)
-	From [8.00, 6.00] and [8.00, 5.00] to [8.00, 5.50]
+Minimum distance 0.250 found at (0, 31), level 32, process 1: From [2.00, 1.00] and [1.75, 1.00] to [1.88, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (6, 10)
-	From [2.00, 7.00] and [2.00, 6.00] to [2.00, 6.50]
+Minimum distance 0.125 found at (2, 30), level 31, process 1: From [2.00, 1.00] and [1.88, 1.00] to [1.94, 1.00]
 
 
-Minimum distance 5.436 found at (0, 1)
-	From [7.37, 8.73] and [7.83, 3.32] to [7.60, 6.03]
+Minimum distance 0.125 found at (1, 65), level 66, process 3: From [9.00, 4.00] and [8.88, 4.00] to [8.94, 4.00]
 
 --------------------------------------------
-
 
 
-Minimum distance 6.061 found at (0, 1)
-	From [2.20, 3.27] and [7.60, 6.03] to [4.90, 4.65]
+Minimum distance 0.504 found at (2, 21), level 22, process 5: From [9.00, 9.00] and [8.94, 8.50] to [8.97, 8.75]
 
+--------------------------------------------
 
-Minimum distance 0.750 found at (15, 45)
-	From [4.00, 8.00] and [4.75, 8.00] to [4.38, 8.00]
 
---------------------------------------------
 
+Minimum distance 0.125 found at (4, 31), level 32, process 4: From [5.00, 7.00] and [5.12, 7.00] to [5.06, 7.00]
 
 --------------------------------------------
 
 
 --------------------------------------------
+
 
 
----------New A: 
-4.90	4.65	
+Minimum distance 0.062 found at (5, 29), level 30, process 1: From [2.00, 1.00] and [1.94, 1.00] to [1.97, 1.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (5, 19)
-	From [5.00, 5.00] and [5.00, 6.00] to [5.00, 5.50]
 
 
-Minimum distance 1.000 found at (10, 12)
-	
 
-Minimum distance 0.500 found at (14, 46)
-Returning root of this subtree to manager
+Minimum distance 0.252 found at (6, 20), level 21, process 5: From [9.00, 9.00] and [8.97, 8.75] to [8.98, 8.88]
 
 --------------------------------------------
 
-From [8.00, 8.00] and [9.00, 8.00] to [8.50, 8.00]
 
---------------------------------------------
 
-	From [2.00, 7.00] and [2.00, 6.50] to [2.00, 6.75]
+Minimum distance 0.062 found at (6, 30), level 31, process 4: From [5.00, 7.00] and [5.06, 7.00] to [5.03, 7.00]
 
 --------------------------------------------
-
 
 
-Minimum distance 1.000 found at (10, 15)
+Minimum distance 0.031 found at (10, 28), level 29, process 1: From [2.00, 1.00] and [1.97, 1.00] to [1.98, 1.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (8, 9)
-	From [2.00, 9.00] and [1.00, 9.00] to [1.50, 9.00]
 
 
-Minimum distance 1.000 found at (10, 14)
-	From [7.00, 7.00] and [7.00, 6.00] to [7.00, 6.50]
+Minimum distance 0.062 found at (1, 64), level 65, process 3: From [9.00, 4.00] and [8.94, 4.00] to [8.97, 4.00]
 
 --------------------------------------------
 
-	From [8.00, 0.00] and [9.00, 0.00] to [8.50, 0.00]
 
+Minimum distance 0.126 found at (8, 19), level 20, process 5: From [9.00, 9.00] and [8.98, 8.88] to [8.99, 8.94]
+
 --------------------------------------------
 
 
---------------------------------------------
 
 
 
-Minimum distance 1.000 found at (10, 17)
-	From [7.00, 4.00] and [7.00, 3.00] to [7.00, 3.50]
 
+Minimum distance 0.016 found at (11, 27), level 28, process 1: From [2.00, 1.00] and [1.98, 1.00] to [1.99, 1.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.500 found at (21, 44)
-	From [1.00, 9.00] and [1.50, 9.00] to [1.25, 9.00]
+Minimum distance 0.008 found at (11, 26), level 27, process 1: From [2.00, 1.00] and [1.99, 1.00] to [2.00, 1.00]
 
 --------------------------------------------
 
 
-Minimum distance 0.500 found at (17, 46)
-	From [7.00, 7.00] and [7.00, 6.50] to [7.00, 6.75]
 
---------------------------------------------
 
 
 
-Minimum distance 1.000 found at (14, 15)
-	
-From [6.00, 7.00] and [6.00, 8.00] to [6.00, 7.50]
+Minimum distance 1.030 found at (0, 12), level 19, process 5: From [6.00, 9.00] and [6.25, 8.00] to [6.12, 8.50]
 
 --------------------------------------------
 
+Minimum distance 0.969 found at (0, 29), level 30, process 4: From [6.00, 7.00] and [5.03, 7.00] to [5.52, 7.00]
 
+--------------------------------------------
 
-Minimum distance 1.000 found at (11, 16)
-	From [3.00, 9.00] and [4.00, 9.00] to [3.50, 9.00]
+Minimum distance 0.996 found at (4, 25), level 26, process 1: From [1.00, 1.00] and [2.00, 1.00] to [1.50, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (32, 37)
-	From [8.50, 7.00] and [8.50, 8.00] to [8.50, 7.50]
+Minimum distance 0.498 found at (4, 24), level 25, process 1: From [1.00, 1.00] and [1.50, 1.00] to [1.25, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (8, 19)
-	From [0.00, 6.00] and [0.00, 7.00] to [0.00, 6.50]
+Minimum distance 0.969 found at (3, 63), level 64, process 3: From [8.00, 4.00] and [8.97, 4.00] to [8.48, 4.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.008 found at (5, 19)
+Minimum distance 0.515 found at (0, 17), level 18, process 5: From [6.00, 9.00] and [6.12, 8.50] to [6.06, 8.75]
 
+--------------------------------------------
 
 
-Minimum distance 1.008 found at (30, 42)
-	From [6.00, 5.38] and [5.00, 5.50] to [5.50, 5.44]
 
+Minimum distance 0.484 found at (0, 28), level 29, process 4: From [6.00, 7.00] and [5.52, 7.00] to [5.76, 7.00]
+
 --------------------------------------------
+
 
-	From [1.00, 1.00] and [0.88, 2.00] to [0.94, 1.50]
+Minimum distance 0.249 found at (8, 23), level 24, process 1: From [1.00, 1.00] and [1.25, 1.00] to [1.12, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.000 found at (8, 16)
-	
 
-Minimum distance 1.068 found at (2, 23)
-	From [3.00, 4.00] and [2.00, 4.38] to [2.50, 4.19]
+Minimum distance 0.257 found at (0, 16), level 17, process 5: From [6.00, 9.00] and [6.06, 8.75] to [6.03, 8.88]
 
 --------------------------------------------
-From [3.00, 9.00] and [4.00, 9.00] to [3.50, 9.00]
 
---------------------------------------------
 
 
 
 
-Minimum distance 0.500 found at (8, 41)
-	From [3.00, 9.00] and [3.50, 9.00] to [3.25, 9.00]
 
+Minimum distance 0.125 found at (10, 22), level 23, process 1: From [1.00, 1.00] and [1.12, 1.00] to [1.06, 1.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.031 found at (5, 28)
-	From [2.00, 3.00] and [1.00, 2.75] to [1.50, 2.88]
+Minimum distance 0.938 found at (9, 21), level 22, process 1: From [2.00, 1.00] and [1.06, 1.00] to [1.53, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.534 found at (11, 37)
-	From [3.00, 4.00] and [2.50, 4.19] to [2.75, 4.09]
+Minimum distance 1.000 found at (0, 13), level 63, process 3: From [5.00, 4.00] and [5.00, 5.00] to [5.00, 4.50]
 
 --------------------------------------------
-
 
 
-Minimum distance 0.750 found at (14, 40)
-	From [4.00, 9.00] and [3.25, 9.00] to [3.62, 9.00]
+Minimum distance 0.129 found at (0, 15), level 16, process 5: From [6.00, 9.00] and [6.03, 8.88] to [6.02, 8.94]
 
+--------------------------------------------
 
-Minimum distance 1.068 found at (8, 30)
-	From [4.00, 9.00] and [4.38, 8.00] to [4.19, 8.50]
 
---------------------------------------------
 
+Minimum distance 0.064 found at (0, 14), level 15, process 5: From [6.00, 9.00] and [6.02, 8.94] to [6.01, 8.97]
+Minimum distance 0.242 found at (0, 27), level 28, process 4: From [6.00, 7.00] and [5.76, 7.00] to [5.88, 7.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.031 found at (7, 26)
-	From [8.00, 9.00] and [7.75, 8.00] to [7.88, 8.50]
+Minimum distance 1.000 found at (0, 3), level 21, process 1: From [8.00, 1.00] and [7.00, 1.00] to [7.50, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.092 found at (1, 13)
-	
+Minimum distance 0.500 found at (6, 19), level 20, process 1: From [7.00, 1.00] and [7.50, 1.00] to [7.25, 1.00]
 
-Minimum distance 1.000 found at (8, 15)
-	From [1.00, 3.00] and [2.00, 3.00] to [1.50, 3.00]
+--------------------------------------------
 
 
-Minimum distance 0.515 found at (8, 41)
-	From [8.00, 9.00] and [7.88, 8.50] to [7.94, 8.75]
 
---------------------------------------------
-From [2.00, 3.00] and [1.00, 3.44] to [1.50, 3.22]
+Minimum distance 1.000 found at (7, 9), level 19, process 1: From [2.00, 2.00] and [3.00, 2.00] to [2.50, 2.00]
 
 --------------------------------------------
 
 
 
 
-Minimum distance 0.546 found at (4, 34)
-	From [2.00, 3.00] and [1.50, 3.22] to [1.75, 3.11]
 
 --------------------------------------------
 
-
---------------------------------------------
 
 
+Minimum distance 0.032 found at (0, 13), level 14, process 5: From [6.00, 9.00] and [6.01, 8.97] to [6.00, 8.98]
 
-Minimum distance 1.118 found at (0, 19)
-	
 
-Minimum distance 1.031 found at (13, 34)
-	From [1.00, 7.00] and [2.00, 6.75] to [1.50, 6.88]
+Minimum distance 1.000 found at (0, 5), level 27, process 4: From [7.00, 7.00] and [7.00, 8.00] to [7.00, 7.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.031 found at (16, 28)
-	From [1.00, 6.25] and [2.00, 6.50] to [1.50, 6.38]
+Minimum distance 1.000 found at (2, 9), level 18, process 1: From [9.00, 1.00] and [8.99, 0.00] to [9.00, 0.50]
 
 --------------------------------------------
 
-From [4.00, 3.00] and [3.00, 2.50] to [3.50, 2.75]
 
---------------------------------------------
 
 
 
-Minimum distance 1.118 found at (5, 21)
-	From [4.00, 5.00] and [5.00, 4.50] to [4.50, 4.75]
+Minimum distance 0.500 found at (0, 61), level 62, process 3: From [5.00, 4.00] and [5.00, 4.50] to [5.00, 4.25]
 
 --------------------------------------------
 
-
+--------------------------------------------
 
-Minimum distance 1.068 found at (3, 19)
-	From [6.00, 3.00] and [7.00, 3.38] to [6.50, 3.19]
 
 
-Minimum distance 1.118 found at (5, 12)
+Minimum distance 0.016 found at (0, 12), level 13, process 5: From [6.00, 9.00] and [6.00, 8.98] to [6.00, 8.99]
 
+--------------------------------------------
 
-Minimum distance 1.031 found at (32, 36)
-	From [1.25, 2.00] and [1.50, 3.00] to [1.38, 2.50]
 
---------------------------------------------
 
+Minimum distance 0.008 found at (0, 11), level 12, process 5: From [6.00, 9.00] and [6.00, 8.99] to [6.00, 9.00]
 
 --------------------------------------------
-
 
+Minimum distance 0.500 found at (0, 25), level 26, process 4: From [7.00, 7.00] and [7.00, 7.50] to [7.00, 7.25]
 
-Minimum distance 1.092 found at (18, 24)
-	
+--------------------------------------------
 
-Minimum distance 1.092 found at (5, 19)
-	From [4.00, 4.00] and [3.56, 5.00] to [3.78, 4.50]
+Minimum distance 0.500 found at (2, 16), level 17, process 1: From [9.00, 1.00] and [9.00, 0.50] to [9.00, 0.75]
 
 --------------------------------------------
 
-	From [6.00, 0.00] and [7.00, 0.50] to [6.50, 0.25]
 
---------------------------------------------
 
-From [7.00, 8.50] and [6.00, 8.94] to [6.50, 8.72]
+Minimum distance 0.250 found at (3, 15), level 16, process 1: From [9.00, 1.00] and [9.00, 0.75] to [9.00, 0.88]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.118 found at (5, 14)
-	From [5.00, 2.00] and [6.00, 2.50] to [5.50, 2.25]
+Minimum distance 1.000 found at (0, 9), level 15, process 1: From [6.00, 1.00] and [5.00, 0.97] to [5.50, 0.99]
 
 --------------------------------------------
+
 
 
 
-Minimum distance 1.118 found at (19, 21)
-	From [5.75, 5.00] and [5.25, 6.00] to [5.50, 5.50]
+Minimum distance 1.061 found at (6, 10), level 11, process 5: From [7.06, 9.00] and [6.00, 9.00] to [6.53, 9.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.118 found at (6, 28)
+Minimum distance 0.250 found at (0, 24), level 25, process 4: From [7.00, 7.00] and [7.00, 7.25] to [7.00, 7.12]
 
+--------------------------------------------
 
-Minimum distance 1.179 found at (8, 17)
 
 
-Minimum distance 1.125 found at (4, 18)
-	From [3.00, 1.00] and [1.88, 1.00] to [2.44, 1.00]
-	From [9.00, 6.00] and [8.50, 7.00] to [8.75, 6.50]
+Minimum distance 0.500 found at (0, 13), level 14, process 1: From [6.00, 1.00] and [5.50, 0.99] to [5.75, 0.99]
 
 --------------------------------------------
 
-	From [4.00, 1.12] and [5.00, 0.50] to [4.50, 0.81]
 
---------------------------------------------
 
+Minimum distance 0.250 found at (0, 12), level 13, process 1: From [6.00, 1.00] and [5.75, 0.99] to [5.88, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.250 found at (0, 8)
-	From [7.00, 6.00] and [6.00, 5.25] to [6.50, 5.62]
+Minimum distance 0.125 found at (0, 11), level 12, process 1: From [6.00, 1.00] and [5.88, 1.00] to [5.94, 1.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.118 found at (7, 16)
-	From [7.00, 0.00] and [6.00, 0.50] to [6.50, 0.25]
+Minimum distance 1.001 found at (3, 6), level 11, process 1: From [1.50, 0.00] and [1.53, 1.00] to [1.51, 0.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.625 found at (3, 27)
-	From [7.00, 6.00] and [6.50, 5.62] to [6.75, 5.81]
+Minimum distance 1.017 found at (1, 4), level 10, process 1: From [3.75, 0.00] and [3.94, 1.00] to [3.85, 0.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.214 found at (19, 26)
+Minimum distance 0.250 found at (0, 60), level 61, process 3: From [5.00, 4.00] and [5.00, 4.25] to [5.00, 4.12]
 
+--------------------------------------------
 
-Minimum distance 1.250 found at (1, 4)
-	From [1.00, 8.00] and [1.75, 7.00] to [1.38, 7.50]
 
---------------------------------------------
-	From [0.56, 8.00] and [1.25, 9.00] to [0.91, 8.50]
+Minimum distance 0.531 found at (0, 9), level 10, process 5: From [6.00, 9.00] and [6.53, 9.00] to [6.27, 9.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.559 found at (8, 35)
-	From [7.00, 0.00] and [6.50, 0.25] to [6.75, 0.12]
+Minimum distance 0.266 found at (0, 8), level 9, process 5: From [6.00, 9.00] and [6.27, 9.00] to [6.13, 9.00]
 
 --------------------------------------------
 
 
 
 
-Minimum distance 1.203 found at (12, 32)
-	From [2.00, 8.00] and [0.91, 8.50] to [1.45, 8.25]
 
+Minimum distance 0.875 found at (11, 23), level 24, process 4: From [7.00, 8.00] and [7.00, 7.12] to [7.00, 7.56]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.371 found at (5, 6)
-	From [3.00, 7.38] and [4.00, 6.44] to [3.50, 6.91]
+Minimum distance 1.046 found at (1, 6), level 9, process 1: From [6.25, 0.00] and [5.94, 1.00] to [6.09, 0.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.118 found at (12, 16)
-	From [5.75, 8.00] and [6.25, 9.00] to [6.00, 8.50]
+Minimum distance 1.261 found at (2, 7), level 8, process 1: From [7.25, 1.00] and [6.09, 0.50] to [6.67, 0.75]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.371 found at (8, 13)
-	From [0.00, 0.50] and [0.94, 1.50] to [0.47, 1.00]
+Minimum distance 1.578 found at (1, 4), level 7, process 1: From [0.00, 0.95] and [1.51, 0.50] to [0.76, 0.72]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.250 found at (6, 22)
-	From [6.00, 3.00] and [5.25, 4.00] to [5.62, 3.50]
+Minimum distance 1.893 found at (0, 3), level 6, process 1: From [5.00, 2.00] and [3.85, 0.50] to [4.42, 1.25]
 
 --------------------------------------------
-
 
+Minimum distance 0.133 found at (0, 7), level 8, process 5: From [6.00, 9.00] and [6.13, 9.00] to [6.07, 9.00]
 
-Minimum distance 1.231 found at (1, 26)
-	From [1.00, 4.00] and [1.50, 2.88] to [1.25, 3.44]
+--------------------------------------------
 
 
-Minimum distance 1.403 found at (12, 14)
-	From [2.75, 4.09] and [1.75, 3.11] to [2.25, 3.60]
 
+Minimum distance 0.066 found at (0, 6), level 7, process 5: From [6.00, 9.00] and [6.07, 9.00] to [6.03, 9.00]
 
-Minimum distance 1.250 found at (8, 16)
-	From [9.00, 0.00] and [7.75, 0.00] to [8.38, 0.00]
 
---------------------------------------------
+Minimum distance 1.000 found at (0, 4), level 23, process 4: From [0.00, 8.00] and [1.00, 8.00] to [0.50, 8.00]
 
 --------------------------------------------
 
 
---------------------------------------------
 
 
+Minimum distance 2.064 found at (0, 4), level 5, process 1: From [2.50, 2.00] and [4.42, 1.25] to [3.46, 1.62]
 
-Minimum distance 1.500 found at (3, 10)
+--------------------------------------------
 
 
 
-Minimum distance 1.250 found at (2, 17)
-	From [1.00, 9.00] and [0.25, 8.00] to [0.62, 8.50]
+Minimum distance 0.875 found at (26, 59), level 60, process 3: From [5.00, 5.00] and [5.00, 4.12] to [5.00, 4.56]
 
 --------------------------------------------
 
-	From [6.03, 9.00] and [6.00, 7.50] to [6.02, 8.25]
-
 --------------------------------------------
 
 
 
-Minimum distance 1.513 found at (11, 20)
-	From [3.50, 2.75] and [2.25, 3.60] to [2.88, 3.18]
+Minimum distance 1.081 found at (0, 2), level 6, process 5: From [5.00, 8.56] and [4.00, 8.97] to [4.50, 8.77]
 
 --------------------------------------------
+
 
 
+Minimum distance 1.125 found at (0, 1), level 5, process 5: From [2.03, 9.00] and [1.02, 8.50] to [1.53, 8.75]
 
-Minimum distance 0.625 found at (9, 29)
-	From [9.00, 0.00] and [8.38, 0.00] to [8.69, 0.00]
 
+Minimum distance 0.500 found at (2, 21), level 22, process 4: From [0.00, 8.00] and [0.50, 8.00] to [0.25, 8.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 1.250 found at (11, 19)
-	From [9.00, 4.75] and [8.00, 5.50] to [8.50, 5.12]
+Minimum distance 2.331 found at (0, 1), level 4, process 1: From [9.00, 0.88] and [6.67, 0.75] to [7.84, 0.81]
 
 --------------------------------------------
+
+
 
+Minimum distance 2.851 found at (0, 1), level 3, process 1: From [0.76, 0.72] and [3.46, 1.62] to [2.11, 1.17]
 
+--------------------------------------------
 
-Minimum distance 1.532 found at (6, 9)
 
 
-Minimum distance 1.324 found at (10, 14)
-	From [5.25, 0.00] and [4.00, 0.44] to [4.62, 0.22]
-	From [8.19, 9.00] and [8.50, 7.50] to [8.34, 8.25]
+Minimum distance 5.738 found at (0, 1), level 2, process 1: From [7.84, 0.81] and [2.11, 1.17] to [4.97, 0.99]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.581 found at (2, 7)
-	
 --------------------------------------------
 
 
 
-Minimum distance 1.250 found at (14, 16)
-	From [2.50, 2.00] and [1.75, 1.00] to [2.12, 1.50]
+Minimum distance 1.552 found at (1, 2), level 4, process 5: From [6.03, 9.00] and [4.50, 8.77] to [5.27, 8.88]
 
 --------------------------------------------
 
-From [7.50, 2.00] and [7.00, 3.50] to [7.25, 2.75]
 
---------------------------------------------
 
+Minimum distance 3.727 found at (0, 2), level 3, process 5: From [8.99, 8.94] and [5.27, 8.88] to [7.13, 8.91]
 
 
-Minimum distance 1.736 found at (6, 13)
-	From [4.19, 8.50] and [3.50, 6.91] to [3.84, 7.70]
+Minimum distance 0.250 found at (3, 20), level 21, process 4: From [0.00, 8.00] and [0.25, 8.00] to [0.12, 8.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.376 found at (19, 24)
-	From [1.50, 6.88] and [1.45, 8.25] to [1.48, 7.56]
+Minimum distance 0.438 found at (27, 58), level 59, process 3: From [5.00, 5.00] and [5.00, 4.56] to [5.00, 4.78]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.751 found at (8, 9)
-	From [5.50, 2.25] and [4.50, 0.81] to [5.00, 1.53]
+Minimum distance 5.604 found at (0, 1), level 2, process 5: From [1.53, 8.75] and [7.13, 8.91] to [4.33, 8.83]
 
 --------------------------------------------
-
 
 
-Minimum distance 1.414 found at (3, 7)
-	
 
-Minimum distance 1.269 found at (6, 22)
-	From [3.00, 3.50] and [3.78, 4.50] to [3.39, 4.00]
+Minimum distance 0.125 found at (6, 19), level 20, process 4: From [0.00, 8.00] and [0.12, 8.00] to [0.06, 8.00]
 
 --------------------------------------------
 
 
+--------------------------------------------
 
-Minimum distance 1.768 found at (1, 14)
-	From [9.00, 3.00] and [7.25, 2.75] to [8.12, 2.88]
 
---------------------------------------------
 
-From [8.00, 9.00] and [9.00, 8.00] to [8.50, 8.50]
+Minimum distance 0.938 found at (2, 18), level 19, process 4: From [1.00, 8.00] and [0.06, 8.00] to [0.53, 8.00]
 
 --------------------------------------------
+
 
 
+Minimum distance 0.219 found at (27, 57), level 58, process 3: From [5.00, 5.00] and [5.00, 4.78] to [5.00, 4.89]
 
-Minimum distance 1.288 found at (8, 20)
+--------------------------------------------
 
 
-Minimum distance 1.812 found at (3, 9)
-	From [2.00, 0.03] and [0.47, 1.00] to [1.23, 0.52]
+Minimum distance 1.000 found at (0, 1), level 18, process 4: From [5.00, 8.00] and [4.00, 8.00] to [4.50, 8.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.414 found at (3, 4)
-	From [4.00, 5.00] and [3.00, 6.00] to [3.50, 5.50]
 
---------------------------------------------
+Minimum distance 1.000 found at (1, 2), level 17, process 4: From [8.00, 8.00] and [9.00, 8.00] to [8.50, 8.00]
 
-	From [5.50, 4.00] and [6.50, 3.19] to [6.00, 3.59]
 
 --------------------------------------------
-
 
 
 
-Minimum distance 1.945 found at (1, 7)
-	From [0.00, 8.88] and [1.38, 7.50] to [0.69, 8.19]
+Minimum distance 1.007 found at (0, 11), level 16, process 4: From [6.00, 8.00] and [5.88, 7.00] to [5.94, 7.50]
 
---------------------------------------------
 
+Minimum distance 0.109 found at (27, 56), level 57, process 3: From [5.00, 5.00] and [5.00, 4.89] to [5.00, 4.95]
 
+--------------------------------------------
 
-Minimum distance 1.973 found at (4, 10)
-	From [6.50, 0.25] and [5.00, 1.53] to [5.75, 0.89]
 
 
-Minimum distance 1.505 found at (2, 7)
-	From [4.00, 3.00] and [5.00, 1.88] to [4.50, 2.44]
+Minimum distance 1.031 found at (6, 8), level 15, process 4: From [0.97, 7.00] and [2.00, 7.03] to [1.48, 7.02]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.346 found at (8, 11)
-	From [3.00, 7.50] and [4.25, 7.00] to [3.62, 7.25]
 
 --------------------------------------------
 
+Minimum distance 1.062 found at (8, 12), level 14, process 4: From [7.00, 7.56] and [5.94, 7.50] to [6.47, 7.53]
 
 --------------------------------------------
+
 
 
+Minimum distance 1.092 found at (7, 10), level 13, process 4: From [8.06, 7.00] and [8.50, 8.00] to [8.28, 7.50]
 
-Minimum distance 2.240 found at (5, 8)
+--------------------------------------------
 
 
-Minimum distance 1.547 found at (17, 23)
-	From [5.62, 3.50] and [4.50, 2.44] to [5.06, 2.97]
 
+Minimum distance 0.055 found at (44, 55), level 56, process 3: From [5.00, 5.00] and [5.00, 4.95] to [5.00, 4.97]
 
-Minimum distance 1.398 found at (1, 26)
-	From [3.00, 6.00] and [3.62, 7.25] to [3.31, 6.62]
 
+Minimum distance 1.139 found at (0, 3), level 12, process 4: From [4.00, 5.81] and [5.12, 6.00] to [4.56, 5.91]
+
 --------------------------------------------
 
-	From [6.02, 8.25] and [3.84, 7.70] to [4.93, 7.98]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.253 found at (1, 7)
-	From [8.88, 5.00] and [8.12, 2.88] to [8.50, 3.94]
+Minimum distance 1.371 found at (5, 7), level 11, process 4: From [0.53, 8.00] and [1.48, 7.02] to [1.01, 7.51]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.262 found at (2, 4)
-	From [4.50, 4.75] and [2.88, 3.18] to [3.69, 3.96]
+Minimum distance 1.371 found at (4, 5), level 10, process 4: From [3.56, 7.00] and [4.50, 8.00] to [4.03, 7.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.576 found at (2, 7)
-	From [8.00, 5.00] and [9.00, 6.22] to [8.50, 5.61]
+Minimum distance 1.000 found at (0, 20), level 55, process 3: From [9.00, 5.00] and [8.00, 5.00] to [8.50, 5.00]
 
 --------------------------------------------
-
 
 
-Minimum distance 1.398 found at (16, 21)
-	From [8.75, 6.50] and [8.50, 5.12] to [8.62, 5.81]
+Minimum distance 1.638 found at (1, 5), level 9, process 4: From [8.94, 6.00] and [8.28, 7.50] to [8.61, 6.75]
 
 --------------------------------------------
 
 
+
+
+Minimum distance 1.680 found at (4, 6), level 8, process 4: From [4.56, 5.91] and [4.03, 7.50] to [4.30, 6.70]
+
 --------------------------------------------
 
 
 
-Minimum distance 2.565 found at (2, 8)
-	From [6.75, 5.81] and [8.50, 3.94] to [7.62, 4.88]
+Minimum distance 1.702 found at (1, 4), level 7, process 4: From [0.22, 6.00] and [1.01, 7.51] to [0.61, 6.75]
 
 --------------------------------------------
 
 
 
+Minimum distance 1.739 found at (0, 2), level 6, process 4: From [7.00, 5.88] and [6.47, 7.53] to [6.73, 6.70]
 
 
-Minimum distance 1.463 found at (2, 15)
-	From [2.00, 5.00] and [1.50, 6.38] to [1.75, 5.69]
+Minimum distance 0.500 found at (10, 53), level 54, process 3: From [9.00, 5.00] and [8.50, 5.00] to [8.75, 5.00]
 
 --------------------------------------------
 
-Minimum distance 2.774 found at (0, 3)
-	From [0.00, 3.00] and [1.23, 0.52] to [0.62, 1.76]
-
 --------------------------------------------
+
+
 
+Minimum distance 1.875 found at (1, 4), level 5, process 4: From [8.61, 6.75] and [6.73, 6.70] to [7.67, 6.73]
 
+--------------------------------------------
 
-Minimum distance 2.891 found at (0, 3)
 
 
-Minimum distance 0.788 found at (2, 21)
-	From [8.00, 5.00] and [8.50, 5.61] to [8.25, 5.30]
 
+Minimum distance 1.974 found at (0, 2), level 4, process 4: From [2.44, 6.00] and [0.61, 6.75] to [1.53, 6.38]
+
 --------------------------------------------
+
 
-	From [8.50, 0.00] and [5.75, 0.89] to [7.12, 0.45]
 
+Minimum distance 2.790 found at (0, 2), level 3, process 4: From [4.30, 6.70] and [1.53, 6.38] to [2.91, 6.54]
+
 --------------------------------------------
 
 
 
-Minimum distance 3.425 found at (0, 2)
-	From [8.34, 8.25] and [4.93, 7.98] to [6.64, 8.11]
 
 
-Minimum distance 1.581 found at (1, 12)
-	From [6.00, 7.00] and [5.50, 5.50] to [5.75, 6.25]
+Minimum distance 0.250 found at (21, 52), level 53, process 3: From [9.00, 5.00] and [8.75, 5.00] to [8.88, 5.00]
+
+--------------------------------------------
+Minimum distance 4.765 found at (0, 1), level 2, process 4: From [7.67, 6.73] and [2.91, 6.54] to [5.29, 6.63]
 
 --------------------------------------------
 
 
 
-Minimum distance 0.732 found at (2, 23)
-	From [2.00, 5.00] and [1.75, 5.69] to [1.88, 5.34]
 
+Minimum distance 0.125 found at (21, 51), level 52, process 3: From [9.00, 5.00] and [8.88, 5.00] to [8.94, 5.00]
+
 --------------------------------------------
 
 
 
-Minimum distance 0.366 found at (2, 22)
+Minimum distance 0.062 found at (22, 50), level 51, process 3: From [9.00, 5.00] and [8.94, 5.00] to [8.97, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.386 found at (2, 5)
-	From [7.62, 4.88] and [6.64, 8.11] to [7.13, 6.49]
+Minimum distance 0.031 found at (41, 49), level 50, process 3: From [9.00, 5.00] and [8.97, 5.00] to [8.98, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.582 found at (1, 6)
-	From [9.00, 3.56] and [8.75, 2.00] to [8.88, 2.78]
+Minimum distance 0.016 found at (41, 48), level 49, process 3: From [9.00, 5.00] and [8.98, 5.00] to [8.99, 5.00]
 
 --------------------------------------------
+
+
 
-	From [2.00, 5.00] and [1.88, 5.34] to [1.94, 5.17]
+Minimum distance 0.992 found at (21, 47), level 48, process 3: From [8.00, 5.00] and [8.99, 5.00] to [8.50, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.780 found at (1, 2)
-	From [3.69, 3.96] and [0.62, 1.76] to [2.15, 2.86]
+Minimum distance 0.496 found at (25, 46), level 47, process 3: From [8.00, 5.00] and [8.50, 5.00] to [8.25, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 5.525 found at (0, 3)
-	From [0.69, 8.19] and [2.15, 2.86] to [1.42, 5.52]
+Minimum distance 0.248 found at (25, 45), level 46, process 3: From [8.00, 5.00] and [8.25, 5.00] to [8.12, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.454 found at (4, 18)
-	From [7.44, 3.00] and [8.88, 2.78] to [8.16, 2.89]
+Minimum distance 0.124 found at (29, 44), level 45, process 3: From [8.00, 5.00] and [8.12, 5.00] to [8.06, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.500 found at (1, 7)
-	From [0.00, 1.00] and [0.00, 2.50] to [0.00, 1.75]
+Minimum distance 0.062 found at (29, 43), level 44, process 3: From [8.00, 5.00] and [8.06, 5.00] to [8.03, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.562 found at (3, 5)
-	From [4.00, 2.50] and [4.44, 1.00] to [4.22, 1.75]
+Minimum distance 1.000 found at (0, 18), level 43, process 3: From [6.00, 5.00] and [7.00, 5.00] to [6.50, 5.00]
 
+--------------------------------------------
 
-Minimum distance 5.793 found at (1, 2)
-	From [7.13, 6.49] and [1.42, 5.52] to [4.28, 6.01]
 
---------------------------------------------
 
+Minimum distance 0.500 found at (1, 41), level 42, process 3: From [6.00, 5.00] and [6.50, 5.00] to [6.25, 5.00]
 
+--------------------------------------------
 
-Minimum distance 6.251 found at (0, 1)
-	From [7.12, 0.45] and [4.28, 6.01] to [5.70, 3.23]
 
 
-Minimum distance 1.677 found at (1, 13)
-	From [4.25, 7.00] and [3.50, 5.50] to [3.88, 6.25]
+Minimum distance 0.250 found at (1, 40), level 41, process 3: From [6.00, 5.00] and [6.25, 5.00] to [6.12, 5.00]
 
 --------------------------------------------
 
 
---------------------------------------------
 
+Minimum distance 0.125 found at (1, 39), level 40, process 3: From [6.00, 5.00] and [6.12, 5.00] to [6.06, 5.00]
 
 --------------------------------------------
 
 
----------New A: 
-5.70	3.23	
-Returning root of this subtree to manager
 
+Minimum distance 0.062 found at (13, 38), level 39, process 3: From [6.00, 5.00] and [6.06, 5.00] to [6.03, 5.00]
 
-Minimum distance 1.819 found at (3, 10)
-	From [0.00, 6.50] and [1.48, 7.56] to [0.74, 7.03]
-
 --------------------------------------------
 
 
 
-Minimum distance 1.769 found at (1, 12)
-	From [3.06, 0.00] and [2.12, 1.50] to [2.59, 0.75]
+Minimum distance 0.031 found at (19, 37), level 38, process 3: From [6.00, 5.00] and [6.03, 5.00] to [6.02, 5.00]
 
 --------------------------------------------
 
 
 
+Minimum distance 0.016 found at (20, 36), level 37, process 3: From [6.00, 5.00] and [6.02, 5.00] to [6.01, 5.00]
 
+--------------------------------------------
 
-Minimum distance 1.838 found at (4, 6)
-	From [1.38, 2.50] and [2.44, 1.00] to [1.91, 1.75]
 
---------------------------------------------
 
-Minimum distance 1.866 found at (9, 15)
-	From [1.25, 3.44] and [1.94, 5.17] to [1.59, 4.30]
+Minimum distance 0.008 found at (22, 35), level 36, process 3: From [6.00, 5.00] and [6.01, 5.00] to [6.00, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.875 found at (10, 12)
-	From [5.75, 6.25] and [3.88, 6.25] to [4.81, 6.25]
+Minimum distance 1.000 found at (0, 4), level 35, process 3: From [2.00, 5.00] and [1.00, 5.00] to [1.50, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.739 found at (0, 17)
-	From [0.00, 5.00] and [1.59, 4.30] to [0.80, 4.65]
+Minimum distance 0.500 found at (1, 33), level 34, process 3: From [2.00, 5.00] and [1.50, 5.00] to [1.75, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.971 found at (2, 12)
-	From [0.00, 1.25] and [1.91, 1.75] to [0.95, 1.50]
+Minimum distance 0.250 found at (3, 32), level 33, process 3: From [2.00, 5.00] and [1.75, 5.00] to [1.88, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.012 found at (3, 6)
-	From [6.50, 8.72] and [8.50, 8.50] to [7.50, 8.61]
+Minimum distance 0.125 found at (10, 31), level 32, process 3: From [2.00, 5.00] and [1.88, 5.00] to [1.94, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.016 found at (0, 1)
+Minimum distance 0.062 found at (10, 30), level 31, process 3: From [2.00, 5.00] and [1.94, 5.00] to [1.97, 5.00]
 
+--------------------------------------------
 
-Minimum distance 1.876 found at (2, 12)
-	From [7.00, 6.75] and [8.62, 5.81] to [7.81, 6.28]
 
---------------------------------------------
 
-	From [0.00, 4.00] and [1.75, 5.00] to [0.88, 4.50]
+Minimum distance 0.031 found at (10, 29), level 30, process 3: From [2.00, 5.00] and [1.97, 5.00] to [1.98, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.416 found at (4, 5)
-	From [8.25, 5.30] and [8.16, 2.89] to [8.20, 4.10]
+Minimum distance 0.016 found at (10, 28), level 29, process 3: From [2.00, 5.00] and [1.98, 5.00] to [1.99, 5.00]
 
 --------------------------------------------
 
 
-Minimum distance 1.879 found at (0, 5)
-	From [8.62, 0.00] and [6.75, 0.12] to [7.69, 0.06]
 
+Minimum distance 0.008 found at (11, 27), level 28, process 3: From [2.00, 5.00] and [1.99, 5.00] to [2.00, 5.00]
+
 --------------------------------------------
 
 
 
+Minimum distance 0.996 found at (2, 26), level 27, process 3: From [1.00, 5.00] and [2.00, 5.00] to [1.50, 5.00]
 
+--------------------------------------------
 
 
-Minimum distance 2.535 found at (4, 8)
-	From [0.74, 7.03] and [0.88, 4.50] to [0.81, 5.77]
 
---------------------------------------------
-Minimum distance 1.908 found at (10, 11)
-	From [4.22, 1.75] and [2.59, 0.75] to [3.41, 1.25]
+Minimum distance 0.498 found at (7, 25), level 26, process 3: From [1.00, 5.00] and [1.50, 5.00] to [1.25, 5.00]
 
 --------------------------------------------
 
 
 
+Minimum distance 0.249 found at (7, 24), level 25, process 3: From [1.00, 5.00] and [1.25, 5.00] to [1.12, 5.00]
 
-Minimum distance 2.785 found at (2, 3)
-	From [4.62, 0.22] and [5.06, 2.97] to [4.84, 1.59]
-
 --------------------------------------------
 
 
 
-Minimum distance 2.995 found at (0, 2)
-	From [3.62, 9.00] and [4.81, 6.25] to [4.22, 7.62]
+Minimum distance 0.125 found at (11, 23), level 24, process 3: From [1.00, 5.00] and [1.12, 5.00] to [1.06, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.910 found at (2, 7)
-	From [5.50, 5.44] and [6.00, 3.59] to [5.75, 4.52]
+Minimum distance 0.938 found at (8, 22), level 23, process 3: From [2.00, 5.00] and [1.06, 5.00] to [1.53, 5.00]
 
+--------------------------------------------
 
-Minimum distance 3.426 found at (2, 6)
-	From [7.50, 8.61] and [4.22, 7.62] to [5.86, 8.12]
 
---------------------------------------------
 
+Minimum distance 0.469 found at (11, 21), level 22, process 3: From [2.00, 5.00] and [1.53, 5.00] to [1.77, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 1.954 found at (2, 3)
-	From [7.94, 8.75] and [6.00, 8.50] to [6.97, 8.62]
+Minimum distance 1.000 found at (0, 2), level 21, process 3: From [4.00, 5.00] and [3.00, 5.00] to [3.50, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.892 found at (1, 4)
-	From [0.95, 1.50] and [4.84, 1.59] to [2.90, 1.55]
+Minimum distance 0.500 found at (0, 19), level 20, process 3: From [4.00, 5.00] and [3.50, 5.00] to [3.75, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 4.126 found at (0, 1)
+Minimum distance 0.250 found at (1, 18), level 19, process 3: From [4.00, 5.00] and [3.75, 5.00] to [3.88, 5.00]
 
+--------------------------------------------
+
+
 
-Minimum distance 2.382 found at (1, 4)
-	From [3.50, 9.00] and [3.31, 6.62] to [3.41, 7.81]
-	From [8.69, 0.00] and [8.20, 4.10] to [8.45, 2.05]
+Minimum distance 0.125 found at (1, 17), level 18, process 3: From [4.00, 5.00] and [3.88, 5.00] to [3.94, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 4.709 found at (0, 2)
-	From [0.81, 5.77] and [2.90, 1.55] to [1.85, 3.66]
+Minimum distance 0.062 found at (2, 16), level 17, process 3: From [4.00, 5.00] and [3.94, 5.00] to [3.97, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 5.996 found at (0, 2)
+Minimum distance 0.031 found at (2, 15), level 16, process 3: From [4.00, 5.00] and [3.97, 5.00] to [3.98, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.415 found at (2, 8)
-	From [3.39, 4.00] and [5.75, 4.52] to [4.57, 4.26]
+Minimum distance 0.984 found at (0, 14), level 15, process 3: From [3.00, 5.00] and [3.98, 5.00] to [3.49, 5.00]
 
 --------------------------------------------
 
-	From [5.86, 8.12] and [1.85, 3.66] to [3.86, 5.89]
 
---------------------------------------------
 
+Minimum distance 0.492 found at (0, 13), level 14, process 3: From [3.00, 5.00] and [3.49, 5.00] to [3.25, 5.00]
 
+--------------------------------------------
 
-Minimum distance 5.983 found at (0, 1)
-	From [8.45, 2.05] and [3.86, 5.89] to [6.15, 3.97]
 
 
-Minimum distance 2.491 found at (4, 7)
-	From [7.81, 6.28] and [6.97, 8.62] to [7.39, 7.45]
+Minimum distance 0.246 found at (0, 12), level 13, process 3: From [3.00, 5.00] and [3.25, 5.00] to [3.12, 5.00]
 
 --------------------------------------------
 
 
 
-Minimum distance 2.865 found at (1, 6)
-	From [0.62, 8.50] and [3.41, 7.81] to [2.02, 8.16]
+Minimum distance 0.123 found at (0, 11), level 12, process 3: From [3.00, 5.00] and [3.12, 5.00] to [3.06, 5.00]
 
 --------------------------------------------
 
 
----------New A: 
-6.15	3.97	
-Returning root of this subtree to manager
 
+Minimum distance 1.000 found at (0, 6), level 11, process 3: From [6.00, 5.00] and [5.00, 4.97] to [5.50, 4.99]
+
 --------------------------------------------
 
 
 
-Minimum distance 2.991 found at (0, 3)
-	From [9.00, 2.75] and [7.69, 0.06] to [8.34, 1.41]
+Minimum distance 0.504 found at (6, 9), level 10, process 3: From [6.00, 5.00] and [5.50, 4.99] to [5.75, 4.99]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.010 found at (0, 1)
-	From [0.00, 1.75] and [0.80, 4.65] to [0.40, 3.20]
+Minimum distance 1.033 found at (1, 6), level 9, process 3: From [1.51, 4.00] and [1.77, 5.00] to [1.64, 4.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.225 found at (0, 1)
-	From [3.41, 1.25] and [4.57, 4.26] to [3.99, 2.75]
+Minimum distance 1.098 found at (3, 4), level 8, process 3: From [8.48, 4.00] and [8.03, 5.00] to [8.26, 4.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 3.618 found at (3, 4)
-	From [0.40, 3.20] and [3.99, 2.75] to [2.19, 2.98]
+Minimum distance 1.331 found at (0, 3), level 7, process 3: From [3.94, 4.00] and [3.06, 5.00] to [3.50, 4.50]
 
 --------------------------------------------
 
 
 
-Minimum distance 5.182 found at (1, 3)
-	From [2.02, 8.16] and [2.19, 2.98] to [2.10, 5.57]
+Minimum distance 1.468 found at (0, 4), level 6, process 3: From [6.88, 4.00] and [8.26, 4.50] to [7.57, 4.25]
 
 --------------------------------------------
 
 
 
-Minimum distance 5.613 found at (0, 2)
-	From [7.39, 7.45] and [2.10, 5.57] to [4.75, 6.51]
+Minimum distance 1.683 found at (0, 2), level 5, process 3: From [0.00, 4.89] and [1.64, 4.50] to [0.82, 4.70]
 
 --------------------------------------------
 
 
 
-Minimum distance 6.243 found at (0, 1)
-	From [8.34, 1.41] and [4.75, 6.51] to [6.55, 3.96]
+Minimum distance 1.962 found at (0, 2), level 4, process 3: From [5.75, 4.99] and [7.57, 4.25] to [6.66, 4.62]
 
 --------------------------------------------
+
 
 
----------New A: 
-6.55	3.96	
-Returning root of this subtree to manager
 
 --------------------------------------------
 
 Sequential Matrix A: 
-0.00	0.00	
-4.23	5.11	
-4.90	4.65	
-5.70	3.23	
-6.15	3.97	
-6.55	3.96	
-
-Dists: 
-0.00	6.63	6.75	6.55	7.32	7.65	
-0.00	0.00	0.82	2.39	2.24	2.59	
-0.00	0.00	0.00	1.63	1.42	1.78	
-0.00	0.00	0.00	0.00	0.87	1.12	
-0.00	0.00	0.00	0.00	0.00	0.40	
-0.00	-0.00	0.00	0.00	0.00	0.00	
-
-
-Minimum distance 0.395 found at (4, 5)
-	From [6.15, 3.97] and [6.55, 3.96] to [6.35, 3.96]
-
---------------------------------------------
-
-New A: 
-0.00	0.00	
-4.23	5.11	
-4.90	4.65	
-5.70	3.23	
-6.35	3.96	
-
-
-Minimum distance 0.819 found at (1, 2)
-	From [4.23, 5.11] and [4.90, 4.65] to [4.56, 4.88]
-
---------------------------------------------
-
-New A: 
-0.00	0.00	
-5.70	3.23	
-6.35	3.96	
-4.56	4.88	
-
-
-Minimum distance 0.980 found at (1, 2)
-	From [5.70, 3.23] and [6.35, 3.96] to [6.02, 3.60]
-
---------------------------------------------
-
-New A: 
-0.00	0.00	
-4.56	4.88	
-6.02	3.60	
-
-
-Minimum distance 1.944 found at (1, 2)
-	From [4.56, 4.88] and [6.02, 3.60] to [5.29, 4.24]
-
---------------------------------------------
-
-New A: 
-0.00	0.00	
-5.29	4.24	
-
-
-Minimum distance 6.780 found at (0, 1)
-	From [0.00, 0.00] and [5.29, 4.24] to [2.65, 2.12]
+Minimum distance 2.689 found at (0, 1), level 3, process 3: From [3.50, 4.50] and [0.82, 4.70] to [2.16, 4.60]
 
 --------------------------------------------
 
 
-Sequential results: 
-0.00	0.00	0.00	0.00	
-0.00	0.00	5.29	4.24	
-4.56	4.88	6.02	3.60	
-5.70	3.23	6.35	3.96	
-4.23	5.11	4.90	4.65	
-6.15	3.97	6.55	3.96	
-0.00	0.00	0.00	0.00	
+
+5.42	2.94	
+4.33	8.83	
+5.29	6.63	
+4.97Minimum distance 4.500 found at (0, 1), level 2, process 3: From [6.66, 4.62] and [2.16, 4.60] to [4.41, 4.61]
+
+--------------------------------------------
+
+	0.99	
+4.41	4.61	
+
+
+Minimum distance 1.954 found at (0, 4), level 5, process 0: From [5.42, 2.94] and [4.41, 4.61] to [4.92, 3.77]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.399 found at (0, 1), level 4, process 0: From [4.33, 8.83] and [5.29, 6.63] to [4.81, 7.73]
+
+--------------------------------------------
+
+
+
+Minimum distance 2.782 found at (0, 1), level 3, process 0: From [4.97, 0.99] and [4.92, 3.77] to [4.94, 2.38]
+
+--------------------------------------------
+
+
+
+Minimum distance 5.350 found at (0, 1), level 2, process 0: From [4.81, 7.73] and [4.94, 2.38] to [4.88, 5.06]
+
+--------------------------------------------
+
 
 ||-----Done sequential-----||.
+
 
 Sending dietags for 5 workers
 
 ||-----Done parallel part-----||.
 
-Total time (sec): 0.024335
+Total time (sec): 0.025875

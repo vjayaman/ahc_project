@@ -6,16 +6,18 @@
 /* Functions */
 
 // if (x > y) return y else x
-int min(int x, int y) {
+double min(double x, double y) {
     return (x > y) ? y : x;
 }
 
 // if (x > y) return x else y
-int max(int x, int y) {
+double max(double x, double y) {
     return (x > y) ? x : y;
 }
 
 double fabs(double x);
+double pow(double x, double exp);
+double sqrt(double x);
 
 // Fills a vector with random integers in the range [0, MAX_RAND)
 void init_vec(double *vec, int len)
@@ -43,7 +45,7 @@ void print_vec(const char *label, double *vec, int len)
 #endif
 }
 
-
+// Prints the given 2D matrix to stdout
 void print_matrix(const char *label, int dim1, int dim2, double (*matrix)[dim2])
 {
     printf("%s", label);
@@ -59,9 +61,8 @@ void print_matrix(const char *label, int dim1, int dim2, double (*matrix)[dim2])
     //printf("\n\n");
 }
 
-double pow(double x, double exp);
-double sqrt(double x);
-
+// reset matrix values to 0 (make sure no garbage values are retained)
+// useful for initialization as well
 void resetMatrix(int dim1, int dim2, double *matrix) {
     int i, j;
     for (i = 0; i < dim1; i++) {
@@ -71,18 +72,28 @@ void resetMatrix(int dim1, int dim2, double *matrix) {
     }
 }
 
-void minMaxCoord(int dim1, int dim2, int j, double *matrix, double minval, double maxval) {
+// identify the maximum value along one column of the A matrix (for bounds)
+double maxCoord(int dim1, int dim2, int j, double *matrix) {
     int i;
+    double maxval = 0;
     for (i = 0; i < dim1; i++) {
-        if (minval > matrix[i * dim2 + j]) {
-            minval = matrix[i * dim2 + j];
-        }
-        if (maxval < matrix[i * dim2 + j) {
-            maxval = matrix[i * dim2 + j];
-        }
+        maxval = max(maxval, matrix[i * dim2 + j]);
     }
+    //printf("min %d: %f, max %d: %f\n", j, minval, j, maxval);
+    return maxval;
 }
 
+// identify the minimum value along one column of the A matrix (for bounds)
+double minCoord(int dim1, int dim2, int j, double *matrix) {
+    int i;
+    double minval = 5000;
+    for (i = 0; i < dim1; i++) {
+        minval = min(minval, matrix[i * dim2 + j]);
+    }
+    return minval;
+}
+
+// Prints the given 2D contiguous array to stdout
 void print_oned_mat(const char *label, double *A, int dim1, int dim2) {
     int i,j;
     printf("%s", label);
@@ -93,15 +104,12 @@ void print_oned_mat(const char *label, double *A, int dim1, int dim2) {
         printf("\n");
     }
 }
-
-
-
-void collectDistances(int y, double *A, double *Dists) {
+/*
+void seqCollectDistances(int y, double *A, double *Dists) {
     double sum;
     int row0, row1, i2;
     for (row0 = 0; row0 < y; row0++) {
         for (row1 = row0+1; row1 < y; row1++) {
-        //for (row1 = 0; row1 < y; row1++) {
             sum = 0;
             for (i2 = 0; i2 < N; i2++) {
                 sum += pow(A[row0 * N + i2] - A[row1 * N + i2], 2);
@@ -110,26 +118,29 @@ void collectDistances(int y, double *A, double *Dists) {
             Dists[row0 * y + row1] = sqrt(sum);
         }
     }
-}
+}*/
 
-
-/*void parallelCollectDistances(int y, double *A, double *Dists) {
+// collect the pairwise distances for vectors in A
+// save into the upper triangular matrix of Dists (not including the diagonal)
+void collectDistances(int y, double *A, double *Dists) {
     double sum;
     int row0, row1, i2;
-    #pragma omp parallel for private(row1, i2, sum)
     for (row0 = 0; row0 < y; row0++) {
         for (row1 = row0+1; row1 < y; row1++) {
             sum = 0;
+            //#pragma omp parallel for private(i2) reduction(+:sum)
             for (i2 = 0; i2 < N; i2++) {
                 sum += pow(A[row0 * N + i2] - A[row1 * N + i2], 2);
             }
             Dists[row0 * y + row1] = sqrt(sum);
         }
     }
-}*/
+}
 
 
-
+// identify the minimum pairwise distance in matrix Dists and save the 
+// indices for where it was found
+// the distance must be greater that 0.005
 void minDist(double min_val, int x, double *Dists, double *coords, int dim2) {
     int i1, i2;
     double mv = min_val;
@@ -148,6 +159,8 @@ void minDist(double min_val, int x, double *Dists, double *coords, int dim2) {
     }
 }
 
+// update the A matrix: add the new center vector and remove the old elements 
+// that are now grouped under the center vector
 void updateActiveMatrix(int num_vecs, double *coords, double *A, double *A_new) { // double *indices
     int k1 = 0;
     int i, j;
@@ -164,12 +177,12 @@ void updateActiveMatrix(int num_vecs, double *coords, double *A, double *A_new) 
     int val1 = (int)coords[1];
     for (j = 0; j < N; j++) {
         A_new[k1 * N + j] = (A[val0 * N + j] + A[val1 * N + j]) / 2;
-
         //printf("(A[%d][j] + A[%d][j]) / 2 = (%.2f + %.2f)/2 = %.2f\n", 
         //       (int)coords[0], (int)coords[1], A[(int)coords[0]][j], A[(int)coords[1]][j], A_new[k1][j]);
     }
 }
 
+// copy 2D contiguous array values from one to another
 void copyNewToOld(double *A_new, double *A, int x_old, int x_new) {
     int i, j;
     for (i = 0; i < x_new; i++) {
@@ -189,6 +202,7 @@ double concatenate(double x, double y) {
     return x * pow + y;
 }
 
+// list of merged pairs, adding to a list of these for result processing
 void addToMergedList(double *merged_pairs, double *A, int val0, int val1, int x) {
     int i;
     for (i = 0; i < 2; i++) {
