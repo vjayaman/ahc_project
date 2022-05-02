@@ -20,17 +20,18 @@ double pow(double x, double exp);
 double sqrt(double x);
 
 // Fills a vector with random integers in the range [0, MAX_RAND)
+// From vec_sum example provided by prof
 void init_vec(double *vec, int len)
 {
     int i;
     for (i = 0; i < len; i++)
     {
-        //srand(i);
         vec[i] = rand() % MAX_RAND;
     }    
 }
 
 // Prints the given vector to stdout
+// From vec_sum example provided by prof
 void print_vec(const char *label, double *vec, int len)
 {
 #if PRINT_VECS
@@ -46,6 +47,7 @@ void print_vec(const char *label, double *vec, int len)
 }
 
 // Prints the given 2D matrix to stdout
+// From vec_sum example provided by prof
 void print_matrix(const char *label, int dim1, int dim2, double (*matrix)[dim2])
 {
     printf("%s", label);
@@ -104,21 +106,6 @@ void print_oned_mat(const char *label, double *A, int dim1, int dim2) {
         printf("\n");
     }
 }
-/*
-void seqCollectDistances(int y, double *A, double *Dists) {
-    double sum;
-    int row0, row1, i2;
-    for (row0 = 0; row0 < y; row0++) {
-        for (row1 = row0+1; row1 < y; row1++) {
-            sum = 0;
-            for (i2 = 0; i2 < N; i2++) {
-                sum += pow(A[row0 * N + i2] - A[row1 * N + i2], 2);
-            }
-            //printf("row0: %d, row1: %d, val: %.3f\n", row0, row1, sqrt(sum));
-            Dists[row0 * y + row1] = sqrt(sum);
-        }
-    }
-}*/
 
 // collect the pairwise distances for vectors in A
 // save into the upper triangular matrix of Dists (not including the diagonal)
@@ -196,9 +183,7 @@ void copyNewToOld(double *A_new, double *A, int x_old, int x_new) {
 // https://stackoverflow.com/questions/12700497/how-to-concatenate-two-integers-in-c
 double concatenate(double x, double y) {
     double pow = 10;
-    while(y >= pow) {
-        pow *= 10;
-    }
+    while(y >= pow) {pow *= 10;}
     return x * pow + y;
 }
 

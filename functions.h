@@ -7,12 +7,7 @@
 #define N 2
 #define PRINT_VECS 1  // flag so we can turn off printing when N is large
 #define MAX_RAND 10   // max value of elements generated for array
-<<<<<<< HEAD
-#define NUM_VECS 5
-=======
-#define NUM_VECS 2000
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
-//#define NTHREADS 8
+#define NUM_VECS 15
 
 /* Prototypes */
 double pow(double x, double exp);
@@ -24,7 +19,6 @@ void print_matrix(const char *label, int dim1, int dim2, double (*matrix)[dim2])
 void print_oned_mat(const char *label, double *A, int dim1, int dim2);
 void minDist(double min_val, int x, double *Dists, double *coords, int dim2); 
 void updateActiveMatrix(int num_vecs, double *coords, double *A, double *A_new);
-//void seqCollectDistances(int y, double *A, double *Dists);
 void collectDistances(int y, double *A, double *Dists);
 void copyNewToOld(double *A_new, double *A, int x_old, int x_new);
 void resetMatrix(int dim1, int dim2, double *matrix); 
@@ -36,9 +30,5 @@ double min(double x, double y);
 double max(double x, double y);
 double maxCoord(int dim1, int dim2, int j, double *matrix);
 double minCoord(int dim1, int dim2, int j, double *matrix);
-<<<<<<< HEAD
-=======
-//memset(str_full, 0, sizeof(str_full));
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 #endif

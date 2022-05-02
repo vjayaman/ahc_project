@@ -5,7 +5,7 @@ library(tidyverse)
 library(ggplot2)
 library(data.table)
 library(stringr)
-
+library(fastcluster)
 
 initialPairs <- function(seq_results) {
   s_a1 <- lapply(seq_results, function(x) {
@@ -465,9 +465,85 @@ parPlotsGeneral <- function(num_vecs, p_outputs, plot_level) {
 
 
 
+# TIMING --------------------------------------------------------------------------
+parallelFixNVaryP <- function(pfiles, m_val) {
+  pfiles <- grep(m_val, pfiles, value = TRUE)
+  parallel_times <- lapply(1:length(pfiles), function(i) {
+    x <- pfiles[i]
+    p_outputs <- readLines(x)
+    p_ind1 <- which(grepl("Total time", p_outputs))
+    if (length(p_ind1) > 0) {
+      y <- strsplit(names(x), split = "m") %>% unlist() %>% gsub("p", "", .) %>% as.double()
+      z <- strsplit(p_outputs[p_ind1], " ")[[1]][4] %>% as.double()
+      data.frame(t(y), z) %>% set_colnames(c("num_nodes", "num_vecs", "time")) 
+    }
+  }) %>% bind_rows()
+  return(parallel_times)
+}
 
+runParallelFixNVaryP <- function(fpath) {
+  pfiles <- list.files(fpath, full.names = TRUE)
+  pnames <- pfiles %>% gsub(fpath, "", .) %>% gsub(".txt", "", .)
+  names(pfiles) <- pnames
+  
+  parallelFixNVaryP(pfiles, "m015") %>% 
+    bind_rows(., parallelFixNVaryP(pfiles, "m060")) %>% 
+    bind_rows(., parallelFixNVaryP(pfiles, "m300")) %>% as.data.table() %>% return()
+}
 
+seqFixNVaryP <- function(sfiles, m_val) {
+  sfiles <- grep(m_val, sfiles, value = TRUE)
+  lapply(1:length(sfiles), function(i) {
+    x <- sfiles[i]
+    s_outputs <- readLines(x)
+    s_ind1 <- which(grepl("Total time", s_outputs))
+    y <- strsplit(names(x), split = "m") %>% unlist() %>% gsub("p", "", .) %>% as.double()
+    z <- strsplit(s_outputs[s_ind1], " ")[[1]][4] %>% as.double()
+    data.frame(num_nodes = y[1], num_vecs = y[2], time = z)
+  }) %>% bind_rows() %>% return()
+  # return(naive_sequential_times)
+}
 
+runseqFixNVaryP <- function(fpath) {
+  sfiles <- list.files(fpath, full.names = TRUE, pattern = ".txt")
+  snames <- sfiles %>% gsub(fpath, "", .) %>% gsub(".txt", "", .)
+  names(sfiles) <- snames
+  # naive_sequential_times <- 
+  seqFixNVaryP(sfiles, "m015") %>% 
+    bind_rows(., seqFixNVaryP(sfiles, "m060")) %>% 
+    bind_rows(., seqFixNVaryP(sfiles, "m300")) %>% as.data.table() %>% return()
+}
+
+runBestSeq <- function(fpath) {
+  num_vec_list <- c(15, 60, 300)
+  # sequential_times <- 
+  lapply(1:length(num_vec_list), function(i) {
+    file_index <- i
+    num_vecs <- num_vec_list[i]
+    
+    start_time <- Sys.time()
+    
+    sfiles <- list.files(fpath, full.names = TRUE, pattern = ".txt")
+    snames <- sfiles %>% gsub(fpath, "", .) %>% gsub(".txt", "", .)
+    names(sfiles) <- snames
+    s_outputs <- readLines(sfiles[grep(as.character(num_vecs), snames)])
+    
+    s_ind1 <- which(grepl("Matrix A: ", s_outputs))+1
+    seq_results <- s_outputs[s_ind1:(s_ind1+(num_vecs-1))]
+    
+    s_a1 <- lapply(seq_results, function(x) {
+      strsplit(x, "\t") %>% unlist() %>% as.double()
+    }) %>% as.data.frame() %>% t() %>% as.data.frame() %>%
+      as_tibble() %>% set_colnames(c("x", "y"))
+    
+    df <- stats::dist(s_a1)
+    hc <- fastcluster::hclust(df, members = "ave") # plot(hc); plot(hc, hang = -1)
+    
+    end_time <- Sys.time() - start_time
+    
+    data.frame(num_nodes = 1, num_vecs, time = as.character(end_time) %>% as.double())
+  }) %>% bind_rows() %>% as.data.table() %>% return()
+}
 
 
 

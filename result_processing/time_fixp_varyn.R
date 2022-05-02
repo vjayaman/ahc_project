@@ -37,7 +37,7 @@ naive_sequential_times <- lapply(sfiles, function(x) {
   y <- strsplit(x, "/")[[1]][3] %>% gsub(".txt", "", .) %>%
     strsplit(names(x), split = "m") %>% unlist() %>% extract2(2)
   z <- strsplit(s_outputs[s_ind1], " ")[[1]][4] %>% as.double()
-  data.frame(num_nodes = 0, num_vecs = as.double(y), time = z)
+  data.frame(num_nodes = 1, num_vecs = as.double(y), time = z)
 }) %>% bind_rows()
 
 
