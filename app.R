@@ -12,12 +12,12 @@ ui <- dashboardPage(
   ),
   dashboardBody(
     fluidRow(
-      box(plotOutput("parallel_plot_halfway", height = 400)), 
-      box(plotOutput("parallel_plot", height = 400))
+      box(plotOutput("parallel_plot_halfway", height = 350)), 
+      box(plotOutput("parallel_plot", height = 350))
     ), 
     fluidRow(
-      box(plotOutput("seq_plot_halfway", height = 400)), 
-      box(plotOutput("seq_plot", height = 400))
+      box(plotOutput("seq_plot_halfway", height = 350)), 
+      box(plotOutput("seq_plot", height = 350))
     )
   )
 )
@@ -40,7 +40,6 @@ server <- function(input, output) {
     p_outputs <- readLines(pfiles[grep(input$num_vecs, pnames)])
     parPlotsGeneral(as.double(input$num_vecs), p_outputs, plot_level = 2)
   })
-  
   
   
   output$seq_plot_halfway <- renderPlot({

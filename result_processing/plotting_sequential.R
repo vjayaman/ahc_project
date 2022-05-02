@@ -66,9 +66,6 @@ s_df <- bind_rows(s_d2, s_d2) %>% bind_rows(s_d2)
 s_toplot$pt[s_toplot$pt == "1"] <- "Merged pair"
 s_toplot$pt[s_toplot$pt == "2"] <- "Center"
 
-s_toplot$type[s_toplot$type == "1"] <- "Merged pair"
-s_toplot$type[s_toplot$type == "2"] <- "Center"
-
 
 threshold <- median(sort(s_toplot$level))
 
@@ -89,7 +86,9 @@ ggplot(data = toplot_1, aes(x = x, y = y, color = level)) + geom_point() +
   ylim(min(toplot_2$y), max(toplot_2$y)) + 
   geom_segment(aes(x = df_1$x, y = df_1$y, xend = df_1$xend, yend = df_1$yend)) + 
   ggtitle(paste0("Naive sequential implementation for ", num_vecs, " vectors and N = 2 (halfway)")) + 
-  labs(color = "Level (root is 0)")
+  labs(color = "Level (root is 0)") + 
+  theme(legend.position = "bottom") +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE))
 # ggsave(paste0("figs_and_tbls/levels_lower_p1m", num_vecs, ".png"))
 
 
@@ -99,7 +98,9 @@ ggplot(data = toplot_2, aes(x = x, y = y, color = level)) + geom_point() +
   ylim(min(toplot_2$y), max(toplot_2$y)) + 
   geom_segment(aes(x = df_2$x, y = df_2$y, xend = df_2$xend, yend = df_2$yend, color = level)) + 
   ggtitle(paste0("Naive sequential implementation for ", num_vecs, " vectors and N = 2s")) + 
-  labs(color = "Level (root is 0)")
+  labs(color = "Level (root is 0)") + 
+  theme(legend.position = "bottom") +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE))
 # ggsave(paste0("figs_and_tbls/levels_upper_p1m", num_vecs, ".png"))
 
 
