@@ -2,7 +2,7 @@
 
 source("result_processing/rfuncs.R")
 
-num_vecs <- 100
+num_vecs <- 15
 file_index <- str_pad(num_vecs, 4, pad = "0")
 
 pfiles <- list.files("outputs/parallel/", full.names = TRUE)
@@ -20,10 +20,10 @@ p_a1 <- lapply(p_matA, function(x) {
 
 
 p_pairs <- grep("From ", p_outputs, value = TRUE)
-p_pairs <- gsub("\t", ": ", p_pairs)
+# p_pairs <- gsub("\t", ": ", p_pairs)
 
 p_clustering <- grep("Minimum distance ", p_outputs, value = TRUE)
-p_clustering <- gsub("\t", ": ", p_clustering)
+# p_clustering <- gsub("\t", ": ", p_clustering)
 
 # note that the "levels" are decreasing --> max is at the leaves, 1 is at the root
 
@@ -59,16 +59,19 @@ p_x1 <- lapply(p_pairs, function(x_i) {
 # p_second_pair <- orderedPairFormatting(p_x1, 2) %>% add_column(type = "1")
 # p_new_center <- orderedPairFormatting(p_x1, 3) %>% add_column(type = "2")
 
-p_first_pair <- orderedPairs(p_x2, "x1") %>% add_column(pt = "1")
+p_first_pair <- orderedPairs(p_x2, "x1") %>% add_column(pt = "0")
 p_second_pair <- orderedPairs(p_x2, "x2") %>% add_column(pt = "1")
 p_new_center <- orderedPairs(p_x2, "center") %>% add_column(pt = "2")
 
+# s_x2[proc != 0]$level <- s_x2[proc != 0]$level + max(s_x2$level) - 1
+p_toplot <- bind_rows(p_first_pair, p_second_pair) %>% 
+  bind_rows(., p_new_center) %>% 
+  mutate(level = level - min(level))
 
-p_toplot <- bind_rows(p_first_pair, p_second_pair) %>% bind_rows(., p_new_center) %>% 
-  mutate(level = level - 2)
+p_toplot[proc != 0] <- p_toplot[proc != 0] %>% 
+  mutate(level = level + max(p_toplot[proc==0]$level) + 1)
 
-p_d1 <- p_toplot[pt == 1] %>% arrange(proc, -level)
-p_d1 <- p_d1 %>% add_column(new_val = rep(c(0,1), nrow(p_d1)/2))
+p_d1 <- p_toplot %>% arrange(proc, -level) %>% filter(pt < 2)
 
 # p_d1 <- p_toplot[p_toplot$type == 1,] %>% arrange(val) %>% 
 #   add_column(new_val = rep(c(0,1), nrow(p_toplot[p_toplot$type == 1,])/2))
@@ -76,12 +79,15 @@ p_d1 <- p_d1 %>% add_column(new_val = rep(c(0,1), nrow(p_d1)/2))
 # p_d2b <- p_d1[p_d1$new_val == 1,c("val","x","y","type")] %>% 
 #   set_colnames(c("val","xend","yend","type"))
 
-p_d2a <- p_d1[p_d1$new_val == 0] %>% select(-new_val) %>% rownames_to_column("row_id")
+p_d2a <- p_d1[p_d1$pt == 0] %>% rownames_to_column("row_id") %>% 
+  select(-pt)
 
-p_d2b <- p_d1[p_d1$new_val == 1] %>% select(-new_val) %>% 
-  set_colnames(c("proc", "level", "xend","yend","pt")) %>% rownames_to_column("row_id")
+p_d2b <- p_d1[p_d1$pt == 1] %>% 
+  set_colnames(c("proc", "level", "xend","yend","pt")) %>% 
+  rownames_to_column("row_id")
 
-p_d2 <- inner_join(p_d2a, p_d2b, by = c("proc","level","pt","row_id")) %>% select(-row_id)
+p_d2 <- inner_join(p_d2a, p_d2b, by = c("proc","level","row_id")) %>% 
+  select(-row_id)
 
 p_df <- bind_rows(p_d2, p_d2) %>% bind_rows(p_d2)
 
