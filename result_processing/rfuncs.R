@@ -7,6 +7,7 @@ library(data.table)
 library(stringr)
 library(fastcluster)
 
+# Splits pairs of doubles extracted from logs, returns as table
 initialPairs <- function(seq_results) {
   s_a1 <- lapply(seq_results, function(x) {
     strsplit(x, "\t") %>% unlist() %>% as.double()
@@ -15,6 +16,8 @@ initialPairs <- function(seq_results) {
   return(s_a1)
 }
 
+# Splits the string of "From [...] and [...] to [...] into table of pairs of 
+# vectors (two columns for each pair - (x,y))
 levelCharNumTbl <- function(s_lvlinds, s_outputs) {
   s_clustering <- s_outputs[s_lvlinds+1]
   s_levels <- lapply(s_outputs[s_lvlinds], function(x_i) {
@@ -32,14 +35,7 @@ levelCharNumTbl <- function(s_lvlinds, s_outputs) {
   return(s_x2)
 }
 
-# orderedPairFormatting <- function(x1, index) {
-#   lapply(1:length(x1), function(i) {
-#     x2 <- x1[[i]][nchar(x1[[i]]) > 0]
-#     x2[index] %>% gsub("\\]|\\[", "", .) %>% strsplit(., ",") %>% unlist() %>% as.double()
-#   }) %>% as.data.frame() %>% t() %>% as.data.frame() %>% as_tibble() %>% 
-#     rownames_to_column("val") %>% set_colnames(c("val", "x", "y"))
-# }
-
+# Processing from output files to return table of Process ID, Threshold level, x value, y value
 orderedPairs <- function(x1, index) {
   lapply(1:nrow(x1), function(i) {
     df <- x1[i,..index] %>% gsub("\\]|\\[", "", .) %>% strsplit(., ",") %>% unlist() %>% as.double() %>% t() %>% 
@@ -48,6 +44,8 @@ orderedPairs <- function(x1, index) {
   }) %>% bind_rows() %>% set_colnames(c("proc", "level", "x", "y"))
 }
 
+# Separates column in similar manner to above functions, but returns table of 
+# the values in multiple formats
 sepCols <- function(col_index, df) {
   cx <- colnames(df)[col_index]
   orig_col <- pull(df, cx)
@@ -61,6 +59,8 @@ sepCols <- function(col_index, df) {
 }
 
 
+# Less relevant section --------------------------------------------------------
+# used when program needed a traceback element, before outputing to the log was easier)
 # from table of 
 #   level | x1 | x2 | center | x1_x | x1_y | x2_x | x2_y | center_x | center_y 
 # and a table | x | y | of original sequences
@@ -268,12 +268,22 @@ orderedPairToDF <- function(df, col_n) {
     mutate(across(c(x,y), as.double)) %>% 
     add_column(df, .before = 1)
 }
-
+# END of less relevant section -------------------------------------------------
 
 
 
 
 # PLOTTING --------------------------------------------------------------------------
+
+# Below functions for plotting read the output log files and extract the listed 
+# levels, process identifiers, and pairs that were merged
+# Then plot these pairs with level number being closer to 0 the closer to the root 
+# we are, and two possible plots are output: one for all merged pairs up to 
+# halfway up the tree, and one plot of all merged points
+# The parallel and sequential plot versions are essentially the same, there are 
+# just minor differences here and there (easier to keep them separate just in case)
+
+
 seqPlotsGeneral <- function(num_vecs, s_outputs, plot_level) {
   file_index <- str_pad(as.double(num_vecs), 4, pad = "0")
   
@@ -364,6 +374,8 @@ seqPlotsGeneral <- function(num_vecs, s_outputs, plot_level) {
     # ggsave(fig2) 
   }
 }
+
+
 
 parPlotsGeneral <- function(num_vecs, p_outputs, plot_level) {
   file_index <- str_pad(as.double(num_vecs), 4, pad = "0")
@@ -514,6 +526,10 @@ runseqFixNVaryP <- function(fpath) {
     bind_rows(., seqFixNVaryP(sfiles, "m300")) %>% as.data.table() %>% return()
 }
 
+# Runs the fastcluster R package on the same set of data as run by the naive_sequential 
+# implementation, and times the process for a pre-set number of vectors = 15, 60, 300
+# This is only because those are the values for which I fixed m and varied p, 
+# seemed like a waste of resources to do this for more values of m than that
 runBestSeq <- function(fpath) {
   num_vec_list <- c(15, 60, 300)
   # sequential_times <- 

@@ -10,4 +10,4 @@ Runs *hybrid\_clustering.R*, the file that actually runs the agglomerative (para
 
 *figs\_and\_tbls/* contain figures and tables used in the project report (as well as a few that were considered and not used). 
 
-*result_processing/* contains the base files used for processing the outputs of the MPI runs - functions of each are saved to rfuncs.R, for easier use during app runtime. Includes a function that runs the *fastcluster* R package on the same matrices as the sequential implementation run in *hybrid\_clustering.R*
+*result_processing/* contains the base files used for processing the outputs of the MPI runs - functions of each are saved to rfuncs.R, for easier use during app runtime. Includes a function that runs the *fastcluster* R package on the same matrices as the sequential implementation run in *hybrid\_clustering.R*. (*rfuncs.R* is better commented than the other files).
