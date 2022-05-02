@@ -9,25 +9,11 @@ Matrix A:
 5.00	4.00	
 
 
-<<<<<<< HEAD
-Min x: 1.000000, Max x: 9.000000, Min y: 0.000000, Max y: 6.000000
-=======
 min x: 1.000000, max x: 9.000000, min y: 0.000000, max y: 6.000000
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 Sequential Matrix A: 
-<<<<<<< HEAD
-3.00	0.00	
-9.00	0.00	
-3.00	4.00	
-5.00	4.00	
-1.00	6.00	
-
-
-Minimum distance 2.000 found at (2, 3), level 5, process 0: From [3.00, 4.00] and [5.00, 4.00] to [4.00, 4.00]
-=======
 9.00	0.00	
 5.00	4.00	
 3.00	0.00	
@@ -35,38 +21,25 @@ Minimum distance 2.000 found at (2, 3), level 5, process 0: From [3.00, 4.00] an
 3.00	4.00	
 
 
-Minimum distance 2.000 found at (1, 4), level 5, process 0	From [5.00, 4.00] and [3.00, 4.00] to [4.00, 4.00]
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+Minimum distance 2.000 found at (1, 4), level 5, process 0: From [5.00, 4.00] and [3.00, 4.00] to [4.00, 4.00]
 
 --------------------------------------------
 
 
 
-<<<<<<< HEAD
 Minimum distance 3.606 found at (2, 3), level 4, process 0: From [1.00, 6.00] and [4.00, 4.00] to [2.50, 5.00]
-=======
-Minimum distance 3.606 found at (2, 3), level 4, process 0	From [1.00, 6.00] and [4.00, 4.00] to [2.50, 5.00]
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
 
 
-<<<<<<< HEAD
-Minimum distance 5.025 found at (0, 2), level 3, process 0: From [3.00, 0.00] and [2.50, 5.00] to [2.75, 2.50]
-=======
-Minimum distance 5.025 found at (1, 2), level 3, process 0	From [3.00, 0.00] and [2.50, 5.00] to [2.75, 2.50]
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
+Minimum distance 5.025 found at (1, 2), level 3, process 0: From [3.00, 0.00] and [2.50, 5.00] to [2.75, 2.50]
 
 --------------------------------------------
 
 
 
-<<<<<<< HEAD
 Minimum distance 6.731 found at (0, 1), level 2, process 0: From [9.00, 0.00] and [2.75, 2.50] to [5.88, 1.25]
-=======
-Minimum distance 6.731 found at (0, 1), level 2, process 0	From [9.00, 0.00] and [2.75, 2.50] to [5.88, 1.25]
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
 
 --------------------------------------------
 
@@ -78,8 +51,4 @@ Sending dietags for 5 workers
 
 ||-----Done parallel part-----||.
 
-<<<<<<< HEAD
-Total time (sec): 0.001854
-=======
 Total time (sec): 0.002519
->>>>>>> cd467e90d28f2299ac04a6b9729378976d9cc408
